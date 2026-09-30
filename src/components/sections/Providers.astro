@@ -1,0 +1,25 @@
+---
+import ProviderCard from "@/components/ui/ProviderCard.astro";
+import { providers } from "@/data/site";
+const featured = providers.filter((p) => p.photo).slice(0, 6);
+---
+<section id="providers" class="bg-mist py-20 md:py-24">
+  <div class="wrap">
+    <div class="flex flex-col justify-between gap-8 md:flex-row md:items-end">
+      <div>
+        <p class="eyebrow" data-reveal>Choose your provider</p>
+        <h2 class="heading-xl mt-5 max-w-2xl" data-reveal="0.05">Meet the doctors <em class="text-sky">behind every step.</em></h2>
+      </div>
+      <p class="max-w-sm text-slate" data-reveal="0.1">17 board-certified podiatrists and foot &amp; ankle surgeons. Pick the doctor and clinic that suit you.</p>
+    </div>
+    <div class="mt-14 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+      {featured.map((p, i) => <ProviderCard {...p} index={i} />)}
+    </div>
+    <div class="mt-16 flex justify-center" data-reveal>
+      <a href="/doctors" class="btn-navy">
+        View all providers
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+      </a>
+    </div>
+  </div>
+</section>

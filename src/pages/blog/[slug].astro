@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from "astro:content";
+import PageLayout from "@/layouts/PageLayout.astro";
+import { site, unsplash } from "@/data/site";
+import { formatDate } from "@/lib/format";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+<PageLayout title={post.data.title} description={post.data.excerpt} eyebrow={`${post.data.category} / ${formatDate(post.data.date)}`} heading={post.data.title} intro={post.data.excerpt} image={unsplash(post.data.image, 2000)}>
+  <section class="py-20 md:py-28">
+    <article class="prose-content wrap max-w-3xl">
+      <p class="!text-sm !text-slate">{post.data.readTime} &nbsp;|&nbsp; Written by the Neuhaus Foot &amp; Ankle team</p>
+      <Content />
+      <div class="mt-14 rounded-2xl bg-mist p-8">
+        <p class="font-display text-3xl leading-tight text-navy-900">Questions about your feet?</p>
+        <p class="mt-2">Our podiatrists can help. Book a visit at any of our 16 clinics.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="/#contact" class="btn-navy">Request an appointment</a>
+          <a href={site.phoneHref} class="btn-outline">Call {site.phone}</a>
+        </div>
+      </div>
+      <a href="/blog" class="link-arrow mt-10">&larr; Back to all articles</a>
+    </article>
+  </section>
+</PageLayout>

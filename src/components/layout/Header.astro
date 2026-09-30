@@ -1,0 +1,342 @@
+---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import Logo from "@/components/ui/Logo.astro";
+import MobileNav from "@/components/react/MobileNav";
+import { nav, site, practiceLinks, locations, slugify, unsplash } from "@/data/site";
+import aboutPhoto from "@/assets/about.jpg";
+import { conditionSlugForTitle } from "@/data/conditions";
+
+interface Props { overlay?: boolean }
+const { overlay = false } = Astro.props;
+
+const services = (await getCollection("services")).sort((a, b) => a.data.order - b.data.order);
+const cities = [...locations].sort((a, b) => a.city.localeCompare(b.city));
+
+const mobileGroups = {
+  practice: practiceLinks.map((l) => ({ label: l.label, href: l.href })),
+  conditions: [...services.map((s) => ({ label: s.data.title, href: `/services/${s.id}` })), { label: "View all services", href: "/services" }],
+  locations: cities.map((l) => ({ label: l.city, href: `/locations/${slugify(l.city)}` })),
+};
+const arrow = `<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>`;
+---
+<header
+  id="site-header"
+  data-overlay={overlay ? "true" : "false"}
+  class="fixed inset-x-0 top-0 z-50"
+>
+  <div class="hidden border-b border-white/10 bg-navy-950 text-[0.78rem] text-white/80 md:block">
+    <div class="wrap flex h-9 items-center justify-between">
+      <p>Board-certified podiatrists at 16 clinics across Middle Tennessee</p>
+      <div class="flex items-center gap-6">
+        <a href={site.patientPortal} target="_blank" rel="noopener" class="hover:text-gold">Patient portal</a>
+        <a href={site.payOnline} target="_blank" rel="noopener" class="hover:text-gold">Pay online</a>
+        <a href={site.phoneHref} class="font-semibold text-white hover:text-gold">{site.phone}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bar relative">
+    <div class="wrap flex h-20 items-center justify-between gap-6">
+      <a href="/" aria-label="Neuhaus Foot & Ankle home" class="header-logo">
+        <span class="logo-light"><Logo tone="light" /></span>
+        <span class="logo-dark"><Logo tone="dark" /></span>
+      </a>
+
+      <nav aria-label="Main" class="hidden h-full lg:block">
+        <ul class="flex h-full items-center whitespace-nowrap text-[0.9rem] font-medium xl:gap-1">
+          {nav.map((item) => (
+            <li class="flex h-full items-center">
+              {item.menu ? (
+                <button
+                  type="button"
+                  class="nav-link mega-trigger flex h-full items-center gap-1.5 px-2.5 xl:px-3"
+                  data-menu={item.menu}
+                  aria-expanded="false"
+                  aria-controls={`mega-${item.menu}`}
+                >
+                  {item.label}
+                  <svg class="chev h-2.5 w-2.5 transition-transform duration-300" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                </button>
+              ) : (
+                <a href={item.href} class="nav-link flex h-full items-center px-2.5 xl:px-3" {...(item.external ? { target: "_blank", rel: "noopener" } : {})}>{item.label}</a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="/#contact" class="btn-gold hidden whitespace-nowrap !px-6 !py-3 sm:inline-flex lg:hidden xl:inline-flex">Request an appointment</a>
+        <MobileNav client:media="(max-width: 1023px)" items={nav} groups={mobileGroups} phone={site.phone} phoneHref={site.phoneHref} />
+      </div>
+    </div>
+
+    <!-- One shared mega panel: it resizes and slides between menus -->
+    <div id="mega" class="mega absolute inset-x-0 top-full hidden lg:block" aria-hidden="true">
+      <div class="mega-shell overflow-hidden border-t border-line bg-white shadow-[0_40px_60px_-30px_rgba(7,31,48,.35)]">
+        <div class="mega-track relative">
+
+          <!-- Our Practice -->
+          <section id="mega-practice" data-pane="practice" class="mega-pane" aria-label="Our Practice">
+            <div class="wrap grid grid-cols-12 gap-10 py-10">
+              <div class="col-span-8">
+                <p class="eyebrow">Our practice</p>
+                <ul class="mt-5 grid grid-cols-2 gap-x-6 gap-y-1">
+                  {practiceLinks.map((l) => (
+                    <li>
+                      <a href={l.href} class="mega-link group flex items-start justify-between gap-4 rounded-xl px-4 py-3.5 transition-colors hover:bg-mist" {...(l.external ? { target: "_blank", rel: "noopener" } : {})}>
+                        <span>
+                          <span class="block font-display text-[1.45rem] leading-tight text-navy-900">{l.label}</span>
+                          <span class="mt-0.5 block text-[0.85rem] text-slate">{l.desc}</span>
+                        </span>
+                        <span class="mt-2 -translate-x-2 text-sky opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" set:html={arrow} />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <a href="/doctors" class="mega-link group relative col-span-4 flex min-h-[15rem] flex-col justify-end overflow-hidden rounded-2xl p-6 text-white">
+                <Image src={aboutPhoto} alt="" widths={[500, 800]} sizes="30vw" class="absolute inset-0 h-full w-full object-cover object-[68%_center] transition-transform duration-[1.2s] group-hover:scale-105" />
+                <span class="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/30 to-transparent"></span>
+                <span class="relative text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-gold">Meet the team</span>
+                <span class="relative mt-2 font-display text-[1.8rem] leading-tight">17 foot &amp; ankle specialists</span>
+                <span class="relative mt-3 inline-flex items-center gap-2 text-sm font-semibold">View all providers <span set:html={arrow} /></span>
+              </a>
+            </div>
+          </section>
+
+          <!-- Conditions We Treat -->
+          <section id="mega-conditions" data-pane="conditions" class="mega-pane" aria-label="Conditions We Treat">
+            <div class="wrap grid grid-cols-12 gap-8 py-10">
+              <!-- Left: main categories -->
+              <div class="col-span-4">
+                <div class="flex items-baseline justify-between">
+                  <p class="eyebrow">Conditions we treat</p>
+                  <a href="/services" class="mega-link link-arrow">All <span set:html={arrow} /></a>
+                </div>
+                <ul class="mt-4 space-y-1" role="list">
+                  {services.map((s, i) => (
+                    <li>
+                      <a href={`/services/${s.id}`} data-cat={s.id} class:list={["cat-link mega-link group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors", i === 0 && "is-current"]}>
+                        <img src={unsplash(s.data.image, 96, 96)} alt="" loading="lazy" class="h-9 w-9 shrink-0 rounded-full object-cover ring-2 ring-white" />
+                        <span class="flex-1 text-[0.94rem] font-medium leading-snug text-navy-900">{s.data.title}</span>
+                        <span class="cat-arrow text-sky" set:html={arrow} />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <!-- Middle: sub categories of the hovered category -->
+              <div class="col-span-5 border-l border-line pl-8">
+                <div class="grid">
+                  {services.map((s, i) => (
+                    <div data-sub={s.id} class:list={["sub-panel col-start-1 row-start-1", i === 0 && "is-current"]}>
+                      <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">In this group</p>
+                      <p class="mt-1 font-display text-[1.6rem] leading-tight text-navy-900">{s.data.title}</p>
+                      <div class="mt-3 space-y-3">
+                        {s.data.groups.map((g) => (
+                          <div>
+                            {g.label && <p class="mb-1 text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-slate">{g.label}</p>}
+                            <ul>
+                              {g.items.map((it) => (
+                                <li>
+                                  <a href={conditionSlugForTitle(it) ? `/conditions/${conditionSlugForTitle(it)}` : `/services/${s.id}#conditions-list`} class="mega-link flex items-start gap-2.5 py-1 text-[0.9rem] leading-snug text-ink transition-colors hover:text-sky">
+                                    <span class="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rotate-45 bg-gold"></span>{it}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                      <a href={`/services/${s.id}`} class="mega-link link-arrow mt-4">See {s.data.title} <span set:html={arrow} /></a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div class="col-span-3 flex flex-col justify-between rounded-2xl bg-navy p-6 text-white">
+                <div>
+                  <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-gold">Not sure?</p>
+                  <p class="mt-3 font-display text-[1.7rem] leading-tight">Tell us where it hurts. We'll find the cause.</p>
+                </div>
+                <div class="mt-6 space-y-2">
+                  <a href="/#contact" class="mega-link btn-gold w-full !py-3">Request an appointment</a>
+                  <a href={site.phoneHref} class="mega-link block text-center text-sm font-semibold text-white/80 hover:text-white">or call {site.phone}</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Locations -->
+          <section id="mega-locations" data-pane="locations" class="mega-pane" aria-label="Locations">
+            <div class="wrap grid grid-cols-12 gap-10 py-10">
+              <div class="col-span-9">
+                <p class="eyebrow">16 locations across Middle Tennessee</p>
+                <ul class="mt-5 grid grid-cols-4 gap-x-4 gap-y-1">
+                  {cities.map((l) => (
+                    <li>
+                      <a href={`/locations/${slugify(l.city)}`} class="mega-link group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-mist">
+                        <svg viewBox="0 0 64 64" class="h-3.5 w-3.5 shrink-0 text-sky transition-colors group-hover:text-gold" aria-hidden="true"><path fill="currentColor" d="M32 3 L61 28 H54 V61 H10 V28 H3 Z"/></svg>
+                        <span>
+                          <span class="block text-[0.95rem] font-medium text-navy-900">{l.city}</span>
+                          <span class="block text-[0.78rem] text-slate">{l.phone}</span>
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <a href="/#locations" class="mega-link group col-span-3 flex flex-col justify-between rounded-2xl bg-mist p-6">
+                <svg viewBox="0 0 120 80" class="h-32 w-full text-navy" aria-hidden="true">
+                  <path d="M4 60 C30 40 50 70 70 45 S110 30 116 20" stroke="currentColor" stroke-opacity=".25" stroke-width="1.5" stroke-dasharray="3 4" fill="none"/>
+                  {[[14,52],[38,50],[58,58],[72,44],[94,34],[110,22]].map(([x, y], i) => (
+                    <path transform={`translate(${x - 6} ${y - 12}) scale(.19)`} fill={i === 3 ? "#ffbe4d" : "currentColor"} d="M32 3 L61 28 H54 V61 H10 V28 H3 Z"/>
+                  ))}
+                </svg>
+                <div>
+                  <p class="font-display text-[1.7rem] leading-tight text-navy-900">Find the clinic nearest you</p>
+                  <span class="link-arrow mt-3">Open the map <span set:html={arrow} /></span>
+                </div>
+              </a>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div id="mega-scrim" class="pointer-events-none fixed inset-0 z-40 bg-navy-950/30 opacity-0 transition-opacity duration-500"></div>
+
+<style>
+  #site-header { color: var(--color-navy-900); }
+  #site-header .header-bar { background: rgba(255,255,255,.97); backdrop-filter: blur(10px); box-shadow: 0 1px 0 var(--color-line); transition: background .4s, box-shadow .4s, color .4s; }
+  #site-header .logo-light { display: none; }
+
+  #site-header[data-overlay="true"]:not(.is-scrolled):not(.menu-open) { color: #fff; }
+  #site-header[data-overlay="true"]:not(.is-scrolled):not(.menu-open) .header-bar { background: transparent; box-shadow: none; backdrop-filter: none; }
+  #site-header[data-overlay="true"]:not(.is-scrolled):not(.menu-open) .logo-light { display: inline; }
+  #site-header[data-overlay="true"]:not(.is-scrolled):not(.menu-open) .logo-dark { display: none; }
+
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: ""; position: absolute; left: .7rem; right: .7rem; bottom: 1.6rem; height: 1px;
+    background: currentColor; transform: scaleX(0); transform-origin: right;
+    transition: transform .45s var(--ease-step);
+  }
+  .nav-link:hover::after, .nav-link[aria-expanded="true"]::after { transform: scaleX(1); transform-origin: left; }
+  .mega-trigger[aria-expanded="true"] .chev { transform: rotate(180deg); }
+
+  /* Shared panel: fades in, and its height follows the active pane */
+  .mega { visibility: hidden; opacity: 0; transform: translateY(-8px); transition: opacity .35s var(--ease-step), transform .35s var(--ease-step), visibility 0s linear .35s; }
+  .mega.is-open { visibility: visible; opacity: 1; transform: none; transition-delay: 0s; }
+  .mega-shell { height: 0; transition: height .45s var(--ease-step); }
+  .mega-pane { position: absolute; inset: 0 0 auto 0; opacity: 0; pointer-events: none; transform: translateX(var(--from, 0)); transition: opacity .35s var(--ease-step), transform .45s var(--ease-step); }
+  .mega-pane.is-active { opacity: 1; pointer-events: auto; transform: none; }
+
+  /* Conditions menu: categories left, sub categories right */
+  .cat-link .cat-arrow { opacity: 0; transform: translateX(-6px); transition: opacity .25s, transform .25s; }
+  .cat-link:hover, .cat-link.is-current { background: var(--color-mist); }
+  .cat-link:hover .cat-arrow, .cat-link.is-current .cat-arrow { opacity: 1; transform: none; }
+  .sub-panel { visibility: hidden; opacity: 0; transform: translateX(10px); transition: opacity .3s var(--ease-step), transform .3s var(--ease-step), visibility 0s linear .3s; }
+  .sub-panel.is-current { visibility: visible; opacity: 1; transform: none; transition-delay: 0s; }
+
+  #site-header.menu-open ~ #mega-scrim { opacity: 1; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mega, .mega-shell, .mega-pane { transition: none; }
+  }
+</style>
+
+<script>
+  const header = document.getElementById("site-header")!;
+  const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 40);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  const mega = document.getElementById("mega")!;
+  const shell = mega.querySelector<HTMLElement>(".mega-shell")!;
+  const panes = [...mega.querySelectorAll<HTMLElement>(".mega-pane")];
+  const triggers = [...document.querySelectorAll<HTMLButtonElement>(".mega-trigger")];
+  const order = triggers.map((t) => t.dataset.menu);
+  let current: string | null = null;
+  let closeTimer: number | undefined;
+
+  const setTabbable = (pane: HTMLElement, on: boolean) =>
+    pane.querySelectorAll<HTMLElement>("a, button").forEach((el) => (el.tabIndex = on ? 0 : -1));
+  panes.forEach((p) => setTabbable(p, false));
+
+  function open(name: string) {
+    clearTimeout(closeTimer);
+    if (current === name) return;
+    const prevIndex = current ? order.indexOf(current) : -1;
+    const nextIndex = order.indexOf(name);
+    panes.forEach((p) => {
+      const active = p.dataset.pane === name;
+      // New pane slides in from the side you moved toward
+      if (active && prevIndex !== -1) p.style.setProperty("--from", nextIndex > prevIndex ? "40px" : "-40px");
+      if (!active && p.classList.contains("is-active")) p.style.setProperty("--from", nextIndex > prevIndex ? "-40px" : "40px");
+      p.classList.toggle("is-active", active);
+      p.setAttribute("aria-hidden", String(!active));
+      setTabbable(p, active);
+      if (active) shell.style.height = p.offsetHeight + "px";
+    });
+    triggers.forEach((t) => t.setAttribute("aria-expanded", String(t.dataset.menu === name)));
+    mega.classList.add("is-open");
+    mega.setAttribute("aria-hidden", "false");
+    header.classList.add("menu-open");
+    current = name;
+  }
+
+  function close() {
+    mega.classList.remove("is-open");
+    mega.setAttribute("aria-hidden", "true");
+    header.classList.remove("menu-open");
+    triggers.forEach((t) => t.setAttribute("aria-expanded", "false"));
+    panes.forEach((p) => { p.classList.remove("is-active"); setTabbable(p, false); p.style.removeProperty("--from"); });
+    shell.style.height = "0px";
+    current = null;
+  }
+  const closeSoon = () => { clearTimeout(closeTimer); closeTimer = window.setTimeout(close, 180); };
+
+  triggers.forEach((t) => {
+    t.addEventListener("mouseenter", () => open(t.dataset.menu!));
+    t.addEventListener("mouseleave", closeSoon);
+    t.addEventListener("click", () => (current === t.dataset.menu ? close() : open(t.dataset.menu!)));
+    t.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown") { e.preventDefault(); open(t.dataset.menu!); mega.querySelector<HTMLElement>(".mega-pane.is-active a")?.focus(); }
+    });
+  });
+  mega.addEventListener("mouseenter", () => clearTimeout(closeTimer));
+  mega.addEventListener("mouseleave", closeSoon);
+  // Hovering a plain nav link closes the panel
+  document.querySelectorAll("nav[aria-label='Main'] a.nav-link").forEach((a) => a.addEventListener("mouseenter", closeSoon));
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && current) {
+      const t = triggers.find((x) => x.dataset.menu === current);
+      close();
+      t?.focus();
+    }
+  });
+  document.addEventListener("click", (e) => { if (current && !header.contains(e.target as Node)) close(); });
+  mega.querySelectorAll(".mega-link").forEach((a) => a.addEventListener("click", () => close()));
+  // Conditions menu: hover (or focus) a category to show its sub categories
+  const cats = [...mega.querySelectorAll<HTMLElement>("[data-cat]")];
+  const subs = [...mega.querySelectorAll<HTMLElement>("[data-sub]")];
+  const showCat = (id: string) => {
+    cats.forEach((c) => c.classList.toggle("is-current", c.dataset.cat === id));
+    subs.forEach((p) => p.classList.toggle("is-current", p.dataset.sub === id));
+  };
+  cats.forEach((c) => {
+    c.addEventListener("mouseenter", () => showCat(c.dataset.cat!));
+    c.addEventListener("focus", () => showCat(c.dataset.cat!));
+  });
+  window.addEventListener("resize", () => {
+    const p = panes.find((x) => x.classList.contains("is-active"));
+    if (p) shell.style.height = p.offsetHeight + "px";
+  });
+</script>

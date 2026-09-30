@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import { unsplash } from "@/data/site";
+const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
+---
+<section id="blog" class="py-20 md:py-24">
+  <div class="wrap">
+    <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+      <div>
+        <p class="eyebrow" data-reveal>From the blog</p>
+        <h2 class="heading-xl mt-5" data-reveal="0.05">Foot health, <em class="text-sky">in plain words.</em></h2>
+      </div>
+      <a href="/blog" class="link-arrow" data-reveal="0.1">All articles <span aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <div class="mt-12 grid gap-8 md:grid-cols-3">
+      {posts.map((p, i) => (
+        <a href={`/blog/${p.id}`} class="group flex flex-col" data-reveal={0.08 * i}>
+          <div class="overflow-hidden rounded-2xl bg-mist">
+            <img src={unsplash(p.data.image, 900, 640)} alt="" loading="lazy" class="aspect-[7/5] w-full object-cover transition-transform duration-[1.2s] ease-[var(--ease-step)] group-hover:scale-[1.05]" />
+          </div>
+          <p class="mt-5 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-sky">{p.data.category} &nbsp;/&nbsp; {p.data.readTime}</p>
+          <h3 class="mt-2 font-display text-[1.75rem] leading-[1.08] group-hover:text-navy">{p.data.title}</h3>
+          <p class="mt-3 text-[0.95rem] text-slate">{p.data.excerpt}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

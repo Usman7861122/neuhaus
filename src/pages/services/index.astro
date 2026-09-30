@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@/layouts/PageLayout.astro";
+import ServiceCard from "@/components/ui/ServiceCard.astro";
+import FlipTouch from "@/components/common/FlipTouch.astro";
+import { site, unsplash } from "@/data/site";
+const services = (await getCollection("services")).sort((a, b) => a.data.order - b.data.order);
+---
+<PageLayout
+  title="Services"
+  eyebrow="What we offer"
+  heading="Foot & ankle care for every step of life."
+  intro="From heel pain to diabetic wound care, our podiatrists treat the full range of foot and ankle problems for kids and adults."
+  image={unsplash("1711466093648-1adfe1664678", 2000)}
+>
+  <section class="bg-mist py-20 md:py-28">
+    <div class="wrap">
+      <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+        <p class="font-display text-3xl text-navy-900">{services.length} groups, 70 conditions</p>
+        <p class="text-slate">Hover or tap a card to read more.</p>
+      </div>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {services.map((s, i) => (
+          <ServiceCard title={s.data.title} excerpt={s.data.excerpt} image={s.data.image} href={`/services/${s.id}`} index={i} />
+        ))}
+      </div>
+      <div class="mt-20 flex flex-col items-start justify-between gap-6 rounded-2xl bg-navy p-10 text-white md:flex-row md:items-center">
+        <p class="font-display text-[clamp(1.8rem,3vw,2.6rem)] leading-tight text-white">Not sure what you need? <em class="text-sky-soft">We'll figure it out together.</em></p>
+        <div class="flex flex-wrap gap-3">
+          <a href="/#contact" class="btn-gold">Request an appointment</a>
+          <a href={site.phoneHref} class="btn-ghost">Call {site.phone}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <FlipTouch />
+</PageLayout>

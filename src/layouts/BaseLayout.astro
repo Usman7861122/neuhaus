@@ -1,0 +1,35 @@
+---
+import "@/styles/global.css";
+import SEO from "@/components/common/SEO.astro";
+import Header from "@/components/layout/Header.astro";
+import Footer from "@/components/layout/Footer.astro";
+
+interface Props { title?: string; description?: string; overlayHeader?: boolean }
+const { title, description, overlayHeader = false } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <SEO title={title} description={description} />
+  </head>
+  <body>
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[80] focus:rounded-full focus:bg-gold focus:px-5 focus:py-3 focus:text-navy-950">Skip to content</a>
+    <Header overlay={overlayHeader} />
+    <main id="main"><slot /></main>
+    <Footer />
+    <script>
+      // Simple scroll reveal for any element with data-reveal
+      import { inView, animate } from "motion";
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      document.querySelectorAll<HTMLElement>("[data-reveal]").forEach((el) => {
+        if (reduce) return;
+        const delay = Number(el.dataset.reveal || 0);
+        el.style.opacity = "0";
+        el.style.transform = "translateY(28px)";
+        inView(el, () => {
+          animate(el, { opacity: 1, transform: "translateY(0px)" }, { duration: 0.9, delay, ease: [0.22, 1, 0.36, 1] });
+        }, { margin: "0px 0px -10% 0px" });
+      });
+    </script>
+  </body>
+</html>

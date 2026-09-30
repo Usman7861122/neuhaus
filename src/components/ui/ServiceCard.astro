@@ -1,0 +1,31 @@
+---
+import { unsplash } from "@/data/site";
+interface Props { title: string; excerpt: string; image: string; href: string; index?: number }
+const { title, excerpt, image, href, index = 0 } = Astro.props;
+---
+<article class="flip group aspect-[4/5] w-full" data-flip data-reveal={(index % 3) * 0.08}>
+  <div class="flip-inner">
+    <!-- Front: image + title -->
+    <div class="flip-face bg-navy-900">
+      <img src={unsplash(image, 800, 1000)} alt="" loading="lazy" class="h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/20 to-transparent"></div>
+      <div class="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-7">
+        <h3 class="font-display text-[1.75rem] leading-[1.05] text-white">{title}</h3>
+        <span aria-hidden="true" class="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-white/40 text-white">
+          <svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.4"/></svg>
+        </span>
+      </div>
+    </div>
+    <!-- Back: excerpt + read more -->
+    <div class="flip-face flip-back flex flex-col bg-navy p-8 text-white">
+      <svg viewBox="0 0 64 64" aria-hidden="true" class="absolute -bottom-10 -right-10 h-48 w-48 text-white/[0.06]"><path fill="currentColor" d="M32 3 L61 28 H54 V61 H10 V28 H3 Z"/></svg>
+      <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-gold">What we treat</p>
+      <h3 class="mt-4 font-display text-[1.75rem] leading-[1.05] text-white">{title}</h3>
+      <p class="mt-5 text-[0.98rem] leading-relaxed text-white/80">{excerpt}</p>
+      <a href={href} class="btn-gold relative mt-auto self-start">
+        Read more <span class="sr-only">about {title}</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+      </a>
+    </div>
+  </div>
+</article>

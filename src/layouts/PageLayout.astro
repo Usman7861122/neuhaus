@@ -1,0 +1,18 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+interface Props { title: string; description?: string; eyebrow?: string; heading?: string; intro?: string; image?: string }
+const { title, description, eyebrow, heading, intro, image } = Astro.props;
+---
+<BaseLayout title={`${title} | Neuhaus Foot & Ankle`} description={description}>
+  <section class="relative overflow-hidden bg-navy-950 pb-20 pt-44 text-white md:pb-28 md:pt-52">
+    {image && <img src={image} alt="" class="absolute inset-0 h-full w-full object-cover opacity-30" />}
+    <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/70 to-navy-950/30"></div>
+    <div class="wrap relative">
+      {eyebrow && <p class="eyebrow !text-gold">{eyebrow}</p>}
+      <h1 class="mt-4 max-w-4xl font-display text-[clamp(2.8rem,7vw,6rem)] text-white">{heading ?? title}</h1>
+      {intro && <p class="mt-6 max-w-2xl text-lg text-white/75">{intro}</p>}
+    </div>
+  </section>
+  <slot />
+  <div class="h-32" aria-hidden="true"></div>
+</BaseLayout>

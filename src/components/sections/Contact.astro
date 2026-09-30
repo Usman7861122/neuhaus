@@ -1,0 +1,49 @@
+---
+import { getCollection } from "astro:content";
+import ContactForm from "@/components/react/ContactForm";
+import { locations, site } from "@/data/site";
+const reasons = (await getCollection("services")).sort((a, b) => a.data.order - b.data.order).map((s) => s.data.title);
+const clinics = [...locations].map((l) => l.city).sort();
+const rows = [
+  { label: "Appointments", value: site.phone, href: site.phoneHref },
+  { label: "General questions", value: site.generalPhone, href: `tel:${site.generalPhone.replace(/-/g, "")}` },
+  { label: "Fax", value: site.fax },
+];
+---
+<section id="contact" class="bg-white pb-36 pt-20 md:pt-24">
+  <div class="wrap grid gap-12 lg:grid-cols-12 lg:gap-16">
+    <div class="lg:col-span-5">
+      <p class="eyebrow" data-reveal>Contact us</p>
+      <h2 class="heading-xl mt-5" data-reveal="0.05">Let's get you <em class="text-sky">walking easy.</em></h2>
+      <p class="mt-6 max-w-md text-slate" data-reveal="0.1">
+        Send a request and our team will call you back, usually within one business day, to book a time at the clinic that suits you.
+      </p>
+
+      <dl class="mt-10 divide-y divide-line border-y border-line" data-reveal="0.15">
+        {rows.map((r) => (
+          <div class="flex items-baseline justify-between gap-6 py-4">
+            <dt class="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-sky">{r.label}</dt>
+            <dd class="font-display text-[1.6rem] leading-none text-navy-900">
+              {r.href ? <a href={r.href} class="hover:text-sky">{r.value}</a> : r.value}
+            </dd>
+          </div>
+        ))}
+      </dl>
+
+      <div class="mt-8 flex flex-wrap gap-3" data-reveal="0.2">
+        <a href={site.patientPortal} target="_blank" rel="noopener" class="btn-outline !py-3">Patient portal</a>
+        <a href="#locations" class="link-arrow ml-2">Find a clinic on the map <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7" data-reveal="0.1">
+      <div class="rounded-[1.75rem] bg-mist p-7 sm:p-10">
+        <p class="font-display text-[1.9rem] leading-tight text-navy-900">Request an appointment</p>
+        <p class="mt-1 text-[0.92rem] text-slate">Fields marked * are required.</p>
+        <div class="mt-6">
+          <ContactForm client:visible clinics={clinics} reasons={reasons} />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

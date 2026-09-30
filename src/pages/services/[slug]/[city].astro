@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+import TreatmentDetail from "@/components/sections/TreatmentDetail.astro";
+import { clinicsFor } from "@/data/treatments";
+
+export async function getStaticPaths() {
+  const all = (await getCollection("services")).sort((a, b) => a.data.order - b.data.order);
+  return all.flatMap((service) =>
+    clinicsFor(service.id).map((clinic) => ({ params: { slug: service.id, city: clinic.slug }, props: { service, all, clinic } })),
+  );
+}
+const { service, all, clinic } = Astro.props;
+---
+<TreatmentDetail service={service} all={all} clinic={clinic} />

@@ -1,0 +1,11 @@
+<script>
+  // On touch screens there is no hover, so a tap flips the card.
+  if (window.matchMedia("(hover: none)").matches) {
+    document.querySelectorAll<HTMLElement>("[data-flip]").forEach((card) => {
+      card.addEventListener("click", (e) => {
+        if ((e.target as HTMLElement).closest("a")) return;
+        card.classList.toggle("is-flipped");
+      });
+    });
+  }
+</script>

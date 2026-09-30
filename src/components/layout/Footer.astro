@@ -1,0 +1,55 @@
+---
+import Logo from "@/components/ui/Logo.astro";
+import { site, nav, locations, slugify } from "@/data/site";
+const year = new Date().getFullYear();
+---
+<footer class="relative bg-navy-950 text-white/75">
+  <!-- Pay Online band -->
+  <section id="pay" aria-labelledby="pay-title" class="wrap relative -translate-y-1/2">
+    <div class="relative overflow-hidden rounded-[1.75rem] bg-gold px-7 py-9 text-navy-950 shadow-[0_30px_60px_-30px_rgba(7,31,48,.6)] sm:px-12 md:flex md:items-center md:justify-between md:gap-10">
+      <svg viewBox="0 0 64 64" aria-hidden="true" class="pointer-events-none absolute -right-6 -top-10 h-56 w-56 text-navy-950/[0.07]"><path fill="currentColor" d="M32 3 L61 28 H54 V61 H10 V28 H3 Z"/></svg>
+      <div class="relative">
+        <p class="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-navy-950/70">Billing</p>
+        <h2 id="pay-title" class="mt-2 font-display text-[clamp(2rem,3.6vw,3rem)] text-navy-950">Pay your bill online</h2>
+        <p class="mt-2 max-w-md text-[0.95rem] text-navy-950/75">Fast, secure payment in a few minutes. Have your statement handy.</p>
+      </div>
+      <div class="relative mt-6 flex flex-wrap gap-3 md:mt-0">
+        <a href={site.payOnline} target="_blank" rel="noopener" class="btn bg-navy-950 text-white hover:bg-navy">
+          Pay online
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+        </a>
+        <a href={site.patientPortal} target="_blank" rel="noopener" class="btn border border-navy-950/30 text-navy-950 hover:bg-navy-950 hover:text-white">Patient portal</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap -mt-6 grid gap-12 pb-14 md:grid-cols-12">
+    <div class="md:col-span-4">
+      <Logo tone="light" />
+      <p class="mt-6 max-w-xs text-[0.95rem]">Board-certified podiatrists caring for families across Nashville and Middle Tennessee.</p>
+      <a href={site.phoneHref} class="mt-6 block font-display text-3xl text-white hover:text-gold">{site.phone}</a>
+      <p class="mt-1 text-sm">General questions: {site.generalPhone} &nbsp;|&nbsp; Fax: {site.fax}</p>
+    </div>
+    <nav aria-label="Footer" class="md:col-span-2">
+      <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Explore</p>
+      <ul class="mt-5 space-y-2.5 text-[0.95rem]">
+        {nav.map((n) => <li><a class="hover:text-gold" href={n.href}>{n.label}</a></li>)}
+      </ul>
+    </nav>
+    <div class="md:col-span-6">
+      <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">16 locations</p>
+      <ul class="mt-5 grid grid-cols-2 gap-x-6 gap-y-2.5 text-[0.95rem] sm:grid-cols-3">
+        {locations.map((l) => <li><a class="hover:text-gold" href={`/locations/${slugify(l.city)}`}>{l.city}</a></li>)}
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="wrap flex flex-col gap-3 py-6 text-[0.82rem] text-white/55 sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; {year} {site.name}. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="/privacy-policy" class="hover:text-white">Privacy policy</a>
+        <a href="/terms" class="hover:text-white">Terms of use</a>
+      </div>
+    </div>
+  </div>
+</footer>

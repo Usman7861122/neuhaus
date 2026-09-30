@@ -1,0 +1,305 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@/layouts/PageLayout.astro";
+import { site, unsplash } from "@/data/site";
+import { conditions, conditionBySlug, siblingsOf, photoPool } from "@/data/conditions";
+import { clinics, nearest, miles, accentPhoto } from "@/data/treatments";
+
+interface Props { slug: string; city?: string }
+const { slug, city } = Astro.props;
+const cond = conditionBySlug(slug);
+const clinic = city ? clinics.find((c) => c.slug === city) : undefined;
+const services = (await getCollection("services")).sort((a, b) => a.data.order - b.data.order);
+const parent = services.find((s) => s.id === cond.parent)!;
+const sibs = siblingsOf(cond);
+const idx = conditions.findIndex((c) => c.slug === slug);
+
+const name = cond.name;
+const short = cond.short as string;
+const at = clinic ? ` in ${clinic.city}` : "";
+const link = (s: string) => (clinic ? `/conditions/${s}/${clinic.slug}` : `/conditions/${s}`);
+const groupLink = clinic ? `/services/${parent.id}/${clinic.slug}` : `/services/${parent.id}`;
+
+// Photos: the group photo, plus a second photo that changes from page to page
+const main = parent.data.image as string;
+const candidates = photoPool.filter((p) => p !== main && p !== accentPhoto[parent.id]);
+const second = candidates[idx % candidates.length];
+const third = candidates[(idx + 5) % candidates.length];
+
+const phone = clinic?.phone ?? site.phone;
+const phoneHref = clinic ? `tel:${clinic.phone.replace(/-/g, "")}` : site.phoneHref;
+const dir = clinic ? `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${clinic.address}, ${clinic.zip}`)}` : "";
+const near = clinic ? nearest(clinic, clinics, 4) : [];
+const num = (i: number) => String(i + 1).padStart(2, "0");
+
+const title = clinic ? `${name} Treatment in ${clinic.city}, TN` : `${name} Treatment`;
+const heading = clinic ? `${name} treatment in ${clinic.city}, TN` : name;
+const intro = clinic
+  ? `Expert care for ${short} at our ${clinic.city} clinic, ${clinic.address}.`
+  : `Causes, symptoms, and treatment for ${short}, with care at 16 clinics across Middle Tennessee.`;
+const description = clinic
+  ? `${name} care in ${clinic.city}, TN. Symptoms, causes, and treatment explained by Neuhaus Foot & Ankle. ${clinic.address}. Call ${clinic.phone}.`
+  : `${cond.lead[0]}`.slice(0, 155);
+
+const faqs: { q: string; a: string }[] = [...cond.faqs];
+if (clinic) {
+  faqs.push(
+    { q: `Do you treat ${short} in ${clinic.city}, TN?`, a: `Yes. Our ${clinic.city} clinic at ${clinic.address}, ${clinic.zip} treats ${short} in children and adults. Call ${clinic.phone} to book a visit.` },
+    { q: `How soon can I be seen for ${short} in ${clinic.city}?`, a: `Call the ${clinic.city} clinic at ${clinic.phone} or send a request online. Tell us about your pain and we will find the earliest time that works for you.` },
+  );
+}
+const faqLd = JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) });
+const steps = [
+  { h: "Talk and exam", p: `We listen first, then examine your feet and how you walk${clinic ? ` at our ${clinic.city} clinic` : ""}.` },
+  { h: "Clear answers", p: "X-rays or other imaging when needed, so you leave knowing what is wrong." },
+  { h: "A plan for you", p: `We begin with gentle options that work${clinic ? `, with follow ups close to home in ${clinic.city}` : ""}.` },
+];
+---
+<PageLayout title={title} description={description} eyebrow={clinic ? `${parent.data.title} · ${clinic.city}` : parent.data.title} heading={heading} intro={intro} image={unsplash(main, 2000)}>
+  <nav aria-label="Breadcrumb" class="border-b border-line bg-white">
+    <ol class="wrap flex flex-wrap items-center gap-2 py-4 text-[0.85rem] text-slate">
+      <li><a href="/services" class="hover:text-sky">Services</a></li><li aria-hidden="true">/</li>
+      <li><a href={groupLink} class="hover:text-sky">{parent.data.title}</a></li><li aria-hidden="true">/</li>
+      <li>{clinic ? <a href={`/conditions/${slug}`} class="hover:text-sky">{name}</a> : <span class="text-navy-900">{name}</span>}</li>
+      {clinic && <><li aria-hidden="true">/</li><li class="text-navy-900">{clinic.city}</li></>}
+    </ol>
+  </nav>
+
+  <!-- Intro: text left, image right -->
+  <section class="py-16 md:py-24">
+    <div class="wrap grid items-center gap-14 lg:grid-cols-12">
+      <div class="lg:col-span-7" data-reveal>
+        <a href={groupLink} class="inline-flex items-center gap-2 rounded-full bg-mist px-4 py-1.5 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-sky transition-colors hover:bg-navy hover:text-white">Part of {parent.data.title}</a>
+        <h2 class="heading-xl mt-5 !text-[clamp(2rem,3.6vw,3.2rem)]">
+          Understanding {short}{clinic ? <>, and how we help <em class="text-sky">in {clinic.city}.</em></> : <> <em class="text-sky">and your options.</em></>}
+        </h2>
+        <div class="mt-6 space-y-4 text-[1.05rem] leading-relaxed text-slate">
+          {clinic && <p class="text-[1.15rem] text-ink">Looking for help with {short} in {clinic.city}? Our {clinic.city} clinic at {clinic.address} offers exams, treatment, and follow up close to home.</p>}
+          {cond.lead.map((p: string) => <p>{p}</p>)}
+        </div>
+        {cond.aka && <p class="mt-5 text-[0.9rem] text-slate"><strong class="text-navy-900">Also called:</strong> {cond.aka}</p>}
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/#contact" class="btn-navy">Request an appointment</a>
+          <a href={phoneHref} class="btn-outline">Call {phone}</a>
+        </div>
+      </div>
+      <div class="relative lg:col-span-5" data-reveal="0.1">
+        <div class="gable relative aspect-[4/5] w-full overflow-hidden bg-mist">
+          <img src={unsplash(main, 1200, 1500)} alt={`${name} care${at}`} class="h-full w-full object-cover" />
+        </div>
+        <div class="absolute -bottom-6 -left-4 w-[46%] overflow-hidden rounded-2xl border-[6px] border-white shadow-[0_30px_60px_-25px_rgba(7,31,48,.45)] sm:-left-8">
+          <img src={unsplash(second, 700, 520)} alt="" loading="lazy" class="aspect-[4/3] w-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Symptoms -->
+  <section class="relative overflow-hidden bg-navy-950 py-16 text-white md:py-24">
+    <div class="wrap grid gap-12 lg:grid-cols-12">
+      <div class="lg:col-span-4" data-reveal>
+        <p class="eyebrow !text-gold">Symptoms</p>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)] !text-white">Signs of <em class="text-sky-soft">{short}.</em></h2>
+        <p class="mt-5 text-white/70">If you notice these signs{clinic ? ` and live near ${clinic.city}` : ""}, an exam can give you clear answers.</p>
+      </div>
+      <ul class="grid gap-4 sm:grid-cols-2 lg:col-span-8">
+        {cond.feels.map((f: string, i: number) => (
+          <li class="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors duration-500 hover:bg-white/[0.08]" data-reveal={String(i * 0.06)}>
+            <span class="font-display text-3xl text-gold">{num(i)}</span>
+            <p class="mt-3 text-white/90">{f}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Causes -->
+  <section class="bg-mist py-16 md:py-24">
+    <div class="wrap">
+      <div class="max-w-2xl" data-reveal>
+        <p class="eyebrow">Why it happens</p>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">What can cause <em class="text-sky">{short}.</em></h2>
+      </div>
+      <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {cond.causes.map((c: string, i: number) => (
+          <li class="rounded-2xl bg-white p-7 shadow-[0_20px_40px_-30px_rgba(7,31,48,.35)]" data-reveal={String(i * 0.05)}>
+            <span class="font-display text-[2.4rem] leading-none text-sky/50">{num(i)}</span>
+            <p class="mt-4 font-medium leading-snug text-navy-900">{c}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Diagnose and treat: image left, text right -->
+  <section class="py-16 md:py-24">
+    <div class="wrap grid items-center gap-14 lg:grid-cols-12">
+      <div class="lg:col-span-5" data-reveal>
+        <div class="relative">
+          <img src={unsplash(third, 1000, 1200)} alt="" loading="lazy" class="aspect-[5/6] w-full rounded-[1.75rem] object-cover" />
+          <a href={groupLink} class="absolute inset-x-4 bottom-4 flex items-center justify-between rounded-2xl bg-white/95 px-5 py-4 shadow-lg backdrop-blur transition-colors hover:bg-white">
+            <span><span class="block text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-sky">Care group</span><span class="font-display text-[1.25rem] leading-tight text-navy-900">{parent.data.title}</span></span>
+            <span aria-hidden="true" class="text-sky">&rarr;</span>
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-7 lg:pl-8" data-reveal="0.1">
+        <p class="eyebrow">Diagnosis and care</p>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">How we treat {short}<em class="text-sky">{clinic ? ` in ${clinic.city}.` : "."}</em></h2>
+        <div class="mt-8 space-y-8">
+          <div class="border-l-2 border-gold pl-6">
+            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Step 1 · Diagnosis</p>
+            <p class="mt-2 text-slate">{cond.diagnose}</p>
+          </div>
+          <div class="border-l-2 border-gold pl-6">
+            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Step 2 · Treatment</p>
+            <p class="mt-2 text-slate">{cond.treat}</p>
+            <p class="mt-3 text-slate">{cond.more}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clinic steps -->
+  {clinic && (
+    <section class="bg-mist py-16 md:py-24">
+      <div class="wrap">
+        <div class="max-w-2xl" data-reveal>
+          <p class="eyebrow">Your visit</p>
+          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">What to expect at our <em class="text-sky">{clinic.city} clinic.</em></h2>
+          <p class="mt-4 text-slate">Your visit for {short} in {clinic.city} is simple and friendly.</p>
+        </div>
+        <ol class="mt-10 grid gap-5 md:grid-cols-3">
+          {steps.map((s, i) => (
+            <li class="rounded-2xl bg-white p-8" data-reveal={String(i * 0.08)}>
+              <span class="grid h-11 w-11 place-items-center rounded-full bg-navy font-semibold text-white">{i + 1}</span>
+              <h3 class="mt-5 font-display text-[1.6rem] text-navy-900">{s.h}</h3>
+              <p class="mt-2 text-slate">{s.p}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
+
+  <!-- Recovery + when to book -->
+  <section class="py-16 md:py-24">
+    <div class="wrap grid gap-6 lg:grid-cols-2">
+      <div class="rounded-[1.75rem] bg-navy p-8 text-white md:p-12" data-reveal>
+        <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-gold">Recovery</p>
+        <h2 class="mt-4 font-display text-[clamp(1.9rem,3vw,2.6rem)] leading-tight text-white">What to expect over time.</h2>
+        <p class="mt-4 text-white/80">{cond.recovery}</p>
+      </div>
+      <div class="rounded-[1.75rem] border border-line bg-white p-8 md:p-12" data-reveal="0.1">
+        <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">When to book</p>
+        <h2 class="mt-4 font-display text-[clamp(1.9rem,3vw,2.6rem)] leading-tight text-navy-900">Do not wait it out{clinic ? ` in ${clinic.city}` : ""}.</h2>
+        <p class="mt-4 text-slate">{cond.when}</p>
+        <a href={phoneHref} class="btn-navy mt-6">Call {phone}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related conditions -->
+  {sibs.length > 0 && (
+    <section class="bg-mist py-16 md:py-20">
+      <div class="wrap">
+        <div data-reveal>
+          <p class="eyebrow">Related care</p>
+          <h2 class="heading-xl mt-4 !text-[clamp(1.9rem,3vw,2.6rem)]">More in <em class="text-sky">{parent.data.title}.</em></h2>
+        </div>
+        <ul class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3" data-reveal="0.05">
+          {sibs.map((s) => (
+            <li>
+              <a href={link(s.slug)} class="group flex h-full items-center justify-between gap-3 rounded-xl border border-line bg-white px-5 py-4 transition-colors hover:border-navy">
+                <span class="font-medium leading-snug text-navy-900">{s.name}{at}</span>
+                <span aria-hidden="true" class="shrink-0 text-sky transition-transform group-hover:translate-x-1">&rarr;</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- FAQ -->
+  <section class="py-16 md:py-24">
+    <div class="wrap grid gap-12 lg:grid-cols-12">
+      <div class="lg:col-span-4" data-reveal>
+        <p class="eyebrow">FAQ</p>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">Your questions <em class="text-sky">answered.</em></h2>
+      </div>
+      <div class="lg:col-span-8" data-reveal="0.1">
+        {faqs.map((f) => (
+          <details open class="group border-b border-navy/15 py-5 first:border-t">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-display text-[1.35rem] leading-snug text-navy-900 [&::-webkit-details-marker]:hidden">
+              {f.q}
+              <span aria-hidden="true" class="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-navy/25 text-navy transition-transform duration-300 group-open:rotate-45">+</span>
+            </summary>
+            <p class="mt-3 max-w-2xl text-slate">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+    <script type="application/ld+json" set:html={faqLd}></script>
+  </section>
+
+  <!-- Clinic box + nearby clinics -->
+  <section class="pb-20 md:pb-28">
+    <div class="wrap">
+      {clinic ? (
+        <div class="relative overflow-hidden rounded-[1.75rem] bg-navy-950 p-8 text-white md:p-12" data-reveal>
+          <div class="grid gap-10 md:grid-cols-12 md:items-center">
+            <div class="md:col-span-7">
+              <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-gold">{clinic.city} clinic</p>
+              <p class="mt-3 font-display text-[clamp(1.9rem,3.2vw,2.8rem)] leading-tight text-white">Get help with {short} in {clinic.city}.</p>
+              <p class="mt-3 text-white/70">{clinic.address}, {clinic.zip}</p>
+              <a href={`/locations/${clinic.slug}`} class="link-arrow mt-4 !text-white/80 hover:!text-gold">Visit the {clinic.city} clinic page <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <div class="flex flex-col gap-3 md:col-span-4 md:col-start-9">
+              <a href="/#contact" class="btn-gold w-full">Request an appointment</a>
+              <a href={phoneHref} class="btn-ghost w-full">Call {phone}</a>
+              <a href={dir} target="_blank" rel="noopener" class="btn-ghost w-full">Get directions</a>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div class="rounded-[1.75rem] bg-navy-950 p-8 text-white md:p-12" data-reveal>
+          <p class="font-display text-[clamp(1.9rem,3.2vw,2.8rem)] leading-tight text-white">Get help with {short}.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="/#contact" class="btn-gold">Request an appointment</a>
+            <a href={phoneHref} class="btn-ghost">Call {phone}</a>
+          </div>
+        </div>
+      )}
+
+      <div class="mt-20" data-reveal>
+        <p class="eyebrow">{clinic ? "Nearby clinics" : "Where we treat it"}</p>
+        <h2 class="heading-xl mt-4 !text-[clamp(1.9rem,3vw,2.6rem)]">{clinic ? <>{name} care near <em class="text-sky">{clinic.city}.</em></> : <>{name} care at <em class="text-sky">16 clinics.</em></>}</h2>
+        <ul class={`mt-8 grid gap-3 sm:grid-cols-2 ${clinic ? "lg:grid-cols-4" : "lg:grid-cols-4"}`}>
+          {(clinic ? near : clinics).map((c) => (
+            <li>
+              <a href={`/conditions/${slug}/${c.slug}`} class="group flex h-full items-center justify-between rounded-xl border border-line bg-white px-5 py-4 transition-colors hover:border-navy">
+                <span>
+                  <span class="block font-semibold text-navy-900">{c.city}</span>
+                  <span class="block text-[0.85rem] text-slate">{clinic ? `About ${miles(clinic, c)} miles away` : c.address}</span>
+                </span>
+                <span aria-hidden="true" class="text-sky transition-transform group-hover:translate-x-1">&rarr;</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        {clinic && <a href={`/conditions/${slug}`} class="link-arrow mt-6">All clinics that treat {short} <span aria-hidden="true">&rarr;</span></a>}
+      </div>
+
+      <div class="mt-16" data-reveal>
+        <p class="eyebrow">All care groups</p>
+        <ul class="mt-5 flex flex-wrap gap-2">
+          {services.map((s) => (
+            <li><a href={clinic ? `/services/${s.id}/${clinic.slug}` : `/services/${s.id}`} class:list={["inline-block rounded-full border px-4 py-2 text-[0.9rem] font-medium transition-colors", s.id === parent.id ? "border-navy bg-navy text-white" : "border-navy/15 bg-white text-navy-900 hover:border-navy hover:bg-navy hover:text-white"]}>{s.data.title}</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+</PageLayout>

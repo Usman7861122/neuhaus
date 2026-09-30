@@ -1,0 +1,10 @@
+---
+import ConditionDetail from "@/components/sections/ConditionDetail.astro";
+import { conditions } from "@/data/conditions";
+import { clinics } from "@/data/treatments";
+export function getStaticPaths() {
+  return conditions.flatMap((c) => clinics.map((clinic) => ({ params: { slug: c.slug, city: clinic.slug }, props: { slug: c.slug, city: clinic.slug } })));
+}
+const { slug, city } = Astro.props;
+---
+<ConditionDetail slug={slug} city={city} />

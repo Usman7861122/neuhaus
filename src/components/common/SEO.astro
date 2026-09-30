@@ -1,0 +1,21 @@
+---
+import { unsplash } from "@/data/site";
+interface Props { title?: string; description?: string; image?: string }
+const {
+  title = "Neuhaus Foot & Ankle | Podiatrists in Nashville & Middle Tennessee",
+  description = "Board-certified podiatrists at 16 clinics across Middle Tennessee. Heel pain, sports injuries, bunions, diabetic foot care, orthotics and more.",
+  image = unsplash("1580058572462-98e2c0e0e2f0", 1600),
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, Astro.site).href} />
+<meta name="theme-color" content="#071f30" />

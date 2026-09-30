@@ -1,0 +1,50 @@
+---
+import { site, unsplash } from "@/data/site";
+const img = "1580058572462-98e2c0e0e2f0";
+---
+<section id="hero" class="relative isolate flex min-h-[100svh] flex-col justify-end overflow-hidden bg-navy-950 text-white">
+  <img
+    id="hero-img"
+    src={unsplash(img, 2200)}
+    srcset={`${unsplash(img, 900)} 900w, ${unsplash(img, 1600)} 1600w, ${unsplash(img, 2400)} 2400w`}
+    sizes="100vw"
+    alt="Two people hiking a forest trail in trail shoes"
+    fetchpriority="high"
+    class="absolute inset-0 -z-10 h-full w-full scale-110 object-cover object-[50%_65%]"
+  />
+  <div class="absolute inset-0 -z-10 bg-gradient-to-t from-navy-950/90 via-navy-950/45 to-navy-950/30"></div>
+  <div class="absolute inset-x-0 top-0 -z-10 h-48 bg-gradient-to-b from-navy-950/70 to-transparent"></div>
+
+  <div class="wrap flex flex-col items-center pb-16 pt-40 text-center md:pb-24">
+    <span class="hero-in mb-5 h-px w-12 bg-gold"></span>
+    <h1 class="font-display font-medium uppercase leading-[1.05] tracking-[0.12em] text-white">
+      <span class="block overflow-hidden pb-[0.08em]"><span class="hero-line block text-[clamp(1.9rem,3.6vw,3.3rem)]">Back on your feet</span></span>
+    </h1>
+
+    <p class="hero-in mt-4 max-w-2xl text-[clamp(0.92rem,1.1vw,1.02rem)] font-light tracking-[0.02em] text-white/80">
+      Podiatrists &amp; foot and ankle surgeons in Nashville and across Middle Tennessee
+    </p>
+
+    <div class="hero-in mt-8 flex flex-wrap justify-center gap-3">
+      <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-2.5 text-[0.78rem] font-semibold uppercase tracking-[0.14em] text-navy transition-colors duration-300 hover:bg-gold hover:text-navy-950">
+        Request an appointment
+      </a>
+      <a href={site.phoneHref} class="inline-flex items-center gap-2 rounded-full border border-white/60 px-6 py-2.5 text-[0.78rem] font-semibold uppercase tracking-[0.14em] text-white transition-colors duration-300 hover:border-white hover:bg-white hover:text-navy">
+        Call {site.phone}
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { animate, stagger, scroll } from "motion";
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const img = document.getElementById("hero-img");
+  if (!reduce && img) {
+    animate(img, { opacity: [0, 1] }, { duration: 1.6 });
+    animate(".hero-line", { transform: ["translateY(105%)", "translateY(0%)"] }, { duration: 1.2, delay: stagger(0.12, { startDelay: 0.2 }), ease: [0.22, 1, 0.36, 1] });
+    animate(".hero-in", { opacity: [0, 1], transform: ["translateY(16px)", "translateY(0px)"] }, { duration: 1, delay: stagger(0.15, { startDelay: 0.6 }) });
+    const hero = document.getElementById("hero");
+    if (hero) scroll(animate(img, { transform: ["scale(1.1) translateY(0%)", "scale(1.1) translateY(8%)"] }, { ease: "linear" }), { target: hero, offset: ["start start", "end start"] });
+  }
+</script>

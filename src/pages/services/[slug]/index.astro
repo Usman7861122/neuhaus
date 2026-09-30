@@ -1,0 +1,11 @@
+---
+import { getCollection } from "astro:content";
+import TreatmentDetail from "@/components/sections/TreatmentDetail.astro";
+
+export async function getStaticPaths() {
+  const all = (await getCollection("services")).sort((a, b) => a.data.order - b.data.order);
+  return all.map((service) => ({ params: { slug: service.id }, props: { service, all } }));
+}
+const { service, all } = Astro.props;
+---
+<TreatmentDetail service={service} all={all} />

@@ -1,0 +1,341 @@
+---
+import PageLayout from "@/layouts/PageLayout.astro";
+import { site, unsplash } from "@/data/site";
+import { conditionSlugForTitle } from "@/data/conditions";
+import { clinicsFor, treatmentsAt, nearest, miles, consultPhoto, accentPhoto, type Clinic } from "@/data/treatments";
+
+interface Props { service: any; all: any[]; clinic?: Clinic }
+const { service, all, clinic } = Astro.props;
+const t = service.data.title as string;
+const lower = (service.data.short ?? t.toLowerCase()) as string;
+const groups = service.data.groups as { label: string | null; items: string[] }[];
+const total = groups.reduce((n, g) => n + g.items.length, 0);
+const at = clinic ? ` in ${clinic.city}` : "";
+
+/* Read the markdown into sections: { heading: { paras, bullets } } */
+const S: Record<string, { paras: string[]; bullets: string[] }> = {};
+let cur = "";
+for (const raw of (service.body as string).split("\n")) {
+  const line = raw.trim();
+  if (line.startsWith("## ")) { cur = line.slice(3); S[cur] = { paras: [], bullets: [] }; continue; }
+  if (!cur || !line) continue;
+  if (line.startsWith("- ")) S[cur].bullets.push(line.slice(2)); else S[cur].paras.push(line);
+}
+const what = S["What it is"]?.paras ?? [];
+const feels = S["What it feels like"]?.bullets ?? [];
+const causes = S["Common causes"]?.bullets ?? [];
+const diagnose = S["How we diagnose it"]?.paras ?? [];
+const treat = S["How we treat it"]?.paras ?? [];
+const recovery = S["Recovery and what to expect"]?.paras ?? [];
+const prevent = S["Tips to prevent it"]?.bullets ?? [];
+const when = S["When to book a visit"]?.paras ?? [];
+
+const offered = clinicsFor(service.id);
+const idx = all.findIndex((s) => s.id === service.id);
+const related = all[(idx + 1) % all.length];
+const base = `/services/${service.id}`;
+const phone = clinic?.phone ?? site.phone;
+const phoneHref = clinic ? `tel:${clinic.phone.replace(/-/g, "")}` : site.phoneHref;
+const near = clinic ? nearest(clinic, offered, 4) : [];
+const others = clinic ? treatmentsAt(all, clinic.slug).filter((s) => s.id !== service.id) : all.filter((s) => s.id !== service.id);
+const dir = clinic ? `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${clinic.address}, ${clinic.zip}`)}` : "";
+const num = (i: number) => String(i + 1).padStart(2, "0");
+
+const title = clinic ? `${t} Treatment in ${clinic.city}, TN` : `${t} Treatment`;
+const heading = clinic ? `${t} treatment in ${clinic.city}, TN` : t;
+const intro = clinic
+  ? `${service.data.excerpt} Care is available at our ${clinic.city} clinic, ${clinic.address}.`
+  : `${service.data.excerpt} Available at ${offered.length} clinics across Middle Tennessee.`;
+const description = clinic
+  ? `${t} care at Neuhaus Foot & Ankle in ${clinic.city}, TN. Causes, treatment, and recovery explained. ${clinic.address}, ${clinic.zip}. Call ${clinic.phone}.`
+  : `${service.data.excerpt} Learn about causes, treatment options, and where to get care.`;
+
+const faqs = [...service.data.faqs];
+if (clinic) {
+  faqs.push(
+    { q: `Where can I get ${lower} treated near ${clinic.city}, TN?`, a: `Our ${clinic.city} clinic is at ${clinic.address}, ${clinic.zip}. Our podiatrists treat ${lower} for children and adults there. Call ${clinic.phone} to book.` },
+    { q: `How do I book a ${lower} visit in ${clinic.city}?`, a: `Call the ${clinic.city} clinic at ${clinic.phone}, or use the appointment form on our website. Tell us about your symptoms and we will find a time that works for you.` },
+  );
+}
+const faqLd = JSON.stringify({
+  "@context": "https://schema.org", "@type": "FAQPage",
+  mainEntity: faqs.map((f: any) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+});
+const steps = [
+  { h: "Talk and exam", p: `We listen first, then examine your feet and how you walk.${clinic ? ` Everything happens at our ${clinic.city} clinic.` : ""}` },
+  { h: "Clear diagnosis", p: "Same visit X-rays when needed, so you get answers without waiting." },
+  { h: "A plan for you", p: `We start with the gentlest options that work${clinic ? `, with follow ups close to home in ${clinic.city}` : ""}.` },
+];
+---
+<PageLayout title={title} description={description} eyebrow={clinic ? `${t} · ${clinic.city} clinic` : "Services"} heading={heading} intro={intro} image={unsplash(service.data.image, 2000)}>
+  <nav aria-label="Breadcrumb" class="border-b border-line bg-white">
+    <ol class="wrap flex flex-wrap items-center gap-2 py-4 text-[0.85rem] text-slate">
+      <li><a href="/services" class="hover:text-sky">Services</a></li>
+      <li aria-hidden="true">/</li>
+      <li>{clinic ? <a href={base} class="hover:text-sky">{t}</a> : <span class="text-navy-900">{t}</span>}</li>
+      {clinic && <><li aria-hidden="true">/</li><li class="text-navy-900">{clinic.city}</li></>}
+    </ol>
+  </nav>
+
+  <!-- 1. Split intro: text left, image right -->
+  <section class="py-16 md:py-24">
+    <div class="wrap grid items-center gap-14 lg:grid-cols-12">
+      <div class="lg:col-span-7" data-reveal>
+        <p class="eyebrow">{clinic ? `${t} care in ${clinic.city}` : `About ${lower}`}</p>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.6vw,3.2rem)]">
+          {clinic ? <>Understanding {lower}, and how we help <em class="text-sky">in {clinic.city}.</em></> : <>Understanding {lower}, and how we <em class="text-sky">help.</em></>}
+        </h2>
+        <div class="mt-6 space-y-4 text-[1.05rem] leading-relaxed text-slate">
+          {clinic ? (
+            <p class="text-[1.15rem] text-ink">Looking for {lower} care in {clinic.city}? Our {clinic.city} clinic at {clinic.address} offers exams, treatment, and follow up for {lower}, so you can get help close to home.</p>
+          ) : (
+            <p class="text-[1.15rem] text-ink">{t} care is offered at {offered.length} Neuhaus Foot &amp; Ankle clinics across Middle Tennessee. Choose a clinic near you at the end of this page.</p>
+          )}
+          {what.map((p) => <p>{p}</p>)}
+        </div>
+        <ul class="mt-8 grid gap-3 sm:grid-cols-3">
+          {[["Kids & adults", "welcome at every clinic"], ["On site X-rays", "for fast answers"], [`${offered.length} clinics`, "across Middle Tennessee"]].map(([a, b]) => (
+            <li class="rounded-xl border border-line bg-mist/60 px-4 py-3"><span class="block font-display text-[1.35rem] leading-tight text-navy">{a}</span><span class="text-[0.82rem] text-slate">{b}</span></li>
+          ))}
+        </ul>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/#contact" class="btn-navy">Request an appointment</a>
+          <a href={phoneHref} class="btn-outline">Call {phone}</a>
+        </div>
+      </div>
+
+      <div class="relative lg:col-span-5" data-reveal="0.1">
+        <div class="gable relative aspect-[4/5] w-full overflow-hidden bg-mist">
+          <img src={unsplash(service.data.image, 1200, 1500)} alt={`${t} care at Neuhaus Foot & Ankle${at}`} class="h-full w-full object-cover" />
+        </div>
+        <div class="absolute -bottom-6 -left-4 w-[46%] overflow-hidden rounded-2xl border-[6px] border-white shadow-[0_30px_60px_-25px_rgba(7,31,48,.45)] sm:-left-8">
+          <img src={unsplash(accentPhoto[service.id] ?? consultPhoto, 700, 520)} alt={`${t} foot and ankle care`} loading="lazy" class="aspect-[4/3] w-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conditions we treat in this group -->
+  {groups.length > 0 && (
+    <section id="conditions-list" class="scroll-mt-32 bg-mist py-16 md:py-24">
+      <div class="wrap">
+        <div class="max-w-2xl" data-reveal>
+          <p class="eyebrow">Conditions we treat</p>
+          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">{total} conditions we care for{clinic ? <> <em class="text-sky">in {clinic.city}.</em></> : <> <em class="text-sky">at every clinic.</em></>}</h2>
+          <p class="mt-4 text-slate">{clinic ? `Pick a condition to read more. All are treated at our ${clinic.city} clinic.` : "Not sure which one you have? You do not need to know. We will find the cause."}</p>
+        </div>
+        <div class="mt-10 grid gap-x-10 gap-y-10 lg:grid-cols-2">
+          {groups.map((g, gi) => (
+            <div class:list={[groups.length === 1 && "lg:col-span-2"]} data-reveal={String(gi * 0.06)}>
+              {g.label && <p class="mb-4 border-b border-navy/15 pb-3 text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">{g.label}</p>}
+              <ul class:list={["grid gap-3", groups.length === 1 && "sm:grid-cols-2"]}>
+                {g.items.map((it) => {
+                  const cs = conditionSlugForTitle(it);
+                  const href = cs ? (clinic ? `/conditions/${cs}/${clinic.slug}` : `/conditions/${cs}`) : "#";
+                  return (
+                    <li>
+                      <a href={href} class="group flex h-full items-start gap-3 rounded-xl bg-white px-5 py-4 shadow-[0_14px_30px_-24px_rgba(7,31,48,.4)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_36px_-22px_rgba(7,31,48,.5)]">
+                        <span class="mt-1.5 h-2 w-2 shrink-0 rotate-45 bg-gold"></span>
+                        <span class="flex-1 font-medium leading-snug text-navy-900">{it}</span>
+                        <span aria-hidden="true" class="text-sky transition-transform group-hover:translate-x-1">&rarr;</span>
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- 2. Signs (dark band) -->
+  {feels.length > 0 && (
+    <section class="relative overflow-hidden bg-navy-950 py-16 text-white md:py-24">
+      <div class="wrap grid gap-12 lg:grid-cols-12">
+        <div class="lg:col-span-4" data-reveal>
+          <p class="eyebrow !text-gold">Symptoms</p>
+          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)] !text-white">Signs of <em class="text-sky-soft">{lower}.</em></h2>
+          <p class="mt-5 text-white/70">If you notice any of these signs{clinic ? ` and you live near ${clinic.city}` : ""}, a visit can bring clear answers.</p>
+        </div>
+        <ul class="grid gap-4 sm:grid-cols-2 lg:col-span-8">
+          {feels.map((f, i) => (
+            <li class="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors duration-500 hover:bg-white/[0.08]" data-reveal={String(i * 0.06)}>
+              <span class="font-display text-3xl text-gold">{num(i)}</span>
+              <p class="mt-3 text-white/90">{f}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- 3. Causes -->
+  {causes.length > 0 && (
+    <section class="bg-mist py-16 md:py-24">
+      <div class="wrap">
+        <div class="max-w-2xl" data-reveal>
+          <p class="eyebrow">Why it happens</p>
+          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">Common causes of <em class="text-sky">{lower}.</em></h2>
+        </div>
+        <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {causes.map((c, i) => (
+            <li class="group flex items-start gap-6 rounded-2xl bg-white p-7 shadow-[0_20px_40px_-30px_rgba(7,31,48,.35)] transition-transform duration-500 hover:-translate-y-1" data-reveal={String(i * 0.05)}>
+              <span class="w-12 shrink-0 font-display text-[2.6rem] leading-none text-sky/50">{num(i)}</span>
+              <p class="border-l border-line pl-6 pt-1 font-medium leading-snug text-navy-900">{c}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- 4. Diagnose and treat: image left, text right -->
+  <section class="py-16 md:py-24">
+    <div class="wrap grid items-center gap-14 lg:grid-cols-12">
+      <div class="lg:col-span-5" data-reveal>
+        <div class="relative">
+          <img src={unsplash(related.data.image, 1000, 1200)} alt={`${related.data.title} care`} loading="lazy" class="aspect-[5/6] w-full rounded-[1.75rem] object-cover" />
+          <a href={clinic ? `/services/${related.id}/${clinic.slug}` : `/services/${related.id}`} class="absolute inset-x-4 bottom-4 flex items-center justify-between rounded-2xl bg-white/95 px-5 py-4 shadow-lg backdrop-blur transition-colors hover:bg-white">
+            <span><span class="block text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-sky">Also see</span><span class="font-display text-[1.3rem] text-navy-900">{related.data.title}{at}</span></span>
+            <span aria-hidden="true" class="text-sky">&rarr;</span>
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-7 lg:pl-8" data-reveal="0.1">
+        <p class="eyebrow">Diagnosis and care</p>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">How we treat {lower}<em class="text-sky">{clinic ? ` in ${clinic.city}.` : "."}</em></h2>
+        <div class="mt-8 space-y-8">
+          <div class="border-l-2 border-gold pl-6">
+            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Step 1 · Diagnosis</p>
+            {diagnose.map((p) => <p class="mt-2 text-slate">{p}</p>)}
+          </div>
+          <div class="border-l-2 border-gold pl-6">
+            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Step 2 · Treatment</p>
+            {treat.map((p) => <p class="mt-2 text-slate">{p}</p>)}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. What to expect (clinic pages) -->
+  {clinic && (
+    <section class="bg-mist py-16 md:py-24">
+      <div class="wrap">
+        <div class="max-w-2xl" data-reveal>
+          <p class="eyebrow">Your visit</p>
+          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">What to expect at our <em class="text-sky">{clinic.city} clinic.</em></h2>
+          <p class="mt-4 text-slate">Your visit for {lower} in {clinic.city} is simple and friendly. Here is how it works.</p>
+        </div>
+        <ol class="mt-10 grid gap-5 md:grid-cols-3">
+          {steps.map((s, i) => (
+            <li class="relative rounded-2xl bg-white p-8" data-reveal={String(i * 0.08)}>
+              <span class="grid h-11 w-11 place-items-center rounded-full bg-navy font-semibold text-white">{i + 1}</span>
+              <h3 class="mt-5 font-display text-[1.6rem] text-navy-900">{s.h}</h3>
+              <p class="mt-2 text-slate">{s.p}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
+
+  <!-- 6. Recovery + prevention -->
+  <section class="py-16 md:py-24">
+    <div class="wrap grid gap-6 lg:grid-cols-2">
+      <div class="rounded-[1.75rem] bg-navy p-8 text-white md:p-12" data-reveal>
+        <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-gold">Recovery</p>
+        <h2 class="mt-4 font-display text-[clamp(1.9rem,3vw,2.6rem)] leading-tight text-white">What to expect{clinic ? ` after ${lower} care` : ""}.</h2>
+        {recovery.map((p) => <p class="mt-4 text-white/80">{p}</p>)}
+        {when.map((p) => <p class="mt-6 border-t border-white/15 pt-6 text-white/80"><strong class="text-gold">When to book: </strong>{p}</p>)}
+      </div>
+      <div class="rounded-[1.75rem] border border-line bg-white p-8 md:p-12" data-reveal="0.1">
+        <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Prevention</p>
+        <h2 class="mt-4 font-display text-[clamp(1.9rem,3vw,2.6rem)] leading-tight text-navy-900">Tips to keep it from coming back.</h2>
+        <ul class="mt-6 space-y-3">
+          {prevent.map((p) => (
+            <li class="flex gap-3 text-ink"><span class="mt-2 h-2 w-2 shrink-0 rotate-45 bg-gold"></span>{p}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FAQ -->
+  <section class="bg-mist py-16 md:py-24">
+    <div class="wrap grid gap-12 lg:grid-cols-12">
+      <div class="lg:col-span-4" data-reveal>
+        <p class="eyebrow">FAQ</p>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">{t}: your questions <em class="text-sky">answered.</em></h2>
+        <a href={phoneHref} class="btn-navy mt-8">Call {phone}</a>
+      </div>
+      <div class="lg:col-span-8" data-reveal="0.1">
+        {faqs.map((f: any) => (
+          <details open class="group border-b border-navy/15 py-5 first:border-t">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-display text-[1.35rem] leading-snug text-navy-900 [&::-webkit-details-marker]:hidden">
+              {f.q}
+              <span aria-hidden="true" class="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-navy/25 text-navy transition-transform duration-300 group-open:rotate-45">+</span>
+            </summary>
+            <p class="mt-3 max-w-2xl text-slate">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+    <script type="application/ld+json" set:html={faqLd}></script>
+  </section>
+
+  <!-- 8. Clinic / clinics -->
+  <section class="py-16 md:py-24">
+    <div class="wrap">
+      {clinic && (
+        <div class="relative overflow-hidden rounded-[1.75rem] bg-navy-950 p-8 text-white md:p-12" data-reveal>
+          <div class="grid gap-10 md:grid-cols-12 md:items-center">
+            <div class="md:col-span-7">
+              <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-gold">{clinic.city} clinic</p>
+              <p class="mt-3 font-display text-[clamp(1.9rem,3.2vw,2.8rem)] leading-tight text-white">Get help with {lower} in {clinic.city}.</p>
+              <p class="mt-3 text-white/70">{clinic.address}, {clinic.zip}</p>
+              <a href={`/locations/${clinic.slug}`} class="link-arrow mt-4 !text-white/80 hover:!text-gold">Visit the {clinic.city} clinic page <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <div class="flex flex-col gap-3 md:col-span-4 md:col-start-9">
+              <a href="/#contact" class="btn-gold w-full">Request an appointment</a>
+              <a href={phoneHref} class="btn-ghost w-full">Call {phone}</a>
+              <a href={dir} target="_blank" rel="noopener" class="btn-ghost w-full">Get directions</a>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div class:list={[clinic && "mt-20"]} data-reveal>
+        <p class="eyebrow">{clinic ? "Nearby clinics" : "Where we treat it"}</p>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">
+          {clinic ? <>{t} care near <em class="text-sky">{clinic.city}.</em></> : <>{t} care at <em class="text-sky">{offered.length} clinics.</em></>}
+        </h2>
+        <ul class={`mt-8 grid gap-3 sm:grid-cols-2 ${clinic ? "lg:grid-cols-4" : "lg:grid-cols-3"}`}>
+          {(clinic ? near : offered).map((c) => (
+            <li>
+              <a href={`${base}/${c.slug}`} class="group flex h-full items-center justify-between rounded-xl border border-line bg-white px-5 py-4 transition-colors hover:border-navy">
+                <span>
+                  <span class="block font-semibold text-navy-900">{t} in {c.city}</span>
+                  <span class="block text-[0.85rem] text-slate">{clinic ? `About ${miles(clinic, c)} miles away` : c.address}</span>
+                </span>
+                <span aria-hidden="true" class="text-sky transition-transform group-hover:translate-x-1">&rarr;</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        {clinic && <a href={base} class="link-arrow mt-6">All clinics that treat {lower} <span aria-hidden="true">&rarr;</span></a>}
+      </div>
+
+      <div class="mt-16" data-reveal>
+        <p class="eyebrow">{clinic ? `More care in ${clinic.city}` : "More services"}</p>
+        <ul class="mt-5 flex flex-wrap gap-2">
+          {others.map((o) => (
+            <li><a href={clinic ? `/services/${o.id}/${clinic.slug}` : `/services/${o.id}`} class="inline-block rounded-full border border-navy/15 bg-white px-4 py-2 text-[0.9rem] font-medium text-navy-900 transition-colors hover:border-navy hover:bg-navy hover:text-white">{o.data.title}</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+</PageLayout>

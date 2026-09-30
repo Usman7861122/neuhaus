@@ -1,0 +1,27 @@
+---
+import PageLayout from "@/layouts/PageLayout.astro";
+import { clinics } from "@/data/treatments";
+import { unsplash } from "@/data/site";
+---
+<PageLayout title="Our Locations" description="16 Neuhaus Foot & Ankle clinics across Middle Tennessee." eyebrow="Locations" heading="16 clinics, one caring team." intro="Choose your city to see the address, map, and conditions we treat there." image={unsplash("1711466093648-1adfe1664678", 2000)}>
+  <section class="py-16 md:py-24">
+    <div class="wrap">
+      <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {clinics.map((c) => (
+          <li>
+            <a href={`/locations/${c.slug}`} class="group flex h-full flex-col justify-between rounded-2xl border border-line bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-navy hover:shadow-[0_30px_50px_-30px_rgba(7,31,48,.4)]">
+              <div>
+                <p class="font-display text-[2rem] leading-tight text-navy-900">{c.city}</p>
+                <p class="mt-2 text-slate">{c.address}<br />{c.zip}</p>
+              </div>
+              <div class="mt-6 flex items-center justify-between">
+                <span class="font-semibold text-navy">{c.phone}</span>
+                <span aria-hidden="true" class="text-sky transition-transform group-hover:translate-x-1">&rarr;</span>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</PageLayout>

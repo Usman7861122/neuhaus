@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+import aboutPhoto from "@/assets/about.jpg";
+import { remoteImage } from "@/data/site";
+const teamPhoto = remoteImage("https://sa1s3optim.patientpop.com/assets/production/practices/1aec7b487ea1bb3824e36f325e6542ee4d6e0680/images/2724712.png");
+const facts = [
+  { n: "50+", l: "years of combined experience" },
+  { n: "16", l: "clinics across Middle Tennessee" },
+  { n: "5", l: "years in a row voted a top podiatry practice" },
+];
+---
+<section id="about" class="relative overflow-hidden py-20 md:py-24">
+  <div class="wrap grid items-center gap-16 lg:grid-cols-12 lg:gap-10">
+    <div class="relative lg:col-span-6" data-reveal>
+      <div class="gable relative ml-auto aspect-[4/5] w-[84%] overflow-hidden bg-mist">
+        <Image src={aboutPhoto} alt="A podiatrist using a foot model to explain treatment to a patient" widths={[600, 900, 1300]} sizes="(min-width: 1024px) 40vw, 82vw" quality={78} class="h-full w-full object-cover object-[68%_center]" />
+      </div>
+      <div class="absolute -bottom-10 left-0 w-[42%] overflow-hidden rounded-2xl border-[6px] border-white bg-mist shadow-[0_30px_60px_-25px_rgba(7,31,48,.45)]">
+        <img src={teamPhoto} alt="The Neuhaus Foot & Ankle team" loading="lazy" class="aspect-square h-full w-full object-cover" />
+      </div>
+      <div class="absolute left-0 top-24 hidden rounded-full bg-gold px-5 py-3 text-[0.8rem] font-bold text-navy-950 shadow-lg sm:block">
+        Kids &amp; adults welcome
+      </div>
+    </div>
+
+    <div class="lg:col-span-6 lg:pl-10">
+      <p class="eyebrow" data-reveal>About us</p>
+      <h2 class="heading-xl mt-5" data-reveal="0.05">
+        Expert foot care, <em class="text-sky">close to home.</em>
+      </h2>
+      <div class="mt-8 space-y-5 text-slate" data-reveal="0.1">
+        <p>
+          Neuhaus Foot &amp; Ankle is a family-friendly podiatry practice serving Nashville and Middle Tennessee.
+          Our board-certified podiatrists treat children and adults, from ingrown toenails and plantar fasciitis
+          to fractures, tendon problems, and diabetic foot care.
+        </p>
+        <p>
+          We use modern equipment to find the cause of your pain in the office, then build a plan that fits
+          your life. Many problems get better without surgery. When surgery is the right choice, our fellowship-trained
+          foot and ankle surgeons are part of the same team.
+        </p>
+      </div>
+
+      <dl class="mt-12 grid grid-cols-3 gap-6 border-t border-line pt-8" data-reveal="0.15">
+        {facts.map((f) => (
+          <div>
+            <dt class="sr-only">{f.l}</dt>
+            <dd class="font-display text-[clamp(2.4rem,4vw,3.4rem)] leading-none text-navy">{f.n}</dd>
+            <dd class="mt-2 text-[0.85rem] leading-snug text-slate">{f.l}</dd>
+          </div>
+        ))}
+      </dl>
+
+      <div class="mt-10 flex flex-wrap items-center gap-6" data-reveal="0.2">
+        <a href="/doctors" class="btn-navy">Meet our providers</a>
+        <a href="/services" class="link-arrow">What we treat <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>

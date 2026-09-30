@@ -1,0 +1,14 @@
+---
+import { unsplash } from "@/data/site";
+---
+<section class="fixed-window relative flex min-h-[100svh] items-center justify-center text-center text-white" aria-label="Our promise">
+  <img src={unsplash("1597201423947-3e0028337902", 2200)} alt="" loading="lazy" class="fixed-window__img" />
+  <div class="absolute inset-0 bg-navy-950/45"></div>
+  <div class="wrap relative">
+    <p class="eyebrow !text-gold" data-reveal>Our promise</p>
+    <p class="mx-auto mt-8 max-w-5xl font-display text-[clamp(2.4rem,6vw,5.6rem)] font-medium italic leading-[1.02]" data-reveal="0.08">
+      Your feet carry you through everything. We help every step feel easy again.
+    </p>
+    <a href="#contact" class="btn-ghost mt-12" data-reveal="0.16">Start with a visit</a>
+  </div>
+</section>
