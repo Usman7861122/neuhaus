@@ -1,17 +1,35 @@
 ---
+import fs from "node:fs";
 import { site, unsplash } from "@/data/site";
 const img = "1580058572462-98e2c0e0e2f0";
+// Put your video files in /public/videos/ named hero.mp4 (and optionally hero.webm)
+const has = (f: string) => { try { return fs.existsSync(`public/videos/${f}`); } catch { return false; } };
+const mp4 = has("hero.mp4");
+const webm = has("hero.webm");
 ---
 <section id="hero" class="relative isolate flex min-h-[100svh] flex-col justify-end overflow-hidden bg-navy-950 text-white">
-  <img
-    id="hero-img"
-    src={unsplash(img, 2200)}
-    srcset={`${unsplash(img, 900)} 900w, ${unsplash(img, 1600)} 1600w, ${unsplash(img, 2400)} 2400w`}
-    sizes="100vw"
-    alt="Two people hiking a forest trail in trail shoes"
-    fetchpriority="high"
-    class="absolute inset-0 -z-10 h-full w-full scale-110 object-cover object-[50%_65%]"
-  />
+  <div id="hero-media" class="absolute inset-0 -z-10 scale-110">
+    <img
+      id="hero-img"
+      src={unsplash(img, 2200)}
+      srcset={`${unsplash(img, 900)} 900w, ${unsplash(img, 1600)} 1600w, ${unsplash(img, 2400)} 2400w`}
+      sizes="100vw"
+      alt="Two people hiking a forest trail in trail shoes"
+      fetchpriority="high"
+      class="absolute inset-0 h-full w-full object-cover object-[50%_65%]"
+    />
+    {(mp4 || webm) && (
+      <video
+        id="hero-video"
+        class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-1000"
+        muted loop playsinline autoplay preload="auto" disablepictureinpicture aria-hidden="true" tabindex="-1"
+        poster={unsplash(img, 1600)}
+      >
+        {webm && <source src="/videos/hero.webm" type="video/webm" />}
+        {mp4 && <source src="/videos/hero.mp4" type="video/mp4" />}
+      </video>
+    )}
+  </div>
   <div class="absolute inset-0 -z-10 bg-gradient-to-t from-navy-950/90 via-navy-950/45 to-navy-950/30"></div>
   <div class="absolute inset-x-0 top-0 -z-10 h-48 bg-gradient-to-b from-navy-950/70 to-transparent"></div>
 
@@ -39,12 +57,32 @@ const img = "1580058572462-98e2c0e0e2f0";
 <script>
   import { animate, stagger, scroll } from "motion";
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const media = document.getElementById("hero-media");
   const img = document.getElementById("hero-img");
-  if (!reduce && img) {
-    animate(img, { opacity: [0, 1] }, { duration: 1.6 });
+  const video = document.getElementById("hero-video") as HTMLVideoElement | null;
+
+  // Video: autoplay needs muted + playsinline. Fade it in once frames are ready.
+  if (video) {
+    if (reduce) {
+      video.remove();
+    } else {
+      video.muted = true;
+      const show = () => video.classList.remove("opacity-0");
+      video.addEventListener("playing", show, { once: true });
+      const start = () => video.play().catch(() => { /* browser blocked autoplay: the photo stays */ });
+      start();
+      // Retry on first touch/click if the browser blocked autoplay (Low Power Mode on iPhone)
+      ["touchstart", "click", "scroll"].forEach((ev) => window.addEventListener(ev, start, { once: true, passive: true }));
+      // Save battery: pause when the hero is out of view
+      new IntersectionObserver(([e]) => (e.isIntersecting ? start() : video.pause()), { threshold: 0.05 }).observe(document.getElementById("hero")!);
+    }
+  }
+
+  if (!reduce && media) {
+    if (img && !video) animate(img, { opacity: [0, 1] }, { duration: 1.6 });
     animate(".hero-line", { transform: ["translateY(105%)", "translateY(0%)"] }, { duration: 1.2, delay: stagger(0.12, { startDelay: 0.2 }), ease: [0.22, 1, 0.36, 1] });
     animate(".hero-in", { opacity: [0, 1], transform: ["translateY(16px)", "translateY(0px)"] }, { duration: 1, delay: stagger(0.15, { startDelay: 0.6 }) });
     const hero = document.getElementById("hero");
-    if (hero) scroll(animate(img, { transform: ["scale(1.1) translateY(0%)", "scale(1.1) translateY(8%)"] }, { ease: "linear" }), { target: hero, offset: ["start start", "end start"] });
+    if (hero) scroll(animate(media, { transform: ["scale(1.1) translateY(0%)", "scale(1.1) translateY(8%)"] }, { ease: "linear" }), { target: hero, offset: ["start start", "end start"] });
   }
 </script>
