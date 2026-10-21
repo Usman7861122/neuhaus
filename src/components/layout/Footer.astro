@@ -37,7 +37,7 @@ const year = new Date().getFullYear();
       </ul>
     </nav>
     <div class="md:col-span-6">
-      <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">16 locations</p>
+      <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">15 locations</p>
       <ul class="mt-5 grid grid-cols-2 gap-x-6 gap-y-2.5 text-[0.95rem] sm:grid-cols-3">
         {locations.map((l) => <li><a class="hover:text-gold" href={`/locations/${slugify(l.city)}`}>{l.city}</a></li>)}
       </ul>

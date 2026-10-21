@@ -36,7 +36,7 @@ const title = clinic ? `${name} Treatment in ${clinic.city}, TN` : `${name} Trea
 const heading = clinic ? `${name} treatment in ${clinic.city}, TN` : name;
 const intro = clinic
   ? `Expert care for ${short} at our ${clinic.city} clinic, ${clinic.address}.`
-  : `Causes, symptoms, and treatment for ${short}, with care at 16 clinics across Middle Tennessee.`;
+  : `Causes, symptoms, and treatment for ${short}, with care at 15 clinics across Middle Tennessee.`;
 const description = clinic
   ? `${name} care in ${clinic.city}, TN. Symptoms, causes, and treatment explained by Neuhaus Foot & Ankle. ${clinic.address}. Call ${clinic.phone}.`
   : `${cond.lead[0]}`.slice(0, 155);
@@ -275,7 +275,7 @@ const steps = [
 
       <div class="mt-20" data-reveal>
         <p class="eyebrow">{clinic ? "Nearby clinics" : "Where we treat it"}</p>
-        <h2 class="heading-xl mt-4 !text-[clamp(1.9rem,3vw,2.6rem)]">{clinic ? <>{name} care near <em class="text-sky">{clinic.city}.</em></> : <>{name} care at <em class="text-sky">16 clinics.</em></>}</h2>
+        <h2 class="heading-xl mt-4 !text-[clamp(1.9rem,3vw,2.6rem)]">{clinic ? <>{name} care near <em class="text-sky">{clinic.city}.</em></> : <>{name} care at <em class="text-sky">15 clinics.</em></>}</h2>
         <ul class={`mt-8 grid gap-3 sm:grid-cols-2 ${clinic ? "lg:grid-cols-4" : "lg:grid-cols-4"}`}>
           {(clinic ? near : clinics).map((c) => (
             <li>

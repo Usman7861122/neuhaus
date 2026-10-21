@@ -10,7 +10,7 @@ const featured = providers.filter((p) => p.photo).slice(0, 6);
         <p class="eyebrow" data-reveal>Choose your provider</p>
         <h2 class="heading-xl mt-5 max-w-2xl" data-reveal="0.05">Meet the doctors <em class="text-sky">behind every step.</em></h2>
       </div>
-      <p class="max-w-sm text-slate" data-reveal="0.1">17 board-certified podiatrists and foot &amp; ankle surgeons. Pick the doctor and clinic that suit you.</p>
+      <p class="max-w-sm text-slate" data-reveal="0.1">16 board-certified podiatrists and foot &amp; ankle surgeons. Pick the doctor and clinic that suit you.</p>
     </div>
     <div class="mt-14 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
       {featured.map((p, i) => <ProviderCard {...p} index={i} />)}

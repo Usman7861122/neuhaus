@@ -44,7 +44,7 @@ export const nav = [
 
 export const practiceLinks = [
   { label: "Why Choose Us", href: "/#why", desc: "How a visit with us works, step by step" },
-  { label: "Our Doctors", href: "/doctors", desc: "17 podiatrists and foot & ankle surgeons" },
+  { label: "Our Doctors", href: "/doctors", desc: "16 podiatrists and foot & ankle surgeons" },
   { label: "Testimonials", href: "/#testimonials", desc: "Reviews from Google, Yelp & Facebook" },
   { label: "Insurance", href: "/#insurance", desc: "Medicare, TennCare and most major plans" },
   { label: "Blog", href: "/blog", desc: "Foot health advice in plain words" },
@@ -68,7 +68,6 @@ export const locations = [
   { city: "Murfreesboro", address: "536 N Thompson Ln, Suite F", zip: "Murfreesboro, TN 37129", phone: "629-219-4002", lat: 35.8570, lng: -86.4110 },
   { city: "Pulaski", address: "306 South 7th Street", zip: "Pulaski, TN 38478", phone: "931-271-4474", lat: 35.1970, lng: -87.0340 },
   { city: "Shelbyville", address: "120 Frank Martin Rd", zip: "Shelbyville, TN 37160", phone: "615-437-3906", lat: 35.4970, lng: -86.4470 },
-  { city: "Smithville", address: "518 W. Main St, Suite A", zip: "Smithville, TN 37166", phone: "615-857-5428", lat: 35.9600, lng: -85.8240 },
   { city: "Smyrna", address: "693 President Pl, Suite 103", zip: "Smyrna, TN 37167", phone: "615-857-5428", lat: 35.9700, lng: -86.5230 },
   { city: "Waverly", address: "110 Hillwood Drive", zip: "Waverly, TN 37185", phone: "615-802-5673", lat: 36.0880, lng: -87.7780 },
 ];
@@ -78,7 +77,6 @@ const PP = "https://sa1s3optim.patientpop.com/assets/production/practices/1aec7b
 export const providers = [
   { name: "Matthew Neuhaus", creds: "DPM, FACFAS", role: "Founder, foot & ankle surgeon", photo: remoteImage(PP + "2724466.jpg") },
   { name: "Peninnah Kumar", creds: "DPM, CWSP, FACFAS", role: "Foot & ankle surgeon, wound care", photo: remoteImage(PP + "2724463.jpg") },
-  { name: "Natalia Parolie", creds: "DPM, CWSP, AACFAS", role: "Podiatrist, wound care", photo: remoteImage(PP + "2724468.jpg") },
   { name: "Christopher Benac", creds: "DPM, MS", role: "Podiatrist", photo: remoteImage(PP + "2724459.jpg") },
   { name: "John Boyd", creds: "DPM, FACFAS", role: "Foot & ankle surgeon", photo: remoteImage(PP + "2505077.jpg") },
   { name: "Emily Keeter", creds: "DPM, AACFAS", role: "Podiatrist", photo: remoteImage(PP + "2724474.jpg") },
@@ -104,7 +102,6 @@ export const insurances = [
 
 export const testimonials = [
   { quote: "Dr. Neuhaus is great. He can diagnose the problem quickly and recommend treatment immediately. I'm so glad to get some relief.", name: "Cathy D.", source: "Google" },
-  { quote: "Dr. Natalia Parolie was excellent. She was knowledgeable, patient, kind, and professional.", name: "Chip B.", source: "Google" },
   { quote: "Dr. Kumar and her assistant are both reason enough to continue treatment.", name: "Karen C.", source: "Google" },
   { quote: "Great staff, very friendly. Wonderful doctor, explains in detail, and had great results!", name: "Keli R.", source: "Facebook" },
   { quote: "Dr. Neuhaus is my favorite doctor in the world! Always able to get me taken care of properly.", name: "Trey V.", source: "Yelp" },
