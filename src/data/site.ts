@@ -74,24 +74,26 @@ export const locations = [
 
 const PP = "https://sa1s3optim.patientpop.com/assets/production/practices/1aec7b487ea1bb3824e36f325e6542ee4d6e0680/images/";
 
-export const providers = [
+const providersRaw = [
   { name: "Matthew Neuhaus", creds: "DPM, FACFAS", role: "Founder, foot & ankle surgeon", photo: remoteImage(PP + "2724466.jpg") },
   { name: "Peninnah Kumar", creds: "DPM, CWSP, FACFAS", role: "Foot & ankle surgeon, wound care", photo: remoteImage(PP + "2724463.jpg") },
   { name: "Christopher Benac", creds: "DPM, MS", role: "Podiatrist", photo: remoteImage(PP + "2724459.jpg") },
   { name: "John Boyd", creds: "DPM, FACFAS", role: "Foot & ankle surgeon", photo: remoteImage(PP + "2505077.jpg") },
-  { name: "Emily Keeter", creds: "DPM, AACFAS", role: "Podiatrist", photo: remoteImage(PP + "2724474.jpg") },
-  { name: "Lucy Barrow", creds: "DPM, FACFAS", role: "Foot & ankle surgeon", photo: "" },
+  { name: "Emily Keeter", creds: "DPM, FACFAS", role: "Foot & ankle surgeon", photo: remoteImage(PP + "2724474.jpg") },
+  { name: "Lucy Barrow", creds: "DPM, FACFAS", role: "Foot & ankle surgeon", photo: remoteImage(PP + "2724470.jpg") },
   { name: "Brian Jackson", creds: "DPM", role: "Podiatrist", photo: remoteImage(PP + "2724472.jpg") },
   { name: "Sheela Chockalingam", creds: "DPM, AACFAS", role: "Podiatrist", photo: remoteImage(PP + "2473068.jpg") },
-  { name: "Douglas Holder", creds: "DPM, AACFAS", role: "Podiatrist", photo: "" },
+  { name: "Douglas Holder", creds: "DPM, AACFAS", role: "Podiatrist", photo: remoteImage(PP + "2724476.jpg") },
   { name: "Jeffrey Hurless", creds: "DPM, FACFAS", role: "Foot & ankle surgeon", photo: remoteImage(PP + "2779925.jpg") },
   { name: "Aaron Allred", creds: "DPM", role: "Podiatrist", photo: remoteImage(PP + "2715476.jpg") },
   { name: "Ryan Thurston", creds: "DPM", role: "Podiatrist", photo: remoteImage(PP + "2747062.jpg") },
   { name: "Jimmie Watkins", creds: "DPM", role: "Podiatrist", photo: remoteImage(PP + "2747064.jpg") },
   { name: "Harpreet Khalsa", creds: "DPM", role: "Podiatrist", photo: remoteImage(PP + "2772366.jpeg") },
-  { name: "Alec Wroblewsk", creds: "DPM", role: "Podiatrist", photo: remoteImage(PP + "2839194.jpg") },
+  { name: "Alec Wroblewski", creds: "DPM", role: "Podiatrist", photo: remoteImage(PP + "2839194.jpg") },
   { name: "Richard Lavigna", creds: "DPM", role: "Podiatrist", photo: remoteImage(PP + "2839196.png") },
 ];
+
+export const providers = providersRaw.map((p) => ({ ...p, slug: slugify(p.name) }));
 
 export const insurances = [
   "Aetna", "Align Network", "Amerigroup", "Anthem", "Blue Cross Blue Shield", "Bright Health",

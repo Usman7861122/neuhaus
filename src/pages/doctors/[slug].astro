@@ -1,0 +1,98 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ProviderCard from "@/components/ui/ProviderCard.astro";
+import { providers, site } from "@/data/site";
+import { providerDetails } from "@/data/provider-details";
+import { clinics } from "@/data/treatments";
+
+export function getStaticPaths() {
+  return providers.map((p, i) => ({ params: { slug: p.slug }, props: { p, i } }));
+}
+const { p, i } = Astro.props;
+const d = providerDetails[p.slug];
+const offices = d.offices.map((s) => clinics.find((c) => c.slug === s)).filter(Boolean);
+const others = providers.filter((x) => x.slug !== p.slug && x.photo).slice((i * 3) % 12, ((i * 3) % 12) + 3);
+const initials = p.name.split(" ").map((w) => w[0]).join("");
+const title = `Dr. ${p.name}, ${p.creds} | Podiatrist in ${offices.map((o) => o!.city).join(" and ")}, TN`;
+const description = `${d.seeing} ${d.bio[0]}`.slice(0, 160);
+const ld = JSON.stringify({
+  "@context": "https://schema.org", "@type": "Physician", name: `Dr. ${p.name}`, medicalSpecialty: "Podiatric",
+  honorificSuffix: p.creds, image: p.photo || undefined,
+  worksFor: { "@type": "MedicalClinic", name: site.name },
+  availableService: offices.map((o) => ({ "@type": "MedicalClinic", name: `Neuhaus Foot & Ankle, ${o!.city}`, address: { "@type": "PostalAddress", streetAddress: o!.address, addressLocality: o!.city, addressRegion: "TN" } })),
+});
+---
+<BaseLayout title={title} description={description}>
+  <section class="relative isolate overflow-hidden bg-navy-950 pb-20 pt-40 text-white md:pb-28 md:pt-48">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-navy-950 via-navy-900 to-navy-950"></div>
+    <div class="wrap">
+      <nav aria-label="Breadcrumb" class="text-[0.85rem] text-white/60">
+        <a href="/" class="hover:text-white">Home</a> <span class="mx-2">/</span>
+        <a href="/doctors" class="hover:text-white">Our providers</a> <span class="mx-2">/</span>
+        <span class="text-white">Dr. {p.name}</span>
+      </nav>
+      <div class="mt-10 grid items-end gap-10 md:grid-cols-[18rem_1fr] md:gap-14">
+        <div class="gable aspect-[4/5] w-56 overflow-hidden bg-gradient-to-br from-sky-soft to-mist md:w-full">
+          {p.photo ? <img src={p.photo} alt={`Dr. ${p.name}`} class="h-full w-full object-cover object-top" /> : <div class="grid h-full w-full place-items-center"><span class="font-display text-[6rem] italic text-navy/70">{initials}</span></div>}
+        </div>
+        <div>
+          <p class="eyebrow !text-gold">{p.role}</p>
+          <h1 class="mt-4 font-display text-[clamp(2.6rem,6vw,5rem)] leading-[1.02] text-white">Dr. {p.name}</h1>
+          <p class="mt-3 text-[0.9rem] font-semibold uppercase tracking-[0.18em] text-sky">{p.creds}</p>
+          <p class="mt-6 max-w-xl text-lg text-white/75">{d.seeing}</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="/book-appointment" class="btn-gold">Book with Dr. {p.name.split(" ").slice(-1)[0]}</a>
+            <a href={site.phoneHref} class="btn-ghost">Call {site.phone}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24">
+    <div class="wrap grid gap-14 lg:grid-cols-[1fr_22rem]">
+      <div>
+        <p class="eyebrow">About Dr. {p.name.split(" ").slice(-1)[0]}</p>
+        <div class="mt-6 max-w-3xl space-y-5 text-[1.05rem] leading-relaxed text-slate">
+          {d.bio.map((para) => <p>{para}</p>)}
+        </div>
+        {d.sections && (
+          <div class="mt-14 grid gap-x-12 gap-y-10 md:grid-cols-2">
+            {d.sections.map((s) => (
+              <div>
+                <h2 class="font-display text-[1.7rem] text-navy-900">{s.title}</h2>
+                <ul class="mt-4 space-y-2.5 text-[0.98rem] text-slate">
+                  {s.items.map((it) => <li class="flex gap-3"><span class="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-sky"></span><span>{it}</span></li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+      <aside class="h-fit rounded-3xl bg-mist p-8">
+        <h2 class="font-display text-[1.7rem] text-navy-900">{offices.length > 1 ? "Offices" : "Office"}</h2>
+        <ul class="mt-5 space-y-6">
+          {offices.map((o) => (
+            <li>
+              <a href={`/locations/${o!.slug}`} class="font-display text-[1.4rem] text-navy hover:text-sky">{o!.city}, TN</a>
+              <p class="mt-1 text-[0.95rem] text-slate">{o!.address}<br />{o!.zip}</p>
+              <a href={`tel:${o!.phone.replace(/-/g, "")}`} class="mt-1 inline-block text-[0.95rem] font-semibold text-navy hover:text-sky">{o!.phone}</a>
+            </li>
+          ))}
+        </ul>
+        <a href="/book-appointment" class="btn-navy mt-8 w-full justify-center">Request an appointment</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="bg-mist py-16 md:py-20">
+    <div class="wrap">
+      <h2 class="heading-xl !text-[clamp(1.9rem,3vw,2.6rem)]">Meet more of <em class="text-sky">our team.</em></h2>
+      <div class="mt-10 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+        {others.map((o, k) => <ProviderCard {...o} index={k} />)}
+      </div>
+      <p class="mt-10"><a href="/doctors" class="font-semibold text-navy hover:text-sky">See all providers &rarr;</a></p>
+    </div>
+  </section>
+  <script type="application/ld+json" set:html={ld} />
+</BaseLayout>
