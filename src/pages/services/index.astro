@@ -27,7 +27,7 @@ const services = (await getCollection("services")).sort((a, b) => a.data.order -
       <div class="mt-20 flex flex-col items-start justify-between gap-6 rounded-2xl bg-navy p-10 text-white md:flex-row md:items-center">
         <p class="font-display text-[clamp(1.8rem,3vw,2.6rem)] leading-tight text-white">Not sure what you need? <em class="text-sky-soft">We'll figure it out together.</em></p>
         <div class="flex flex-wrap gap-3">
-          <a href="/#contact" class="btn-gold">Request an appointment</a>
+          <a href="/book-appointment" class="btn-gold">Request an appointment</a>
           <a href={site.phoneHref} class="btn-ghost">Call {site.phone}</a>
         </div>
       </div>

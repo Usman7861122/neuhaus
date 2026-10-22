@@ -41,7 +41,7 @@ const ld = JSON.stringify({
           <p class="mt-3 text-[0.9rem] font-semibold uppercase tracking-[0.18em] text-sky">{p.creds}</p>
           <p class="mt-6 max-w-xl text-lg text-white/75">{d.seeing}</p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="/book-appointment" class="btn-gold">Book with Dr. {p.name.split(" ").slice(-1)[0]}</a>
+            <a href={offices.length === 1 && offices[0]!.book ? offices[0]!.book : "#offices"} target={offices.length === 1 && offices[0]!.book ? "_blank" : undefined} rel="noopener" class="btn-gold">Book with Dr. {p.name.split(" ").slice(-1)[0]}</a>
             <a href={site.phoneHref} class="btn-ghost">Call {site.phone}</a>
           </div>
         </div>
@@ -69,7 +69,7 @@ const ld = JSON.stringify({
           </div>
         )}
       </div>
-      <aside class="h-fit rounded-3xl bg-mist p-8">
+      <aside id="offices" class="h-fit scroll-mt-32 rounded-3xl bg-mist p-8">
         <h2 class="font-display text-[1.7rem] text-navy-900">{offices.length > 1 ? "Offices" : "Office"}</h2>
         <ul class="mt-5 space-y-6">
           {offices.map((o) => (
@@ -77,10 +77,11 @@ const ld = JSON.stringify({
               <a href={`/locations/${o!.slug}`} class="font-display text-[1.4rem] text-navy hover:text-sky">{o!.city}, TN</a>
               <p class="mt-1 text-[0.95rem] text-slate">{o!.address}<br />{o!.zip}</p>
               <a href={`tel:${o!.phone.replace(/-/g, "")}`} class="mt-1 inline-block text-[0.95rem] font-semibold text-navy hover:text-sky">{o!.phone}</a>
+              {o!.book ? <a href={o!.book} target="_blank" rel="noopener" class="btn-gold mt-3 w-full justify-center !py-3 !text-[0.85rem]">Book now in {o!.city}</a> : <a href={`tel:${o!.phone.replace(/-/g, "")}`} class="btn-gold mt-3 w-full justify-center !py-3 !text-[0.85rem]">Call to book</a>}
             </li>
           ))}
         </ul>
-        <a href="/book-appointment" class="btn-navy mt-8 w-full justify-center">Request an appointment</a>
+        <a href="/book-appointment" class="btn-outline mt-8 w-full justify-center">See all clinics</a>
       </aside>
     </div>
   </section>

@@ -79,7 +79,7 @@ const steps = [
         </div>
         {cond.aka && <p class="mt-5 text-[0.9rem] text-slate"><strong class="text-navy-900">Also called:</strong> {cond.aka}</p>}
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="/#contact" class="btn-navy">Request an appointment</a>
+          <a href="/book-appointment" class="btn-navy">Request an appointment</a>
           <a href={phoneHref} class="btn-outline">Call {phone}</a>
         </div>
       </div>
@@ -257,7 +257,7 @@ const steps = [
               <a href={`/locations/${clinic.slug}`} class="link-arrow mt-4 !text-white/80 hover:!text-gold">Visit the {clinic.city} clinic page <span aria-hidden="true">&rarr;</span></a>
             </div>
             <div class="flex flex-col gap-3 md:col-span-4 md:col-start-9">
-              <a href="/#contact" class="btn-gold w-full">Request an appointment</a>
+              <a href="/book-appointment" class="btn-gold w-full">Request an appointment</a>
               <a href={phoneHref} class="btn-ghost w-full">Call {phone}</a>
               <a href={dir} target="_blank" rel="noopener" class="btn-ghost w-full">Get directions</a>
             </div>
@@ -267,7 +267,7 @@ const steps = [
         <div class="rounded-[1.75rem] bg-navy-950 p-8 text-white md:p-12" data-reveal>
           <p class="font-display text-[clamp(1.9rem,3.2vw,2.8rem)] leading-tight text-white">Get help with {short}.</p>
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="/#contact" class="btn-gold">Request an appointment</a>
+            <a href="/book-appointment" class="btn-gold">Request an appointment</a>
             <a href={phoneHref} class="btn-ghost">Call {phone}</a>
           </div>
         </div>

@@ -55,21 +55,21 @@ export const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-"
 
 /** Coordinates are approximate (street level). Check before launch. */
 export const locations = [
-  { city: "Nashville", address: "300 20th Avenue North, Suite 103", zip: "Nashville, TN 37203", phone: "615-805-6859", lat: 36.1523, lng: -86.8006 },
-  { city: "Brentwood", address: "10644 Concord Road", zip: "Brentwood, TN 37027", phone: "615-857-5649", lat: 35.9876, lng: -86.7717 },
-  { city: "Clarksville", address: "1762 Memorial Dr", zip: "Clarksville, TN 37043", phone: "615-857-5132", lat: 36.5530, lng: -87.3240 },
-  { city: "Columbia", address: "1215 Hatcher Lane", zip: "Columbia, TN 38401", phone: "931-213-3861", lat: 35.6268, lng: -87.0620 },
-  { city: "Cookeville", address: "120 Walnut Commons Lane, Suite A", zip: "Cookeville, TN 38501", phone: "931-651-9285", lat: 36.1520, lng: -85.5100 },
-  { city: "Gallatin", address: "179 Hancock St, Suite 300", zip: "Gallatin, TN 37066", phone: "615-802-5465", lat: 36.3700, lng: -86.4730 },
-  { city: "Goodlettsville", address: "824 Wren Rd", zip: "Goodlettsville, TN 37072", phone: "615-551-4394", lat: 36.3190, lng: -86.7050 },
-  { city: "Hermitage", address: "3901 Central Pike, Suite 353", zip: "Hermitage, TN 37076", phone: "615-805-6472", lat: 36.1880, lng: -86.6130 },
-  { city: "Lebanon", address: "430 West Main Street", zip: "Lebanon, TN 37087", phone: "615-805-6633", lat: 36.2080, lng: -86.3010 },
-  { city: "Mount Juliet", address: "2628 North Mount Juliet Road", zip: "Mount Juliet, TN 37122", phone: "615-857-5383", lat: 36.2240, lng: -86.5140 },
-  { city: "Murfreesboro", address: "536 N Thompson Ln, Suite F", zip: "Murfreesboro, TN 37129", phone: "629-219-4002", lat: 35.8570, lng: -86.4110 },
-  { city: "Pulaski", address: "306 South 7th Street", zip: "Pulaski, TN 38478", phone: "931-271-4474", lat: 35.1970, lng: -87.0340 },
-  { city: "Shelbyville", address: "120 Frank Martin Rd", zip: "Shelbyville, TN 37160", phone: "615-437-3906", lat: 35.4970, lng: -86.4470 },
-  { city: "Smyrna", address: "693 President Pl, Suite 103", zip: "Smyrna, TN 37167", phone: "615-857-5428", lat: 35.9700, lng: -86.5230 },
-  { city: "Waverly", address: "110 Hillwood Drive", zip: "Waverly, TN 37185", phone: "615-802-5673", lat: 36.0880, lng: -87.7780 },
+  { city: "Nashville", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=6jGZQ0k17NAyWnLO", address: "300 20th Avenue North, Suite 103", zip: "Nashville, TN 37203", phone: "615-805-6859", lat: 36.1523, lng: -86.8006 },
+  { city: "Brentwood", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=mJ615ek74gv0B7D4", address: "10644 Concord Road", zip: "Brentwood, TN 37027", phone: "615-857-5649", lat: 35.9876, lng: -86.7717 },
+  { city: "Clarksville", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=xaqPX3Aq0bvQGJ46", address: "1762 Memorial Dr", zip: "Clarksville, TN 37043", phone: "615-857-5132", lat: 36.5530, lng: -87.3240 },
+  { city: "Columbia", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=ab2n5zVEe1VYZq8N", address: "1215 Hatcher Lane", zip: "Columbia, TN 38401", phone: "931-213-3861", lat: 35.6268, lng: -87.0620 },
+  { city: "Cookeville", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=8gZXrVgZ1nARmWYl", address: "120 Walnut Commons Lane, Suite A", zip: "Cookeville, TN 38501", phone: "931-651-9285", lat: 36.1520, lng: -85.5100 },
+  { city: "Gallatin", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=Qd1p2JAR2nADozmN", address: "179 Hancock St, Suite 300", zip: "Gallatin, TN 37066", phone: "615-802-5465", lat: 36.3700, lng: -86.4730 },
+  { city: "Goodlettsville", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=5Mz7wAW0pJVZoqQD", address: "824 Wren Rd", zip: "Goodlettsville, TN 37072", phone: "615-551-4394", lat: 36.3190, lng: -86.7050 },
+  { city: "Hermitage", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=oWmOyeV6yoAEdg2q", address: "3901 Central Pike, Suite 353", zip: "Hermitage, TN 37076", phone: "615-805-6472", lat: 36.1880, lng: -86.6130 },
+  { city: "Lebanon", book: "", address: "430 West Main Street", zip: "Lebanon, TN 37087", phone: "615-805-6633", lat: 36.2080, lng: -86.3010 },
+  { city: "Mount Juliet", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=qn8mDjV4RyvOwQJ0", address: "2628 North Mount Juliet Road", zip: "Mount Juliet, TN 37122", phone: "615-857-5383", lat: 36.2240, lng: -86.5140 },
+  { city: "Murfreesboro", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=b2n5zVEgL1vYZq8N", address: "536 N Thompson Ln, Suite F", zip: "Murfreesboro, TN 37129", phone: "629-219-4002", lat: 35.8570, lng: -86.4110 },
+  { city: "Pulaski", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=51M9b2k88gk08zKn", address: "306 South 7th Street", zip: "Pulaski, TN 38478", phone: "931-271-4474", lat: 35.1970, lng: -87.0340 },
+  { city: "Shelbyville", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=xaqPX3AqoDkQGJ46", address: "120 Frank Martin Rd, Suite 200", zip: "Shelbyville, TN 37160", phone: "615-437-3906", lat: 35.4970, lng: -86.4470 },
+  { city: "Smyrna", book: "https://healow.com/apps/practice/advanced-health-23486?v=2&t=1&f=B8gZXrVg4nkRmWYl", address: "693 President Pl, Suite 103", zip: "Smyrna, TN 37167", phone: "615-857-5428", lat: 35.9700, lng: -86.5230 },
+  { city: "Waverly", book: "", address: "110 Hillwood Drive", zip: "Waverly, TN 37185", phone: "615-802-5673", lat: 36.0880, lng: -87.7780 },
 ];
 
 const PP = "https://sa1s3optim.patientpop.com/assets/production/practices/1aec7b487ea1bb3824e36f325e6542ee4d6e0680/images/";

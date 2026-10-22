@@ -55,7 +55,7 @@ const ld = JSON.stringify([
           Expert foot and ankle care for kids and adults, close to home in {c.city}. Find out what we treat, see the map, and book a visit.
         </p>
         <div class="mt-9 flex flex-wrap gap-3" data-reveal="0.15">
-          <a href="#book" class="btn-gold">Request an appointment</a>
+          <a href={c.book || "#book"} target={c.book ? "_blank" : undefined} rel={c.book ? "noopener" : undefined} class="btn-gold">Book now</a>
           <a href={phoneHref} class="btn-ghost">Call {c.phone}</a>
         </div>
       </div>
@@ -116,7 +116,7 @@ const ld = JSON.stringify([
             <a href={phoneHref} class="mt-5 block font-display text-[2rem] text-gold hover:underline">{c.phone}</a>
             <div class="mt-6 flex flex-wrap gap-2">
               <a href={dir} target="_blank" rel="noopener" class="btn-gold !px-5 !py-2.5 !text-[0.85rem]">Get directions</a>
-              <a href="#book" class="btn-ghost !px-5 !py-2.5 !text-[0.85rem]">Book a visit</a>
+              <a href={c.book || "#book"} target={c.book ? "_blank" : undefined} rel={c.book ? "noopener" : undefined} class="btn-ghost !px-5 !py-2.5 !text-[0.85rem]">Book a visit</a>
             </div>
           </div>
           <div class="rounded-[1.75rem] bg-mist p-8">
@@ -242,6 +242,7 @@ const ld = JSON.stringify([
         <p class="eyebrow">Book a visit</p>
         <h2 class="heading-xl mt-4 !text-[clamp(2.2rem,4vw,3.4rem)]">See a podiatrist in <em class="text-sky">{c.city}.</em></h2>
         <p class="mt-4 text-slate">Send us a request and our {c.city} team will call you to set a time. Or call us now.</p>
+        {c.book && <a href={c.book} target="_blank" rel="noopener" class="btn-gold mt-6">Book online now</a>}
         <a href={phoneHref} class="mt-6 block font-display text-[2.4rem] text-navy hover:text-sky">{c.phone}</a>
         <p class="mt-2 text-slate">{c.address}, {c.zip}</p>
       </div>

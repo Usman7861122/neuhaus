@@ -11,8 +11,8 @@ export type ProviderDetail = {
 
 export const providerDetails: Record<string, ProviderDetail> = {
   "matthew-neuhaus": {
-    offices: ["smyrna"],
-    seeing: "Dr. Neuhaus is currently seeing patients in our Smyrna office.",
+    offices: ["smyrna", "mount-juliet"],
+    seeing: "Dr. Neuhaus is currently seeing patients in our Smyrna and Mount Juliet offices.",
     bio: [
       "Dr. Matthew Neuhaus, originally from Madison, Wisconsin, has been in private practice in Nashville since 2003. He is married to his high school sweetheart, Allyson, and together they have 11 children.",
       "Dr. Neuhaus is a graduate of Brigham Young University. During college, he took 2 years off so he could serve as a missionary in Spain for the Church of Jesus Christ of Latter-Day Saints, and he received his doctorate from the California College of Podiatric Medicine in 2000. He spent his fourth year of podiatric medical school at the University of Texas Health Science Center, San Antonio. While in Texas, he received extensive training in diabetic foot care. He did his residency training in reconstructive foot and ankle surgery in Louisville, Kentucky, in association with the University of Louisville. Dr. Neuhaus is fluent in English and Spanish.",
@@ -110,8 +110,8 @@ export const providerDetails: Record<string, ProviderDetail> = {
   },
 
   "emily-keeter": {
-    offices: ["smyrna"],
-    seeing: "Dr. Keeter is currently seeing patients in our Smyrna office.",
+    offices: ["smyrna", "gallatin"],
+    seeing: "Dr. Keeter is currently seeing patients in our Smyrna and Gallatin offices.",
     bio: [
       "Dr. Emily Keeter is a fellowship-trained foot and ankle surgeon originally from Central Florida. She grew up in a very athletic military family, and following several sports injuries, including a broken leg and stress fractures, her passion for foot and ankle injuries was formed. After a brief stint at the Air Force Academy, she finished her undergraduate degree in Nutritional Science at the University of Florida. Go Gators! From there she attended podiatry school at Temple University in Philadelphia, Pennsylvania. As a medical student, Dr. Keeter was president of the sports medicine club and organized events alongside the Philadelphia 76ers as well as working the medical tent at the Boston Marathon.",
       "Dr. Keeter moved to St. Louis, Missouri to complete her surgical residency, where she was trained in all facets of podiatric medicine and lower extremity surgery including trauma, Charcot reconstruction, forefoot, ankle reconstruction, and more.",
@@ -156,8 +156,8 @@ export const providerDetails: Record<string, ProviderDetail> = {
   },
 
   "sheela-chockalingam": {
-    offices: ["nashville", "mount-juliet"],
-    seeing: "Dr. Chockalingam is currently seeing patients in our Nashville (Midtown) and Mount Juliet offices.",
+    offices: ["nashville"],
+    seeing: "Dr. Chockalingam is currently seeing patients in our Nashville (Midtown) office.",
     bio: [
       "My path to podiatry is a bit of a different one. I did not know as a child that I wanted to be a doctor, I did not come from a family of physicians, and I had no knowledge of podiatry until later on in life. That all being said, I can tell you with 100% certainty that podiatric medicine is both my passion and calling in life.",
       "I have always been drawn to both the social sciences and natural sciences. While doing my undergraduate studies at Louisiana State University (Geaux Tigers!), I majored in biology and took a multitude of psychology classes. As I began to consider life after college, I wanted to pursue a career that would combine both interests. A job in the medical field was exactly what I was looking for. I would have a foundation in the sciences, but at the same time, I would be able to interact with people on an individual basis. My years of running and soccer also influenced me to become a podiatrist. Many of my teammates encountered foot and ankle injuries, and I learned firsthand how devastating these injuries could be. However, I also discovered the pivotal role a podiatric physician played in getting athletes back on the field.",
@@ -215,8 +215,8 @@ export const providerDetails: Record<string, ProviderDetail> = {
   },
 
   "harpreet-khalsa": {
-    offices: ["nashville", "mount-juliet", "lebanon"],
-    seeing: "Dr. Khalsa is seeing patients in our Nashville (Midtown), Mount Juliet, and Lebanon offices.",
+    offices: ["nashville", "smyrna", "lebanon"],
+    seeing: "Dr. Khalsa is seeing patients in our Nashville (Midtown), Smyrna, and Lebanon offices.",
     bio: [
       "Dr. Khalsa completed their undergraduate studies at Indiana University before earning their medical degree from the Kent State University College of Podiatric Medicine. Following medical school, Dr. Khalsa pursued an intensive surgical residency at United Health Services Hospital in New York, where they gained comprehensive training in advanced podiatric surgical techniques.",
       "With a patient-centered approach and multilingual skills, Dr. Khalsa is passionate about fostering clear communication and ensuring personalized care for diverse communities. Whether addressing common foot ailments or complex surgical needs, Dr. Khalsa is dedicated to helping patients achieve optimal foot health and improved quality of life.",
@@ -225,8 +225,8 @@ export const providerDetails: Record<string, ProviderDetail> = {
   },
 
   "alec-wroblewski": {
-    offices: ["brentwood", "clarksville"],
-    seeing: "Dr. Wroblewski is seeing patients in our Brentwood and Clarksville offices.",
+    offices: ["clarksville"],
+    seeing: "Dr. Wroblewski is seeing patients in our Clarksville office.",
     bio: [
       "Dr. Alec Wroblewski brings a grounded, patient-first approach to foot and ankle care, shaped by his small-town upbringing and strong values of hard work, integrity, and service. He is committed to building genuine relationships with his patients and takes pride in providing thoughtful, personalized care that helps people stay active and improve their quality of life.",
       "Dr. Wroblewski believes the best outcomes come from trust, clear communication, and a collaborative approach. Whether treating everyday foot pain or more complex conditions, he focuses on helping patients understand their options and feel confident in their care.",
@@ -235,10 +235,10 @@ export const providerDetails: Record<string, ProviderDetail> = {
   },
 
   "richard-lavigna": {
-    offices: ["brentwood", "clarksville"],
-    seeing: "Dr. Lavigna is seeing patients in our Brentwood and Clarksville offices.",
+    offices: ["brentwood"],
+    seeing: "Dr. Lavigna is seeing patients in our Brentwood office.",
     bio: [
-      "Dr. Richard Lavigna is a podiatrist at Neuhaus Foot & Ankle, seeing patients in Brentwood and Clarksville. Call our office to book a visit with him.",
+      "Dr. Richard Lavigna is a podiatrist at Neuhaus Foot & Ankle, seeing patients in Brentwood. Call our office to book a visit with him.",
     ],
   },
 };

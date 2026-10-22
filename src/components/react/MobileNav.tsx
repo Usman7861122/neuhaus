@@ -130,7 +130,7 @@ export default function MobileNav({
                 </nav>
 
                 <div className="mt-auto space-y-3 pt-10">
-                  <a href="/#contact" onClick={close} className="btn-gold w-full">Request an appointment</a>
+                  <a href="/book-appointment" onClick={close} className="btn-gold w-full">Request an appointment</a>
                   <a href={phoneHref} className="btn-ghost w-full">Call {phone}</a>
                 </div>
               </motion.div>
