@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-interface Props { title: string; description?: string; eyebrow?: string; heading?: string; intro?: string; image?: string }
-const { title, description, eyebrow, heading, intro, image } = Astro.props;
+interface Props { title: string; description?: string; eyebrow?: string; heading?: string; intro?: string; image?: string; schema?: Record<string, unknown> | Record<string, unknown>[] }
+const { title, description, eyebrow, heading, intro, image, schema } = Astro.props;
 ---
-<BaseLayout title={`${title} | Neuhaus Foot & Ankle`} description={description}>
+<BaseLayout title={`${title} | Neuhaus Foot & Ankle`} description={description} schema={schema}>
   <section class="relative overflow-hidden bg-navy-950 pb-20 pt-44 text-white md:pb-28 md:pt-52">
     {image && <img src={image} alt="" class="absolute inset-0 h-full w-full object-cover opacity-30" />}
     <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/70 to-navy-950/30"></div>

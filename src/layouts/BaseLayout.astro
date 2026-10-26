@@ -4,13 +4,14 @@ import SEO from "@/components/common/SEO.astro";
 import Header from "@/components/layout/Header.astro";
 import Footer from "@/components/layout/Footer.astro";
 
-interface Props { title?: string; description?: string; overlayHeader?: boolean }
-const { title, description, overlayHeader = false } = Astro.props;
+interface Props { title?: string; description?: string; overlayHeader?: boolean; schema?: Record<string, unknown> | Record<string, unknown>[] }
+const { title, description, overlayHeader = false, schema } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <SEO title={title} description={description} />
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
   </head>
   <body>
     <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[80] focus:rounded-full focus:bg-gold focus:px-5 focus:py-3 focus:text-navy-950">Skip to content</a>

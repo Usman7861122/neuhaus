@@ -12,8 +12,25 @@ import WhyChooseUs from "@/components/sections/WhyChooseUs.astro";
 import Locations from "@/components/sections/Locations.astro";
 import Contact from "@/components/sections/Contact.astro";
 import FlipTouch from "@/components/common/FlipTouch.astro";
+import { site, locations } from "@/data/site";
+const schema = [
+  {
+    "@context": "https://schema.org", "@type": ["MedicalBusiness", "Podiatric"],
+    "@id": "https://www.neufoot.com/#organization",
+    name: site.name, url: "https://www.neufoot.com/", telephone: site.phone,
+    image: "https://www.neufoot.com/images/photos/1580058572462-98e2c0e0e2f0-lg.jpg",
+    medicalSpecialty: "Podiatric", areaServed: "Middle Tennessee",
+    location: locations.map((l) => ({
+      "@type": "MedicalClinic", name: `Neuhaus Foot & Ankle, ${l.city}`, telephone: l.phone,
+      url: `https://www.neufoot.com/locations/${l.city.toLowerCase().replace(/\s+/g, "-")}/`,
+      address: { "@type": "PostalAddress", streetAddress: l.address, addressLocality: l.city, addressRegion: "TN", postalCode: l.zip.split(" ").pop(), addressCountry: "US" },
+      geo: { "@type": "GeoCoordinates", latitude: l.lat, longitude: l.lng },
+    })),
+  },
+  { "@context": "https://schema.org", "@type": "WebSite", name: site.name, url: "https://www.neufoot.com/" },
+];
 ---
-<BaseLayout overlayHeader>
+<BaseLayout overlayHeader schema={schema}>
   <Hero />
   <About />
   <WhatWeOffer />

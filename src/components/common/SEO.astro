@@ -7,15 +7,30 @@ const {
   image = unsplash("1580058572462-98e2c0e0e2f0", 1600),
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+
+// Keep search snippets from being cut off: titles near 60 characters, descriptions near 155.
+const SUFFIX = " | Neuhaus Foot & Ankle";
+const clampTitle = (t: string) => (t.length > 60 && t.endsWith(SUFFIX) ? t.slice(0, -SUFFIX.length) : t);
+const clampDesc = (d: string, max = 158) => {
+  if (d.length <= max) return d;
+  const cut = d.slice(0, max);
+  const sentence = cut.lastIndexOf(". ");
+  if (sentence > 90) return cut.slice(0, sentence + 1);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:\s]+$/, "") + "...";
+};
+const metaTitle = clampTitle(title);
+const metaDescription = clampDesc(description);
 ---
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<title>{title}</title>
-<meta name="description" content={description} />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<title>{metaTitle}</title>
+<meta name="description" content={metaDescription} />
 <link rel="canonical" href={canonical} />
 <meta property="og:type" content="website" />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
+<meta property="og:title" content={metaTitle} />
+<meta property="og:description" content={metaDescription} />
 <meta property="og:image" content={new URL(image, Astro.site).href} />
+<meta name="google-site-verification" content="PE5RC1rXTmdwdoveXbJyr2-4evtQiGiPBTIStmaqel8" />
 <meta name="theme-color" content="#071f30" />

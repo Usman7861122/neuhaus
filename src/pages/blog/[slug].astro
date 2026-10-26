@@ -10,8 +10,15 @@ export async function getStaticPaths() {
 }
 const { post } = Astro.props;
 const { Content } = await render(post);
+const schema = {
+  "@context": "https://schema.org", "@type": "Article", headline: post.data.title, description: post.data.excerpt,
+  datePublished: new Date(post.data.date).toISOString(), image: new URL(unsplash(post.data.image, 1600), Astro.site).href,
+  author: { "@type": "Organization", name: site.name },
+  publisher: { "@type": "Organization", name: site.name, url: "https://www.neufoot.com/" },
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+};
 ---
-<PageLayout title={post.data.title} description={post.data.excerpt} eyebrow={`${post.data.category} / ${formatDate(post.data.date)}`} heading={post.data.title} intro={post.data.excerpt} image={unsplash(post.data.image, 2000)}>
+<PageLayout schema={schema} title={post.data.title} description={post.data.excerpt} eyebrow={`${post.data.category} / ${formatDate(post.data.date)}`} heading={post.data.title} intro={post.data.excerpt} image={unsplash(post.data.image, 2000)}>
   <section class="py-20 md:py-28">
     <article class="prose-content wrap max-w-3xl">
       <p class="!text-sm !text-slate">{post.data.readTime} &nbsp;|&nbsp; Written by the Neuhaus Foot &amp; Ankle team</p>
