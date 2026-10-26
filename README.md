@@ -16,7 +16,6 @@ npm run build    # static site in /dist
 - `src/styles/global.css` brand colors and fonts
 
 ## Before launch
-- Contact form: set `PUBLIC_FORM_ENDPOINT` in `.env` (Formspree, CRM, etc.). Without it the form only shows a success message.
 - Check map pin positions in `src/data/site.ts`.
 - Provider photos load from the old PatientPop site. Download them into `public/images/doctors/` before the old site goes away.
 - Add privacy policy and terms text.

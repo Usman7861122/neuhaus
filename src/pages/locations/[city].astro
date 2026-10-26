@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import TestimonialSlider from "@/components/react/TestimonialSlider";
-import ContactForm from "@/components/react/ContactForm";
 import { site, unsplash, insurances, testimonials } from "@/data/site";
 import { clinics, treatmentsAt, nearest, miles, consultPhoto } from "@/data/treatments";
 
@@ -16,16 +15,14 @@ const treatments = treatmentsAt(all, c.slug);
 const near = nearest(c, clinics, 4);
 const phoneHref = `tel:${c.phone.replace(/-/g, "")}`;
 const dir = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${c.address}, ${c.zip}`)}`;
-const reasons = all.map((s) => s.data.title);
 const embed = `https://www.google.com/maps?q=${encodeURIComponent(`Neuhaus Foot & Ankle, ${c.address}, ${c.zip}`)}&z=15&output=embed`;
-const cityNames = clinics.map((x) => x.city);
 
 const title = `Podiatrist in ${c.city}, TN | Foot & Ankle Doctors`;
 const description = `Neuhaus Foot & Ankle in ${c.city}, TN. Podiatrists for kids and adults. ${c.address}, ${c.zip}. Call ${c.phone}. See conditions we treat, map, and insurance.`;
 
 const faqs = [
   { q: `Where is the Neuhaus Foot & Ankle clinic in ${c.city}?`, a: `Our ${c.city} clinic is at ${c.address}, ${c.zip}. Use the map on this page for directions.` },
-  { q: `How do I make an appointment in ${c.city}?`, a: `Call ${c.phone} or use the appointment form on this page. Tell us what is bothering your feet and we will find a time for you.` },
+  { q: `How do I make an appointment in ${c.city}?`, a: `Book online using the Book now button on this page, or call ${c.phone}. Tell us what is bothering your feet and we will find a time for you.` },
   { q: `What foot and ankle problems do you treat in ${c.city}?`, a: `Our ${c.city} clinic treats ${treatments.length} groups of foot and ankle conditions, from heel and arch pain to bunions, ankle injuries, arthritis, fractures, diabetic wound care, and children's foot care. See the full list above.` },
   { q: `Do you see children at the ${c.city} clinic?`, a: `Yes. Our podiatrists care for kids and adults.` },
   { q: `Which insurance plans do you accept in ${c.city}?`, a: `We work with most major plans, including Medicare and TennCare. Call ${c.phone} and we will check your coverage before your visit.` },
@@ -241,13 +238,18 @@ const ld = JSON.stringify([
       <div class="lg:col-span-5" data-reveal>
         <p class="eyebrow">Book a visit</p>
         <h2 class="heading-xl mt-4 !text-[clamp(2.2rem,4vw,3.4rem)]">See a podiatrist in <em class="text-sky">{c.city}.</em></h2>
-        <p class="mt-4 text-slate">Send us a request and our {c.city} team will call you to set a time. Or call us now.</p>
-        {c.book && <a href={c.book} target="_blank" rel="noopener" class="btn-gold mt-6">Book online now</a>}
+        <p class="mt-4 text-slate">Book online in a couple of minutes, or call us and our team will find a time for you.</p>
         <a href={phoneHref} class="mt-6 block font-display text-[2.4rem] text-navy hover:text-sky">{c.phone}</a>
         <p class="mt-2 text-slate">{c.address}, {c.zip}</p>
       </div>
-      <div class="rounded-[1.75rem] bg-white p-6 shadow-[0_30px_60px_-40px_rgba(7,31,48,.45)] ring-1 ring-line sm:p-10 lg:col-span-7" data-reveal="0.1">
-        <ContactForm client:visible clinics={cityNames} reasons={reasons} />
+      <div class="rounded-[1.75rem] bg-mist p-8 sm:p-10 lg:col-span-7" data-reveal="0.1">
+        <p class="font-display text-[2rem] leading-tight text-navy-900">Neuhaus Foot &amp; Ankle, {c.city}</p>
+        <p class="mt-2 text-slate">{c.address}, {c.zip}</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          {c.book && <a href={c.book} target="_blank" rel="noopener" class="btn-gold">Book online now</a>}
+          <a href={phoneHref} class="btn-outline">Call {c.phone}</a>
+          <a href={dir} target="_blank" rel="noopener" class="btn-outline">Get directions</a>
+        </div>
       </div>
     </div>
   </section>

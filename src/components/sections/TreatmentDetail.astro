@@ -54,7 +54,7 @@ const faqs = [...service.data.faqs];
 if (clinic) {
   faqs.push(
     { q: `Where can I get ${lower} treated near ${clinic.city}, TN?`, a: `Our ${clinic.city} clinic is at ${clinic.address}, ${clinic.zip}. Our podiatrists treat ${lower} for children and adults there. Call ${clinic.phone} to book.` },
-    { q: `How do I book a ${lower} visit in ${clinic.city}?`, a: `Call the ${clinic.city} clinic at ${clinic.phone}, or use the appointment form on our website. Tell us about your symptoms and we will find a time that works for you.` },
+    { q: `How do I book a ${lower} visit in ${clinic.city}?`, a: `Call the ${clinic.city} clinic at ${clinic.phone}, or book online on our website. Tell us about your symptoms and we will find a time that works for you.` },
   );
 }
 const faqLd = JSON.stringify({
