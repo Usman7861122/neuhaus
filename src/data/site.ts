@@ -20,6 +20,10 @@ export const remoteImage = (url: string) => {
   return hasLocal(local) ? local : url;
 };
 
+/** Blog images: full URLs (copied posts) or Unsplash ids (hand-written posts). */
+export const blogImage = (img: string, w = 1600, h?: number) =>
+  /^https?:\/\//.test(img) ? remoteImage(img) : unsplash(img, w, h);
+
 export const site = {
   careers: "https://neuhausfootandankle.applytojob.com/",
   name: "Neuhaus Foot & Ankle",

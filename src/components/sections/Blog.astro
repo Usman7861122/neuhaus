@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import { unsplash } from "@/data/site";
+import { blogImage } from "@/data/site";
 const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
 ---
 <section id="blog" class="py-20 md:py-24">
@@ -17,7 +17,7 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf()
       {posts.map((p, i) => (
         <a href={`/blog/${p.id}`} class="group flex flex-col" data-reveal={0.08 * i}>
           <div class="overflow-hidden rounded-2xl bg-mist">
-            <img src={unsplash(p.data.image, 900, 640)} alt="" loading="lazy" class="aspect-[7/5] w-full object-cover transition-transform duration-[1.2s] ease-[var(--ease-step)] group-hover:scale-[1.05]" />
+            <img src={blogImage(p.data.image, 900, 640)} alt="" loading="lazy" class="aspect-[7/5] w-full object-cover transition-transform duration-[1.2s] ease-[var(--ease-step)] group-hover:scale-[1.05]" />
           </div>
           <p class="mt-5 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-sky">{p.data.category} &nbsp;/&nbsp; {p.data.readTime}</p>
           <h3 class="mt-2 font-display text-[1.75rem] leading-[1.08] group-hover:text-navy">{p.data.title}</h3>

@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import PageLayout from "@/layouts/PageLayout.astro";
-import { unsplash } from "@/data/site";
+import { blogImage, unsplash } from "@/data/site";
 import { formatDate } from "@/lib/format";
 const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
@@ -11,7 +11,7 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf()
       {posts.map((p, i) => (
         <a href={`/blog/${p.id}`} class="group" data-reveal={(i % 3) * 0.08}>
           <div class="overflow-hidden rounded-2xl bg-mist">
-            <img src={unsplash(p.data.image, 900, 640)} alt="" loading="lazy" class="aspect-[7/5] w-full object-cover transition-transform duration-[1.2s] ease-[var(--ease-step)] group-hover:scale-[1.05]" />
+            <img src={blogImage(p.data.image, 900, 640)} alt="" loading="lazy" class="aspect-[7/5] w-full object-cover transition-transform duration-[1.2s] ease-[var(--ease-step)] group-hover:scale-[1.05]" />
           </div>
           <p class="mt-6 text-[0.75rem] font-semibold uppercase tracking-[0.16em] text-sky">{p.data.category} &nbsp;/&nbsp; {formatDate(p.data.date)}</p>
           <h2 class="mt-3 font-display text-[2rem] leading-[1.05] group-hover:text-navy">{p.data.title}</h2>

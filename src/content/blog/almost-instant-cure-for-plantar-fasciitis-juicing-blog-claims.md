@@ -1,0 +1,34 @@
+---
+title: "Almost-Instant Cure for Plantar Fasciitis, Juicing Blog Claims"
+date: 2019-01-21
+excerpt: "With great information comes great misinformation. Viral posts with catchy headlines and factless treatment recommendations are spreading like wildfire."
+image: "https://sa1s3optim.patientpop.com/assets/images/provider/photos/1908881.jpg"
+category: "Heel pain"
+readTime: "5 min read"
+---
+
+##
+
+## Fake treatments is the new fake news
+
+ With great information comes great misinformation. Viral posts with catchy headlines and factless treatment recommendations are spreading like wildfire. It's getting harder for people to know what's fact and what's fiction. Recently, the [U.S. Food & Drug Administration](https://www.fda.gov/ForConsumers/ConsumerUpdates/ucm048383.htm) shut down companies claiming to cure various diseases. In its statement, the FDA said misinformation preys on desperation leading consumers to feel a "great temptation to jump at anything that appears to offer a chance for a cure." The consumer loses when blogs and products promise cures and make claims that lack evidence-based medicine. In most cases, fake treatment blogs and products benefit the website, not you. See photos of illegally sold cancer drugs on the FDA's Flickr page [here](https://www.flickr.com/photos/fdaphotos/sets/72157679310490975).
+
+## Exhibit A: Questionable Advice and 200 ads later
+
+ Take this [post](https://juicing-for-health.com/cure-for-plantar-fasciitis) from a juicing blog, "Almost-Instant Cure for Plantar Fasciitis That They Don't Tell You About." With **over 15,000 shares**, it is one of the most shared post on social media in the lsat 12 months! With that headline, the typical reader might think:
+
+- *Who doesn’t want an 'almost instant cure for plantar fasciitis'? I’m in!*
+- *How dare ‘they’ not tell me about this! Please reveal the secrets!*
+ Instead, if the headline read, “Some less common ways to try and relieve your plantar fasciitis that medical professionals don’t mention because there’s no clinical evidence to support these claims,” -- no one would click. ...crickets -- Internet advice focused on selling ads or making commissions on the products they mention, should cause you to consider the credibility of the information. In the post mentioned above, you'll see **over 40 ads throughout the text and over 200 ads on the page**! If a reader follows a link to a recommended product page and purchases, there is a commission kicked back to the blog. ***In healthcare, this practice is illegal.*** If you referred a friend to a doctor and that doctor paid you a commission, this would be a kickback and it’s a against the law in healthcare.
+
+## The truth about treating plantar fasciitis
+
+ Not all plantar fasciitis is the same. Every body is different. The severity and underlying cause of plantar fasciitis is different for everyone. With several podiatrists in Nashville and across Middle Tennessee, **Neuhaus Foot & Ankle treats thousands of patients with plantar fasciitis every year**. In the last 15 years in Nashville, we’ve treated tens of thousands of people with heel pain. Dr. Neuhaus, owner of Neuhaus Foot & Ankle, says patients spend a lot of money, sometimes hundreds of dollars, trying to treat heel pain on their own before going to the doctor. *“People have a good idea of what’s causing their pain, but without a proper medical diagnosis, people are guessing, and hoping, a remedy they read online will do the trick**.”* Dr. Neuhaus discourages spending any money, especially on [expensive insoles](https://mythreecents.com/reviews/good-feet), without first seeing a podiatrist. The reason? Most [products only](https://youtu.be/O-WfGlR2UbM)[relieve](https://youtu.be/O-WfGlR2UbM)[plantar fasciitis](https://youtu.be/O-WfGlR2UbM), not cure it. They're band-aids. Pain relief is only temporary, but knowing the underlying cause is how you treat plantar fasciitis and get long-lasting relief. When you see a podiatrist first, you get a [proper medical diagnosis](https://youtu.be/n0O-od9hLjk). Then you get effective treatment options based on your unique symptoms and diagnosis.
+
+## The real instant cure for plantar fasciitis
+
+ The instant cure for plantar fasciitis isn’t a cure at all. It’s a way to temporary relieve the pain. If you’re looking for an instant cure for plantar fasciitis, then it won’t be instant. It takes time. Curing plantar fasciitis is a multi-faceted approach, one that doesn’t fit into a compelling, clickable headline.
+
+## General Do's and Don'ts for dealing with plantar fasciitis
+
+ **Do:** Support your arch with the right footwear or insole. With plantar fasciitis, you need support to relieve the stress on the inflamed ligament. Contrary to the juicing blog post, going barefoot puts more strain on your plantar fascia. This is the worst thing you can do with plantar fasciitis. **Do:**[Stretch your calf](https://youtu.be/fNBEVzjRNvg). When your calf muscles are tight, the pull on the heel bone makes the plantar fascia very taut and prone to stress and injury. **Do:** Reduce the inflammation with ice and anti-inflammatory medications like ibuprofen. **Do:** Lose a few pounds if you're overweight. Every 10 pounds of body weight is equal to 40 pounds of pressure on your knees and lower legs. Reducing the pressure on your feet with every step is one of the most effective permanent cures for plantar fasciitis. **Don’t:** Spend money on expensive orthotics without a medical diagnosis from a podiatrist first. Custom orthotics should only be an option if other plantar fasciitis treatments have been ineffective. **Don’t:** Buy Dr. Scholl’s or inserts at the drug store. They are made for comfort and temporary pain relief. For mild and severe plantar fasciitis cases, the effective of cheap insoles won’t last. **Don’t:** Go go barefoot. Going barefoot with a plantar fasciitis injury is like a runner that pulls a hamstring and keeps running. The continued strain will slow the healing or turn a one-time injury into a chronic issue. When you wake up in the morning with heel pain, do some research, check out our [videos on heel pain](https://youtu.be/5s1Vtl8C3GQ), and see a podiatrist before spending any money on treatments if the pain lingers for more than a week. Podiatrists, physical therapists, and barefoot enthusiasts agree, strengthening your foot and correcting the biomechanics of your lower legs is the best cure for plantar fasciitis. It’s just not an instant one. At Neuhaus Foot & Ankle, **we understand how frustrating getting proper treatment for plantar fasciitis can be**. The healthcare system is not fun and that may be an understatement. Add all the misinformation on the internet and it gets harder. Your patient experience is so important to us, we’ve earned top podiatrist in the area five years in a row. When you have a foot or ankle issue, we hope you see a podiatrist at Neuhaus Foot & Ankle first.
