@@ -41,6 +41,7 @@ export const nav = [
   { label: "Conditions We Treat", href: "/services", menu: "conditions" },
   { label: "Locations", href: "/#locations", menu: "locations" },
   { label: "Testimonials", href: "/#testimonials" },
+  { label: "Blog", href: "/blog" },
   { label: "Careers", href: "https://neuhausfootandankle.applytojob.com/", external: true },
   { label: "Contact", href: "/#contact" },
 ];
