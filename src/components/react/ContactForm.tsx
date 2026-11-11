@@ -75,14 +75,14 @@ export default function ContactForm({ clinics, reasons }: Props) {
               {errors.email && <p id="e-email" className="mt-2 text-sm text-red-700">{errors.email}</p>}
             </div>
             <div>
-              <label htmlFor="f-clinic" className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-sky">Preferred clinic</label>
+              <label htmlFor="f-clinic" className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-sky-ink">Preferred clinic</label>
               <select id="f-clinic" name="clinic" className="mt-1 w-full border-0 border-b border-line bg-transparent py-2.5 text-ink outline-none focus:border-navy">
                 <option value="">No preference</option>
                 {clinics.map((c) => <option key={c}>{c}</option>)}
               </select>
             </div>
             <div>
-              <label htmlFor="f-reason" className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-sky">Reason for visit</label>
+              <label htmlFor="f-reason" className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-sky-ink">Reason for visit</label>
               <select id="f-reason" name="reason" className="mt-1 w-full border-0 border-b border-line bg-transparent py-2.5 text-ink outline-none focus:border-navy">
                 <option value="">Choose one</option>
                 {reasons.map((r) => <option key={r}>{r}</option>)}

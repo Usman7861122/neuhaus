@@ -1,0 +1,17 @@
+# Neuhaus Foot & Ankle
+
+> Board-certified podiatrists and foot and ankle surgeons treating children and adults at 15 clinics across Nashville and Middle Tennessee. Phone 615-220-8788.
+
+## Main pages
+- [Home](https://www.neufoot.com/): Practice overview, services and locations
+- [Our providers](https://www.neufoot.com/doctors/): 16 podiatrists and foot and ankle surgeons, each with a profile page
+- [Services](https://www.neufoot.com/services/): Care groups for heel pain, bunions, ankle injuries, arthritis, fractures, diabetic foot care and children's foot care
+- [Locations](https://www.neufoot.com/locations/): Address, map and services for each of the 15 clinics
+- [Book an appointment](https://www.neufoot.com/book-appointment/): Online booking links for every clinic
+- [Patient resources](https://www.neufoot.com/patient-resources/): Forms, billing and what to bring to a visit
+- [Blog](https://www.neufoot.com/blog/): Foot and ankle health articles written by the practice
+
+## Legal
+- [Privacy policy](https://www.neufoot.com/privacy-policy/)
+- [Notice of privacy practices](https://www.neufoot.com/notice-of-privacy-practices/)
+- [Terms of use](https://www.neufoot.com/terms/)

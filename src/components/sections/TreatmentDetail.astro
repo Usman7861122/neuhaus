@@ -47,7 +47,7 @@ const intro = clinic
   ? `${service.data.excerpt} Care is available at our ${clinic.city} clinic, ${clinic.address}.`
   : `${service.data.excerpt} Available at ${offered.length} clinics across Middle Tennessee.`;
 const description = clinic
-  ? `${t} care at Neuhaus Foot & Ankle in ${clinic.city}, TN. Causes, treatment, and recovery explained. ${clinic.address}, ${clinic.zip}. Call ${clinic.phone}.`
+  ? `${t} treatment in ${clinic.city}, TN from Neuhaus Foot & Ankle. Causes, treatment options and recovery explained. Visit us at ${clinic.address} or call ${clinic.phone}.`
   : `${service.data.excerpt} Learn about causes, treatment options, and where to get care.`;
 
 const faqs = [...service.data.faqs];
@@ -70,7 +70,7 @@ const steps = [
 <PageLayout title={title} description={description} eyebrow={clinic ? `${t} · ${clinic.city} clinic` : "Services"} heading={heading} intro={intro} image={unsplash(service.data.image, 2000)}>
   <nav aria-label="Breadcrumb" class="border-b border-line bg-white">
     <ol class="wrap flex flex-wrap items-center gap-2 py-4 text-[0.85rem] text-slate">
-      <li><a href="/services" class="hover:text-sky">Services</a></li>
+      <li><a href="/services/" class="hover:text-sky">Services</a></li>
       <li aria-hidden="true">/</li>
       <li>{clinic ? <a href={base} class="hover:text-sky">{t}</a> : <span class="text-navy-900">{t}</span>}</li>
       {clinic && <><li aria-hidden="true">/</li><li class="text-navy-900">{clinic.city}</li></>}
@@ -83,7 +83,7 @@ const steps = [
       <div class="lg:col-span-7" data-reveal>
         <p class="eyebrow">{clinic ? `${t} care in ${clinic.city}` : `About ${lower}`}</p>
         <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.6vw,3.2rem)]">
-          {clinic ? <>Understanding {lower}, and how we help <em class="text-sky">in {clinic.city}.</em></> : <>Understanding {lower}, and how we <em class="text-sky">help.</em></>}
+          {clinic ? <>Understanding {lower}, and how we help <em class="text-sky-ink">in {clinic.city}.</em></> : <>Understanding {lower}, and how we <em class="text-sky-ink">help.</em></>}
         </h2>
         <div class="mt-6 space-y-4 text-[1.05rem] leading-relaxed text-slate">
           {clinic ? (
@@ -99,7 +99,7 @@ const steps = [
           ))}
         </ul>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="/book-appointment" class="btn-navy">Request an appointment</a>
+          <a href="/book-appointment/" class="btn-navy">Request an appointment</a>
           <a href={phoneHref} class="btn-outline">Call {phone}</a>
         </div>
       </div>
@@ -121,13 +121,13 @@ const steps = [
       <div class="wrap">
         <div class="max-w-2xl" data-reveal>
           <p class="eyebrow">Conditions we treat</p>
-          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">{total} conditions we care for{clinic ? <> <em class="text-sky">in {clinic.city}.</em></> : <> <em class="text-sky">at every clinic.</em></>}</h2>
+          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">{total} conditions we care for{clinic ? <> <em class="text-sky-ink">in {clinic.city}.</em></> : <> <em class="text-sky-ink">at every clinic.</em></>}</h2>
           <p class="mt-4 text-slate">{clinic ? `Pick a condition to read more. All are treated at our ${clinic.city} clinic.` : "Not sure which one you have? You do not need to know. We will find the cause."}</p>
         </div>
         <div class="mt-10 grid gap-x-10 gap-y-10 lg:grid-cols-2">
           {groups.map((g, gi) => (
             <div class:list={[groups.length === 1 && "lg:col-span-2"]} data-reveal={String(gi * 0.06)}>
-              {g.label && <p class="mb-4 border-b border-navy/15 pb-3 text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">{g.label}</p>}
+              {g.label && <p class="mb-4 border-b border-navy/15 pb-3 text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky-ink">{g.label}</p>}
               <ul class:list={["grid gap-3", groups.length === 1 && "sm:grid-cols-2"]}>
                 {g.items.map((it) => {
                   const cs = conditionSlugForTitle(it);
@@ -137,7 +137,7 @@ const steps = [
                       <a href={href} class="group flex h-full items-start gap-3 rounded-xl bg-white px-5 py-4 shadow-[0_14px_30px_-24px_rgba(7,31,48,.4)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_36px_-22px_rgba(7,31,48,.5)]">
                         <span class="mt-1.5 h-2 w-2 shrink-0 rotate-45 bg-gold"></span>
                         <span class="flex-1 font-medium leading-snug text-navy-900">{it}</span>
-                        <span aria-hidden="true" class="text-sky transition-transform group-hover:translate-x-1">&rarr;</span>
+                        <span aria-hidden="true" class="text-sky-ink transition-transform group-hover:translate-x-1">&rarr;</span>
                       </a>
                     </li>
                   );
@@ -177,12 +177,12 @@ const steps = [
       <div class="wrap">
         <div class="max-w-2xl" data-reveal>
           <p class="eyebrow">Why it happens</p>
-          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">Common causes of <em class="text-sky">{lower}.</em></h2>
+          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">Common causes of <em class="text-sky-ink">{lower}.</em></h2>
         </div>
         <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {causes.map((c, i) => (
             <li class="group flex items-start gap-6 rounded-2xl bg-white p-7 shadow-[0_20px_40px_-30px_rgba(7,31,48,.35)] transition-transform duration-500 hover:-translate-y-1" data-reveal={String(i * 0.05)}>
-              <span class="w-12 shrink-0 font-display text-[2.6rem] leading-none text-sky/50">{num(i)}</span>
+              <span class="w-12 shrink-0 font-display text-[2.6rem] leading-none text-sky-ink/80">{num(i)}</span>
               <p class="border-l border-line pl-6 pt-1 font-medium leading-snug text-navy-900">{c}</p>
             </li>
           ))}
@@ -198,21 +198,21 @@ const steps = [
         <div class="relative">
           <img src={unsplash(related.data.image, 1000, 1200)} alt={`${related.data.title} care`} loading="lazy" class="aspect-[5/6] w-full rounded-[1.75rem] object-cover" />
           <a href={clinic ? `/services/${related.id}/${clinic.slug}` : `/services/${related.id}`} class="absolute inset-x-4 bottom-4 flex items-center justify-between rounded-2xl bg-white/95 px-5 py-4 shadow-lg backdrop-blur transition-colors hover:bg-white">
-            <span><span class="block text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-sky">Also see</span><span class="font-display text-[1.3rem] text-navy-900">{related.data.title}{at}</span></span>
-            <span aria-hidden="true" class="text-sky">&rarr;</span>
+            <span><span class="block text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-sky-ink">Also see</span><span class="font-display text-[1.3rem] text-navy-900">{related.data.title}{at}</span></span>
+            <span aria-hidden="true" class="text-sky-ink">&rarr;</span>
           </a>
         </div>
       </div>
       <div class="lg:col-span-7 lg:pl-8" data-reveal="0.1">
         <p class="eyebrow">Diagnosis and care</p>
-        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">How we treat {lower}<em class="text-sky">{clinic ? ` in ${clinic.city}.` : "."}</em></h2>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">How we treat {lower}<em class="text-sky-ink">{clinic ? ` in ${clinic.city}.` : "."}</em></h2>
         <div class="mt-8 space-y-8">
           <div class="border-l-2 border-gold pl-6">
-            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Step 1 · Diagnosis</p>
+            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky-ink">Step 1 · Diagnosis</p>
             {diagnose.map((p) => <p class="mt-2 text-slate">{p}</p>)}
           </div>
           <div class="border-l-2 border-gold pl-6">
-            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Step 2 · Treatment</p>
+            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky-ink">Step 2 · Treatment</p>
             {treat.map((p) => <p class="mt-2 text-slate">{p}</p>)}
           </div>
         </div>
@@ -226,7 +226,7 @@ const steps = [
       <div class="wrap">
         <div class="max-w-2xl" data-reveal>
           <p class="eyebrow">Your visit</p>
-          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">What to expect at our <em class="text-sky">{clinic.city} clinic.</em></h2>
+          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">What to expect at our <em class="text-sky-ink">{clinic.city} clinic.</em></h2>
           <p class="mt-4 text-slate">Your visit for {lower} in {clinic.city} is simple and friendly. Here is how it works.</p>
         </div>
         <ol class="mt-10 grid gap-5 md:grid-cols-3">
@@ -252,7 +252,7 @@ const steps = [
         {when.map((p) => <p class="mt-6 border-t border-white/15 pt-6 text-white/80"><strong class="text-gold">When to book: </strong>{p}</p>)}
       </div>
       <div class="rounded-[1.75rem] border border-line bg-white p-8 md:p-12" data-reveal="0.1">
-        <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Prevention</p>
+        <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky-ink">Prevention</p>
         <h2 class="mt-4 font-display text-[clamp(1.9rem,3vw,2.6rem)] leading-tight text-navy-900">Tips to keep it from coming back.</h2>
         <ul class="mt-6 space-y-3">
           {prevent.map((p) => (
@@ -268,7 +268,7 @@ const steps = [
     <div class="wrap grid gap-12 lg:grid-cols-12">
       <div class="lg:col-span-4" data-reveal>
         <p class="eyebrow">FAQ</p>
-        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">{t}: your questions <em class="text-sky">answered.</em></h2>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">{t}: your questions <em class="text-sky-ink">answered.</em></h2>
         <a href={phoneHref} class="btn-navy mt-8">Call {phone}</a>
       </div>
       <div class="lg:col-span-8" data-reveal="0.1">
@@ -296,10 +296,10 @@ const steps = [
               <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-gold">{clinic.city} clinic</p>
               <p class="mt-3 font-display text-[clamp(1.9rem,3.2vw,2.8rem)] leading-tight text-white">Get help with {lower} in {clinic.city}.</p>
               <p class="mt-3 text-white/70">{clinic.address}, {clinic.zip}</p>
-              <a href={`/locations/${clinic.slug}`} class="link-arrow mt-4 !text-white/80 hover:!text-gold">Visit the {clinic.city} clinic page <span aria-hidden="true">&rarr;</span></a>
+              <a href={`/locations/${clinic.slug}/`} class="link-arrow mt-4 !text-white/80 hover:!text-gold">Visit the {clinic.city} clinic page <span aria-hidden="true">&rarr;</span></a>
             </div>
             <div class="flex flex-col gap-3 md:col-span-4 md:col-start-9">
-              <a href="/book-appointment" class="btn-gold w-full">Request an appointment</a>
+              <a href="/book-appointment/" class="btn-gold w-full">Request an appointment</a>
               <a href={phoneHref} class="btn-ghost w-full">Call {phone}</a>
               <a href={dir} target="_blank" rel="noopener" class="btn-ghost w-full">Get directions</a>
             </div>
@@ -310,7 +310,7 @@ const steps = [
       <div class:list={[clinic && "mt-20"]} data-reveal>
         <p class="eyebrow">{clinic ? "Nearby clinics" : "Where we treat it"}</p>
         <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">
-          {clinic ? <>{t} care near <em class="text-sky">{clinic.city}.</em></> : <>{t} care at <em class="text-sky">{offered.length} clinics.</em></>}
+          {clinic ? <>{t} care near <em class="text-sky-ink">{clinic.city}.</em></> : <>{t} care at <em class="text-sky-ink">{offered.length} clinics.</em></>}
         </h2>
         <ul class={`mt-8 grid gap-3 sm:grid-cols-2 ${clinic ? "lg:grid-cols-4" : "lg:grid-cols-3"}`}>
           {(clinic ? near : offered).map((c) => (
@@ -320,7 +320,7 @@ const steps = [
                   <span class="block font-semibold text-navy-900">{t} in {c.city}</span>
                   <span class="block text-[0.85rem] text-slate">{clinic ? `About ${miles(clinic, c)} miles away` : c.address}</span>
                 </span>
-                <span aria-hidden="true" class="text-sky transition-transform group-hover:translate-x-1">&rarr;</span>
+                <span aria-hidden="true" class="text-sky-ink transition-transform group-hover:translate-x-1">&rarr;</span>
               </a>
             </li>
           ))}

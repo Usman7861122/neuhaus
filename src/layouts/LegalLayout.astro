@@ -1,22 +1,24 @@
 ---
 import PageLayout from "./PageLayout.astro";
 import { site } from "@/data/site";
+import { pageSchema } from "@/lib/schema";
 interface Props { title: string; description: string; updated?: string }
 const { title, description, updated = "November 5, 2026" } = Astro.props;
 const links = [
-  { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/notice-of-privacy-practices", label: "Notice of Privacy Practices" },
-  { href: "/terms", label: "Terms of Use" },
-  { href: "/accessibility", label: "Accessibility" },
-  { href: "/non-discrimination", label: "Non-Discrimination" },
+  { href: "/privacy-policy/", label: "Privacy Policy" },
+  { href: "/notice-of-privacy-practices/", label: "Notice of Privacy Practices" },
+  { href: "/terms/", label: "Terms of Use" },
+  { href: "/accessibility/", label: "Accessibility" },
+  { href: "/non-discrimination/", label: "Non-Discrimination" },
 ];
 const path = Astro.url.pathname.replace(/\/$/, "");
+const schema = pageSchema("WebPage", title, `${path}/`, description, [{ name: "Home", path: "/" }, { name: title, path: `${path}/` }]);
 ---
-<PageLayout title={title} heading={title} eyebrow="Legal" description={description}>
+<PageLayout title={title} heading={title} eyebrow="Legal" description={description} schema={schema}>
   <section class="wrap grid gap-12 py-16 md:py-20 lg:grid-cols-12">
     <aside class="lg:col-span-3">
       <nav aria-label="Legal pages" class="lg:sticky lg:top-28">
-        <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Legal</p>
+        <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky-ink">Legal</p>
         <ul class="mt-4 space-y-1 text-[0.95rem]">
           {links.map((l) => (
             <li>
@@ -28,12 +30,12 @@ const path = Astro.url.pathname.replace(/\/$/, "");
       </nav>
     </aside>
     <article class="prose-content max-w-3xl lg:col-span-9">
-      <p class="!text-[0.9rem] !text-slate/80">Last updated: {updated}</p>
+      <p class="!text-[0.9rem] !text-slate">Last updated: {updated}</p>
       <slot />
       <h2>Contact us</h2>
       <p>
         Questions about this page? Call us at <a class="underline" href={site.phoneHref}>{site.phone}</a>,
-        fax <span>{site.fax}</span>, or visit any of our <a class="underline" href="/locations">15 offices</a>.
+        fax <span>{site.fax}</span>, or visit any of our <a class="underline" href="/locations/">15 offices</a>.
         You can also ask for our Privacy Officer at any office.
       </p>
     </article>

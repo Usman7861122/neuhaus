@@ -1,7 +1,7 @@
 ---
 title: "What Causes Elevated Uric Acid Levels that Can Lead to Gout?"
 date: 2023-05-04
-excerpt: "For the more than 9 million people in the United States with gout, any steps toward preventing an attack are steps worth taking."
+excerpt: "Learn what raises uric acid in the body, how it leads to painful gout attacks, and the steps that help you prevent the next flare-up."
 image: "https://sa1s3optim.patientpop.com/assets/images/provider/photos/2628501.jpg"
 category: "Gout"
 readTime: "2 min read"

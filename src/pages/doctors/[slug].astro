@@ -13,7 +13,14 @@ const d = providerDetails[p.slug];
 const offices = d.offices.map((s) => clinics.find((c) => c.slug === s)).filter(Boolean);
 const others = providers.filter((x) => x.slug !== p.slug && x.photo).slice((i * 3) % 12, ((i * 3) % 12) + 3);
 const initials = p.name.split(" ").map((w) => w[0]).join("");
-const title = `Dr. ${p.name}, ${p.creds} | Podiatrist in ${offices.map((o) => o!.city).join(" and ")}, TN`;
+const cityList = offices.map((o) => o!.city);
+const titleOptions = [
+  `Dr. ${p.name}, ${p.creds} | Podiatrist in ${cityList.join(" and ")}, TN`,
+  `Dr. ${p.name}, ${p.creds} | Podiatrist in ${cityList[0]}, TN`,
+  `Dr. ${p.name} | Podiatrist in ${cityList.join(" and ")}, TN`,
+  `Dr. ${p.name} | Podiatrist in ${cityList[0]}, TN`,
+];
+const title = titleOptions.find((t) => t.length <= 60) ?? titleOptions[titleOptions.length - 1];
 const description = `${d.seeing} ${d.bio[0]}`.slice(0, 160);
 const ld = JSON.stringify({
   "@context": "https://schema.org", "@type": "Physician", name: `Dr. ${p.name}`, medicalSpecialty: "Podiatric",
@@ -28,7 +35,7 @@ const ld = JSON.stringify({
     <div class="wrap">
       <nav aria-label="Breadcrumb" class="text-[0.85rem] text-white/60">
         <a href="/" class="hover:text-white">Home</a> <span class="mx-2">/</span>
-        <a href="/doctors" class="hover:text-white">Our providers</a> <span class="mx-2">/</span>
+        <a href="/doctors/" class="hover:text-white">Our providers</a> <span class="mx-2">/</span>
         <span class="text-white">Dr. {p.name}</span>
       </nav>
       <div class="mt-10 grid items-end gap-10 md:grid-cols-[18rem_1fr] md:gap-14">
@@ -38,7 +45,7 @@ const ld = JSON.stringify({
         <div>
           <p class="eyebrow !text-gold">{p.role}</p>
           <h1 class="mt-4 font-display text-[clamp(2.6rem,6vw,5rem)] leading-[1.02] text-white">Dr. {p.name}</h1>
-          <p class="mt-3 text-[0.9rem] font-semibold uppercase tracking-[0.18em] text-sky">{p.creds}</p>
+          <p class="mt-3 text-[0.9rem] font-semibold uppercase tracking-[0.18em] text-sky-ink">{p.creds}</p>
           <p class="mt-6 max-w-xl text-lg text-white/75">{d.seeing}</p>
           <div class="mt-8 flex flex-wrap gap-3">
             <a href={offices.length === 1 && offices[0]!.book ? offices[0]!.book : "#offices"} target={offices.length === 1 && offices[0]!.book ? "_blank" : undefined} rel="noopener" class="btn-gold">Book with Dr. {p.name.split(" ").slice(-1)[0]}</a>
@@ -74,25 +81,25 @@ const ld = JSON.stringify({
         <ul class="mt-5 space-y-6">
           {offices.map((o) => (
             <li>
-              <a href={`/locations/${o!.slug}`} class="font-display text-[1.4rem] text-navy hover:text-sky">{o!.city}, TN</a>
+              <a href={`/locations/${o!.slug}/`} class="font-display text-[1.4rem] text-navy hover:text-sky">{o!.city}, TN</a>
               <p class="mt-1 text-[0.95rem] text-slate">{o!.address}<br />{o!.zip}</p>
               <a href={`tel:${o!.phone.replace(/-/g, "")}`} class="mt-1 inline-block text-[0.95rem] font-semibold text-navy hover:text-sky">{o!.phone}</a>
               {o!.book ? <a href={o!.book} target="_blank" rel="noopener" class="btn-gold mt-3 w-full justify-center !py-3 !text-[0.85rem]">Book now in {o!.city}</a> : <a href={`tel:${o!.phone.replace(/-/g, "")}`} class="btn-gold mt-3 w-full justify-center !py-3 !text-[0.85rem]">Call to book</a>}
             </li>
           ))}
         </ul>
-        <a href="/book-appointment" class="btn-outline mt-8 w-full justify-center">See all clinics</a>
+        <a href="/book-appointment/" class="btn-outline mt-8 w-full justify-center">See all clinics</a>
       </aside>
     </div>
   </section>
 
   <section class="bg-mist py-16 md:py-20">
     <div class="wrap">
-      <h2 class="heading-xl !text-[clamp(1.9rem,3vw,2.6rem)]">Meet more of <em class="text-sky">our team.</em></h2>
+      <h2 class="heading-xl !text-[clamp(1.9rem,3vw,2.6rem)]">Meet more of <em class="text-sky-ink">our team.</em></h2>
       <div class="mt-10 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
         {others.map((o, k) => <ProviderCard {...o} index={k} />)}
       </div>
-      <p class="mt-10"><a href="/doctors" class="font-semibold text-navy hover:text-sky">See all providers &rarr;</a></p>
+      <p class="mt-10"><a href="/doctors/" class="font-semibold text-navy hover:text-sky">See all providers &rarr;</a></p>
     </div>
   </section>
   <script type="application/ld+json" set:html={ld} />

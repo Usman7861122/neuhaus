@@ -19,7 +19,7 @@ export default function TestimonialSlider({ items }: { items: T[] }) {
       onFocus={() => setPaused(true)}
       onBlur={() => setPaused(false)}
     >
-      <div className="flex gap-1 text-gold" aria-label="5 out of 5 stars">
+      <div className="flex gap-1 text-gold" role="img" aria-label="5 out of 5 stars">
         {Array.from({ length: 5 }).map((_, k) => (
           <svg key={k} width="18" height="18" viewBox="0 0 20 20" aria-hidden="true">
             <path fill="currentColor" d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z" />

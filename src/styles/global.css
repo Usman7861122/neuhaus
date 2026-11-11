@@ -12,6 +12,8 @@
   --color-navy-900: #0b3149;
   --color-navy: #105179;
   --color-sky: #498fb8;
+  /* Darker sky for small text on white and mist backgrounds (contrast 4.5:1 or better) */
+  --color-sky-ink: #2b6f99;
   --color-sky-soft: #cfe1ec;
   --color-gold: #ffbe4d;
   --color-gold-deep: #e3a02c;
@@ -54,7 +56,7 @@
 }
 
 @utility eyebrow {
-  @apply font-sans text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky;
+  @apply font-sans text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky-ink;
 }
 @utility heading-xl {
   @apply font-display text-[clamp(2.4rem,5vw,4.2rem)];

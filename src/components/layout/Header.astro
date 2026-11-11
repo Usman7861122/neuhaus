@@ -15,8 +15,8 @@ const cities = [...locations].sort((a, b) => a.city.localeCompare(b.city));
 
 const mobileGroups = {
   practice: practiceLinks.map((l) => ({ label: l.label, href: l.href })),
-  conditions: [...services.map((s) => ({ label: s.data.title, href: `/services/${s.id}` })), { label: "View all services", href: "/services" }],
-  locations: cities.map((l) => ({ label: l.city, href: `/locations/${slugify(l.city)}` })),
+  conditions: [...services.map((s) => ({ label: s.data.title, href: `/services/${s.id}/` })), { label: "View all services", href: "/services/" }],
+  locations: cities.map((l) => ({ label: l.city, href: `/locations/${slugify(l.city)}/` })),
 };
 const arrow = `<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>`;
 ---
@@ -67,7 +67,7 @@ const arrow = `<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true
       </nav>
 
       <div class="flex items-center gap-3">
-        <a href="/book-appointment" class="btn-gold hidden whitespace-nowrap !px-6 !py-3 sm:inline-flex lg:hidden xl:inline-flex">Request an appointment</a>
+        <a href="/book-appointment/" class="btn-gold hidden whitespace-nowrap !px-6 !py-3 sm:inline-flex lg:hidden xl:inline-flex">Request an appointment</a>
         <MobileNav client:media="(max-width: 1023px)" items={nav} groups={mobileGroups} phone={site.phone} phoneHref={site.phoneHref} />
       </div>
     </div>
@@ -96,7 +96,7 @@ const arrow = `<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true
                   ))}
                 </ul>
               </div>
-              <a href="/doctors" class="mega-link group relative col-span-4 flex min-h-[15rem] flex-col justify-end overflow-hidden rounded-2xl p-6 text-white">
+              <a href="/doctors/" class="mega-link group relative col-span-4 flex min-h-[15rem] flex-col justify-end overflow-hidden rounded-2xl p-6 text-white">
                 <Image src={aboutPhoto} alt="" widths={[500, 800]} sizes="30vw" class="absolute inset-0 h-full w-full object-cover object-[68%_center] transition-transform duration-[1.2s] group-hover:scale-105" />
                 <span class="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/30 to-transparent"></span>
                 <span class="relative text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-gold">Meet the team</span>
@@ -113,12 +113,12 @@ const arrow = `<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true
               <div class="col-span-4">
                 <div class="flex items-baseline justify-between">
                   <p class="eyebrow">Conditions we treat</p>
-                  <a href="/services" class="mega-link link-arrow">All <span set:html={arrow} /></a>
+                  <a href="/services/" class="mega-link link-arrow">All <span set:html={arrow} /></a>
                 </div>
                 <ul class="mt-4 space-y-1" role="list">
                   {services.map((s, i) => (
                     <li>
-                      <a href={`/services/${s.id}`} data-cat={s.id} class:list={["cat-link mega-link group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors", i === 0 && "is-current"]}>
+                      <a href={`/services/${s.id}/`} data-cat={s.id} class:list={["cat-link mega-link group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors", i === 0 && "is-current"]}>
                         <img src={unsplash(s.data.image, 96, 96)} alt="" loading="lazy" class="h-9 w-9 shrink-0 rounded-full object-cover ring-2 ring-white" />
                         <span class="flex-1 text-[0.94rem] font-medium leading-snug text-navy-900">{s.data.title}</span>
                         <span class="cat-arrow text-sky" set:html={arrow} />
@@ -151,7 +151,7 @@ const arrow = `<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true
                           </div>
                         ))}
                       </div>
-                      <a href={`/services/${s.id}`} class="mega-link link-arrow mt-4">See {s.data.title} <span set:html={arrow} /></a>
+                      <a href={`/services/${s.id}/`} class="mega-link link-arrow mt-4">See {s.data.title} <span set:html={arrow} /></a>
                     </div>
                   ))}
                 </div>
@@ -163,7 +163,7 @@ const arrow = `<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true
                   <p class="mt-3 font-display text-[1.7rem] leading-tight">Tell us where it hurts. We'll find the cause.</p>
                 </div>
                 <div class="mt-6 space-y-2">
-                  <a href="/book-appointment" class="mega-link btn-gold w-full !py-3">Request an appointment</a>
+                  <a href="/book-appointment/" class="mega-link btn-gold w-full !py-3">Request an appointment</a>
                   <a href={site.phoneHref} class="mega-link block text-center text-sm font-semibold text-white/80 hover:text-white">or call {site.phone}</a>
                 </div>
               </div>
@@ -178,7 +178,7 @@ const arrow = `<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true
                 <ul class="mt-5 grid grid-cols-4 gap-x-4 gap-y-1">
                   {cities.map((l) => (
                     <li>
-                      <a href={`/locations/${slugify(l.city)}`} class="mega-link group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-mist">
+                      <a href={`/locations/${slugify(l.city)}/`} class="mega-link group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-mist">
                         <svg viewBox="0 0 64 64" class="h-3.5 w-3.5 shrink-0 text-sky transition-colors group-hover:text-gold" aria-hidden="true"><path fill="currentColor" d="M32 3 L61 28 H54 V61 H10 V28 H3 Z"/></svg>
                         <span>
                           <span class="block text-[0.95rem] font-medium text-navy-900">{l.city}</span>
@@ -282,8 +282,10 @@ const arrow = `<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true
       p.classList.toggle("is-active", active);
       p.setAttribute("aria-hidden", String(!active));
       setTabbable(p, active);
-      if (active) shell.style.height = p.offsetHeight + "px";
     });
+    const activePane = panes.find((p) => p.dataset.pane === name);
+    // Read layout once, after all writes, on the next frame (avoids forced reflow).
+    if (activePane) requestAnimationFrame(() => { shell.style.height = activePane.offsetHeight + "px"; });
     triggers.forEach((t) => t.setAttribute("aria-expanded", String(t.dataset.menu === name)));
     mega.classList.add("is-open");
     mega.setAttribute("aria-hidden", "false");
@@ -337,6 +339,6 @@ const arrow = `<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true
   });
   window.addEventListener("resize", () => {
     const p = panes.find((x) => x.classList.contains("is-active"));
-    if (p) shell.style.height = p.offsetHeight + "px";
+    if (p) requestAnimationFrame(() => { shell.style.height = p.offsetHeight + "px"; });
   });
 </script>

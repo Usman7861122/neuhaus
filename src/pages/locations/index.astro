@@ -9,14 +9,14 @@ import { unsplash } from "@/data/site";
       <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {clinics.map((c) => (
           <li>
-            <a href={`/locations/${c.slug}`} class="group flex h-full flex-col justify-between rounded-2xl border border-line bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-navy hover:shadow-[0_30px_50px_-30px_rgba(7,31,48,.4)]">
+            <a href={`/locations/${c.slug}/`} class="group flex h-full flex-col justify-between rounded-2xl border border-line bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-navy hover:shadow-[0_30px_50px_-30px_rgba(7,31,48,.4)]">
               <div>
                 <p class="font-display text-[2rem] leading-tight text-navy-900">{c.city}</p>
                 <p class="mt-2 text-slate">{c.address}<br />{c.zip}</p>
               </div>
               <div class="mt-6 flex items-center justify-between">
                 <span class="font-semibold text-navy">{c.phone}</span>
-                <span aria-hidden="true" class="text-sky transition-transform group-hover:translate-x-1">&rarr;</span>
+                <span aria-hidden="true" class="text-sky-ink transition-transform group-hover:translate-x-1">&rarr;</span>
               </div>
             </a>
           </li>

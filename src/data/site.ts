@@ -38,20 +38,21 @@ export const site = {
 
 export const nav = [
   { label: "Our Practice", href: "/#about", menu: "practice" },
-  { label: "Conditions We Treat", href: "/services", menu: "conditions" },
+  { label: "Conditions We Treat", href: "/services/", menu: "conditions" },
   { label: "Locations", href: "/#locations", menu: "locations" },
   { label: "Testimonials", href: "/#testimonials" },
-  { label: "Blog", href: "/blog" },
+  { label: "Blog", href: "/blog/" },
   { label: "Careers", href: "https://neuhausfootandankle.applytojob.com/", external: true },
   { label: "Contact", href: "/#contact" },
 ];
 
 export const practiceLinks = [
   { label: "Why Choose Us", href: "/#why", desc: "How a visit with us works, step by step" },
-  { label: "Our Doctors", href: "/doctors", desc: "16 podiatrists and foot & ankle surgeons" },
+  { label: "Our Doctors", href: "/doctors/", desc: "16 podiatrists and foot & ankle surgeons" },
   { label: "Testimonials", href: "/#testimonials", desc: "Reviews from Google, Yelp & Facebook" },
   { label: "Insurance", href: "/#insurance", desc: "Medicare, TennCare and most major plans" },
-  { label: "Blog", href: "/blog", desc: "Foot health advice in plain words" },
+  { label: "Patient Resources", href: "/patient-resources/", desc: "Forms, billing and what to bring to your visit" },
+  { label: "Blog", href: "/blog/", desc: "Foot health advice in plain words" },
   { label: "Careers", href: "https://neuhausfootandankle.applytojob.com/", desc: "Join our growing team", external: true },
 ];
 

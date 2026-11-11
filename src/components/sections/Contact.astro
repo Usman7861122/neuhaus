@@ -9,7 +9,7 @@ const rows = [
   <div class="wrap grid gap-12 lg:grid-cols-12 lg:gap-16">
     <div class="lg:col-span-6">
       <p class="eyebrow" data-reveal>Contact us</p>
-      <h2 class="heading-xl mt-5" data-reveal="0.05">Let's get you <em class="text-sky">walking easy.</em></h2>
+      <h2 class="heading-xl mt-5" data-reveal="0.05">Let's get you <em class="text-sky-ink">walking easy.</em></h2>
       <p class="mt-6 max-w-md text-slate" data-reveal="0.1">
         Book online at the clinic closest to you, or call us and our team will find a time that works.
       </p>
@@ -17,7 +17,7 @@ const rows = [
       <dl class="mt-10 divide-y divide-line border-y border-line" data-reveal="0.15">
         {rows.map((r) => (
           <div class="flex items-baseline justify-between gap-6 py-4">
-            <dt class="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-sky">{r.label}</dt>
+            <dt class="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-sky-ink">{r.label}</dt>
             <dd class="font-display text-[1.6rem] leading-none text-navy-900">
               {r.href ? <a href={r.href} class="hover:text-sky">{r.value}</a> : r.value}
             </dd>
@@ -36,7 +36,7 @@ const rows = [
         <p class="font-display text-[2.2rem] leading-tight text-navy-900">Book your visit online</p>
         <p class="mt-3 text-slate">Pick your clinic, choose a doctor, and select a time. It takes about two minutes.</p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="/book-appointment" class="btn-gold">Choose a clinic and book</a>
+          <a href="/book-appointment/" class="btn-gold">Choose a clinic and book</a>
           <a href={site.phoneHref} class="btn-outline">Call {site.phone}</a>
         </div>
       </div>

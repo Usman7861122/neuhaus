@@ -41,7 +41,7 @@ const cards = clinics.map((c) => ({
               ) : (
                 <a href={`tel:${c.phone.replace(/-/g, "")}`} class="btn-gold !px-6 !py-3 !text-[0.85rem]">Call to book</a>
               )}
-              <a href={`/locations/${c.slug}`} class="btn-outline !px-5 !py-3 !text-[0.85rem]">Clinic details</a>
+              <a href={`/locations/${c.slug}/`} class="btn-outline !px-5 !py-3 !text-[0.85rem]">Clinic details</a>
             </div>
           </li>
         ))}

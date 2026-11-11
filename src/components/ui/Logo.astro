@@ -6,13 +6,13 @@ interface Props {
   showTagline?: boolean;
 }
 const { tone = "dark", class: cls = "" } = Astro.props;
-const src = tone === "light" ? "/images/neuhaus-logo-light.png" : "/images/neuhaus-logo.png";
+const src = tone === "light" ? "/images/logo-header-light.webp" : "/images/logo-header.webp";
 ---
 <img
   src={src}
   alt="Neuhaus Foot & Ankle"
-  width="720"
-  height="231"
+  width="360"
+  height="116"
   class={`block h-12 w-auto sm:h-14 ${cls}`}
   decoding="async"
 />

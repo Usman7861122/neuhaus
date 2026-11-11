@@ -11,9 +11,11 @@ const webm = has("hero.webm");
   <div id="hero-media" class="absolute inset-0 -z-10 scale-110">
     <img
       id="hero-img"
-      src={unsplash(img, 2200)}
-      srcset={`${unsplash(img, 900)} 900w, ${unsplash(img, 1600)} 1600w, ${unsplash(img, 2400)} 2400w`}
+      src="/images/photos/hero-1600.webp"
+      srcset="/images/photos/hero-640.webp 640w, /images/photos/hero-1024.webp 1024w, /images/photos/hero-1600.webp 1600w, /images/photos/hero-2000.webp 2000w"
       sizes="100vw"
+      width="2000" height="1333"
+      decoding="async"
       alt="Two people hiking a forest trail in trail shoes"
       fetchpriority="high"
       class="absolute inset-0 h-full w-full object-cover object-[50%_65%]"
@@ -22,8 +24,7 @@ const webm = has("hero.webm");
       <video
         id="hero-video"
         class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-1000"
-        muted loop playsinline autoplay preload="auto" disablepictureinpicture aria-hidden="true" tabindex="-1"
-        poster={unsplash(img, 1600)}
+        muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true" tabindex="-1"
       >
         {webm && <source src="/videos/hero.webm" type="video/webm" />}
         {mp4 && <source src="/videos/hero.mp4" type="video/mp4" />}
@@ -34,17 +35,18 @@ const webm = has("hero.webm");
   <div class="absolute inset-x-0 top-0 -z-10 h-48 bg-gradient-to-b from-navy-950/70 to-transparent"></div>
 
   <div class="wrap flex flex-col items-center pb-16 pt-40 text-center md:pb-24">
-    <span class="hero-in mb-5 h-px w-12 bg-gold"></span>
+    <span style="--d:.6s" class="hero-in mb-5 h-px w-12 bg-gold"></span>
+    <p style="--d:.75s" class="hero-in mb-3 text-[0.78rem] font-semibold uppercase tracking-[0.28em] text-gold">Back on your feet</p>
     <h1 class="font-display font-medium uppercase leading-[1.05] tracking-[0.12em] text-white">
-      <span class="block overflow-hidden pb-[0.08em]"><span class="hero-line block text-[clamp(1.9rem,3.6vw,3.3rem)]">Back on your feet</span></span>
+      <span class="block overflow-hidden pb-[0.08em]"><span class="hero-line block text-[clamp(1.9rem,3.6vw,3.3rem)]">Podiatrists in Nashville &amp; Middle Tennessee</span></span>
     </h1>
 
-    <p class="hero-in mt-4 max-w-2xl text-[clamp(0.92rem,1.1vw,1.02rem)] font-light tracking-[0.02em] text-white/80">
-      Podiatrists &amp; foot and ankle surgeons in Nashville and across Middle Tennessee
+    <p style="--d:.9s" class="hero-in mt-4 max-w-2xl text-[clamp(0.92rem,1.1vw,1.02rem)] font-light tracking-[0.02em] text-white/80">
+      Board-certified podiatrists and foot and ankle surgeons for kids and adults
     </p>
 
-    <div class="hero-in mt-8 flex flex-wrap justify-center gap-3">
-      <a href="/book-appointment" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-2.5 text-[0.78rem] font-semibold uppercase tracking-[0.14em] text-navy transition-colors duration-300 hover:bg-gold hover:text-navy-950">
+    <div style="--d:1.05s" class="hero-in mt-8 flex flex-wrap justify-center gap-3">
+      <a href="/book-appointment/" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-2.5 text-[0.78rem] font-semibold uppercase tracking-[0.14em] text-navy transition-colors duration-300 hover:bg-gold hover:text-navy-950">
         Request an appointment
       </a>
       <a href={site.phoneHref} class="inline-flex items-center gap-2 rounded-full border border-white/60 px-6 py-2.5 text-[0.78rem] font-semibold uppercase tracking-[0.14em] text-white transition-colors duration-300 hover:border-white hover:bg-white hover:text-navy">
@@ -53,6 +55,15 @@ const webm = has("hero.webm");
     </div>
   </div>
 </section>
+
+<style>
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-line { animation: hero-rise 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both; }
+    .hero-in { animation: hero-fade 1s cubic-bezier(0.22, 1, 0.36, 1) var(--d, 0.6s) both; }
+  }
+  @keyframes hero-rise { from { transform: translateY(105%); } to { transform: translateY(0); } }
+  @keyframes hero-fade { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+</style>
 
 <script>
   import { animate, stagger, scroll } from "motion";
@@ -63,14 +74,18 @@ const webm = has("hero.webm");
 
   // Video: autoplay needs muted + playsinline. Fade it in once frames are ready.
   if (video) {
-    if (reduce) {
+    const conn = (navigator as any).connection;
+    const lite = !!conn && (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || ""));
+    if (reduce || lite || window.matchMedia("(max-width: 767px)").matches) {
+      // Phones and data-saver: keep the photo, skip the 3 MB video.
       video.remove();
     } else {
       video.muted = true;
       const show = () => video.classList.remove("opacity-0");
       video.addEventListener("playing", show, { once: true });
       const start = () => video.play().catch(() => { /* browser blocked autoplay: the photo stays */ });
-      start();
+      // Start after the page has loaded so the photo (LCP) wins the network.
+      if (document.readyState === "complete") start(); else window.addEventListener("load", () => setTimeout(start, 300), { once: true });
       // Retry on first touch/click if the browser blocked autoplay (Low Power Mode on iPhone)
       ["touchstart", "click", "scroll"].forEach((ev) => window.addEventListener(ev, start, { once: true, passive: true }));
       // Save battery: pause when the hero is out of view
@@ -80,8 +95,6 @@ const webm = has("hero.webm");
 
   if (!reduce && media) {
     if (img && !video) animate(img, { opacity: [0, 1] }, { duration: 1.6 });
-    animate(".hero-line", { transform: ["translateY(105%)", "translateY(0%)"] }, { duration: 1.2, delay: stagger(0.12, { startDelay: 0.2 }), ease: [0.22, 1, 0.36, 1] });
-    animate(".hero-in", { opacity: [0, 1], transform: ["translateY(16px)", "translateY(0px)"] }, { duration: 1, delay: stagger(0.15, { startDelay: 0.6 }) });
     const hero = document.getElementById("hero");
     if (hero) scroll(animate(media, { transform: ["scale(1.1) translateY(0%)", "scale(1.1) translateY(8%)"] }, { ease: "linear" }), { target: hero, offset: ["start start", "end start"] });
   }

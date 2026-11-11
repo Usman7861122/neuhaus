@@ -31,6 +31,9 @@ const schema = [
 ];
 ---
 <BaseLayout overlayHeader schema={schema}>
+  <link slot="head" rel="preload" as="image" type="image/webp" href="/images/photos/hero-1600.webp"
+    imagesrcset="/images/photos/hero-640.webp 640w, /images/photos/hero-1024.webp 1024w, /images/photos/hero-1600.webp 1600w, /images/photos/hero-2000.webp 2000w"
+    imagesizes="100vw" fetchpriority="high" />
   <Hero />
   <About />
   <WhatWeOffer />

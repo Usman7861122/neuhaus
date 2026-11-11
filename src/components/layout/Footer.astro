@@ -34,12 +34,13 @@ const year = new Date().getFullYear();
       <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Explore</p>
       <ul class="mt-5 space-y-2.5 text-[0.95rem]">
         {nav.map((n) => <li><a class="hover:text-gold" href={n.href}>{n.label}</a></li>)}
+        <li><a class="hover:text-gold" href="/patient-resources/">Patient resources</a></li>
       </ul>
     </nav>
     <div class="md:col-span-6">
       <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">15 locations</p>
       <ul class="mt-5 grid grid-cols-2 gap-x-6 gap-y-2.5 text-[0.95rem] sm:grid-cols-3">
-        {locations.map((l) => <li><a class="hover:text-gold" href={`/locations/${slugify(l.city)}`}>{l.city}</a></li>)}
+        {locations.map((l) => <li><a class="hover:text-gold" href={`/locations/${slugify(l.city)}/`}>{l.city}</a></li>)}
       </ul>
     </div>
   </div>
@@ -47,11 +48,11 @@ const year = new Date().getFullYear();
     <div class="wrap flex flex-col gap-3 py-6 text-[0.82rem] text-white/55 sm:flex-row sm:items-center sm:justify-between">
       <p>&copy; {year} {site.name}. All rights reserved.</p>
       <div class="flex flex-wrap gap-x-6 gap-y-2">
-        <a href="/privacy-policy" class="hover:text-white">Privacy policy</a>
-        <a href="/notice-of-privacy-practices" class="hover:text-white">Notice of privacy practices</a>
-        <a href="/terms" class="hover:text-white">Terms of use</a>
-        <a href="/accessibility" class="hover:text-white">Accessibility</a>
-        <a href="/non-discrimination" class="hover:text-white">Non-discrimination</a>
+        <a href="/privacy-policy/" class="hover:text-white">Privacy policy</a>
+        <a href="/notice-of-privacy-practices/" class="hover:text-white">Notice of privacy practices</a>
+        <a href="/terms/" class="hover:text-white">Terms of use</a>
+        <a href="/accessibility/" class="hover:text-white">Accessibility</a>
+        <a href="/non-discrimination/" class="hover:text-white">Non-discrimination</a>
       </div>
     </div>
   </div>

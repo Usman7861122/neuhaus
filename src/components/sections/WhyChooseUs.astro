@@ -36,7 +36,7 @@ const foot = `<path d="M0 -6 C4 -6 5 -2 4.5 3 C4 8 3 12 0 12 C-3 12 -3.6 8 -3.6 
               </span>
             </span>
 
-            <span aria-hidden="true" data-step-num class={`pointer-events-none col-start-3 row-start-1 hidden self-center font-display text-[7rem] italic leading-none text-white/[0.08] md:block ${right ? "md:col-start-1 md:pr-10 md:text-right" : "md:pl-10"}`}>0{i + 1}</span>
+            <span aria-hidden="true" data-step-num data-n={`0${i + 1}`} class={`before:content-[attr(data-n)] pointer-events-none col-start-3 row-start-1 hidden self-center font-display text-[7rem] italic leading-none text-white/[0.08] md:block ${right ? "md:col-start-1 md:pr-10 md:text-right" : "md:pl-10"}`}></span>
             <div
               data-step-card={right ? "right" : "left"}
               class={`col-start-2 row-start-1 ${right ? "md:col-start-3 md:pl-10" : "md:col-start-1 md:pr-10 md:text-right"}`}

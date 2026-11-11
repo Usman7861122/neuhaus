@@ -38,7 +38,7 @@ const intro = clinic
   ? `Expert care for ${short} at our ${clinic.city} clinic, ${clinic.address}.`
   : `Causes, symptoms, and treatment for ${short}, with care at 15 clinics across Middle Tennessee.`;
 const description = clinic
-  ? `${name} care in ${clinic.city}, TN. Symptoms, causes, and treatment explained by Neuhaus Foot & Ankle. ${clinic.address}. Call ${clinic.phone}.`
+  ? `${short} treatment in ${clinic.city}, TN. Symptoms, causes and care explained by Neuhaus Foot & Ankle podiatrists. Call ${clinic.phone}.`
   : `${cond.lead[0]}`.slice(0, 155);
 
 const faqs: { q: string; a: string }[] = [...cond.faqs];
@@ -58,9 +58,9 @@ const steps = [
 <PageLayout title={title} description={description} eyebrow={clinic ? `${parent.data.title} · ${clinic.city}` : parent.data.title} heading={heading} intro={intro} image={unsplash(main, 2000)}>
   <nav aria-label="Breadcrumb" class="border-b border-line bg-white">
     <ol class="wrap flex flex-wrap items-center gap-2 py-4 text-[0.85rem] text-slate">
-      <li><a href="/services" class="hover:text-sky">Services</a></li><li aria-hidden="true">/</li>
+      <li><a href="/services/" class="hover:text-sky">Services</a></li><li aria-hidden="true">/</li>
       <li><a href={groupLink} class="hover:text-sky">{parent.data.title}</a></li><li aria-hidden="true">/</li>
-      <li>{clinic ? <a href={`/conditions/${slug}`} class="hover:text-sky">{name}</a> : <span class="text-navy-900">{name}</span>}</li>
+      <li>{clinic ? <a href={`/conditions/${slug}/`} class="hover:text-sky">{name}</a> : <span class="text-navy-900">{name}</span>}</li>
       {clinic && <><li aria-hidden="true">/</li><li class="text-navy-900">{clinic.city}</li></>}
     </ol>
   </nav>
@@ -69,9 +69,9 @@ const steps = [
   <section class="py-16 md:py-24">
     <div class="wrap grid items-center gap-14 lg:grid-cols-12">
       <div class="lg:col-span-7" data-reveal>
-        <a href={groupLink} class="inline-flex items-center gap-2 rounded-full bg-mist px-4 py-1.5 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-sky transition-colors hover:bg-navy hover:text-white">Part of {parent.data.title}</a>
+        <a href={groupLink} class="inline-flex items-center gap-2 rounded-full bg-mist px-4 py-1.5 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-sky-ink transition-colors hover:bg-navy hover:text-white">Part of {parent.data.title}</a>
         <h2 class="heading-xl mt-5 !text-[clamp(2rem,3.6vw,3.2rem)]">
-          Understanding {short}{clinic ? <>, and how we help <em class="text-sky">in {clinic.city}.</em></> : <> <em class="text-sky">and your options.</em></>}
+          Understanding {short}{clinic ? <>, and how we help <em class="text-sky-ink">in {clinic.city}.</em></> : <> <em class="text-sky-ink">and your options.</em></>}
         </h2>
         <div class="mt-6 space-y-4 text-[1.05rem] leading-relaxed text-slate">
           {clinic && <p class="text-[1.15rem] text-ink">Looking for help with {short} in {clinic.city}? Our {clinic.city} clinic at {clinic.address} offers exams, treatment, and follow up close to home.</p>}
@@ -79,7 +79,7 @@ const steps = [
         </div>
         {cond.aka && <p class="mt-5 text-[0.9rem] text-slate"><strong class="text-navy-900">Also called:</strong> {cond.aka}</p>}
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="/book-appointment" class="btn-navy">Request an appointment</a>
+          <a href="/book-appointment/" class="btn-navy">Request an appointment</a>
           <a href={phoneHref} class="btn-outline">Call {phone}</a>
         </div>
       </div>
@@ -118,12 +118,12 @@ const steps = [
     <div class="wrap">
       <div class="max-w-2xl" data-reveal>
         <p class="eyebrow">Why it happens</p>
-        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">What can cause <em class="text-sky">{short}.</em></h2>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">What can cause <em class="text-sky-ink">{short}.</em></h2>
       </div>
       <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {cond.causes.map((c: string, i: number) => (
           <li class="rounded-2xl bg-white p-7 shadow-[0_20px_40px_-30px_rgba(7,31,48,.35)]" data-reveal={String(i * 0.05)}>
-            <span class="font-display text-[2.4rem] leading-none text-sky/50">{num(i)}</span>
+            <span class="font-display text-[2.4rem] leading-none text-sky-ink/80">{num(i)}</span>
             <p class="mt-4 font-medium leading-snug text-navy-900">{c}</p>
           </li>
         ))}
@@ -138,21 +138,21 @@ const steps = [
         <div class="relative">
           <img src={unsplash(third, 1000, 1200)} alt="" loading="lazy" class="aspect-[5/6] w-full rounded-[1.75rem] object-cover" />
           <a href={groupLink} class="absolute inset-x-4 bottom-4 flex items-center justify-between rounded-2xl bg-white/95 px-5 py-4 shadow-lg backdrop-blur transition-colors hover:bg-white">
-            <span><span class="block text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-sky">Care group</span><span class="font-display text-[1.25rem] leading-tight text-navy-900">{parent.data.title}</span></span>
-            <span aria-hidden="true" class="text-sky">&rarr;</span>
+            <span><span class="block text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-sky-ink">Care group</span><span class="font-display text-[1.25rem] leading-tight text-navy-900">{parent.data.title}</span></span>
+            <span aria-hidden="true" class="text-sky-ink">&rarr;</span>
           </a>
         </div>
       </div>
       <div class="lg:col-span-7 lg:pl-8" data-reveal="0.1">
         <p class="eyebrow">Diagnosis and care</p>
-        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">How we treat {short}<em class="text-sky">{clinic ? ` in ${clinic.city}.` : "."}</em></h2>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">How we treat {short}<em class="text-sky-ink">{clinic ? ` in ${clinic.city}.` : "."}</em></h2>
         <div class="mt-8 space-y-8">
           <div class="border-l-2 border-gold pl-6">
-            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Step 1 · Diagnosis</p>
+            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky-ink">Step 1 · Diagnosis</p>
             <p class="mt-2 text-slate">{cond.diagnose}</p>
           </div>
           <div class="border-l-2 border-gold pl-6">
-            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">Step 2 · Treatment</p>
+            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky-ink">Step 2 · Treatment</p>
             <p class="mt-2 text-slate">{cond.treat}</p>
             <p class="mt-3 text-slate">{cond.more}</p>
           </div>
@@ -167,7 +167,7 @@ const steps = [
       <div class="wrap">
         <div class="max-w-2xl" data-reveal>
           <p class="eyebrow">Your visit</p>
-          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">What to expect at our <em class="text-sky">{clinic.city} clinic.</em></h2>
+          <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">What to expect at our <em class="text-sky-ink">{clinic.city} clinic.</em></h2>
           <p class="mt-4 text-slate">Your visit for {short} in {clinic.city} is simple and friendly.</p>
         </div>
         <ol class="mt-10 grid gap-5 md:grid-cols-3">
@@ -192,7 +192,7 @@ const steps = [
         <p class="mt-4 text-white/80">{cond.recovery}</p>
       </div>
       <div class="rounded-[1.75rem] border border-line bg-white p-8 md:p-12" data-reveal="0.1">
-        <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky">When to book</p>
+        <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-sky-ink">When to book</p>
         <h2 class="mt-4 font-display text-[clamp(1.9rem,3vw,2.6rem)] leading-tight text-navy-900">Do not wait it out{clinic ? ` in ${clinic.city}` : ""}.</h2>
         <p class="mt-4 text-slate">{cond.when}</p>
         <a href={phoneHref} class="btn-navy mt-6">Call {phone}</a>
@@ -206,14 +206,14 @@ const steps = [
       <div class="wrap">
         <div data-reveal>
           <p class="eyebrow">Related care</p>
-          <h2 class="heading-xl mt-4 !text-[clamp(1.9rem,3vw,2.6rem)]">More in <em class="text-sky">{parent.data.title}.</em></h2>
+          <h2 class="heading-xl mt-4 !text-[clamp(1.9rem,3vw,2.6rem)]">More in <em class="text-sky-ink">{parent.data.title}.</em></h2>
         </div>
         <ul class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3" data-reveal="0.05">
           {sibs.map((s) => (
             <li>
               <a href={link(s.slug)} class="group flex h-full items-center justify-between gap-3 rounded-xl border border-line bg-white px-5 py-4 transition-colors hover:border-navy">
                 <span class="font-medium leading-snug text-navy-900">{s.name}{at}</span>
-                <span aria-hidden="true" class="shrink-0 text-sky transition-transform group-hover:translate-x-1">&rarr;</span>
+                <span aria-hidden="true" class="shrink-0 text-sky-ink transition-transform group-hover:translate-x-1">&rarr;</span>
               </a>
             </li>
           ))}
@@ -227,7 +227,7 @@ const steps = [
     <div class="wrap grid gap-12 lg:grid-cols-12">
       <div class="lg:col-span-4" data-reveal>
         <p class="eyebrow">FAQ</p>
-        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">Your questions <em class="text-sky">answered.</em></h2>
+        <h2 class="heading-xl mt-4 !text-[clamp(2rem,3.4vw,3rem)]">Your questions <em class="text-sky-ink">answered.</em></h2>
       </div>
       <div class="lg:col-span-8" data-reveal="0.1">
         {faqs.map((f) => (
@@ -254,10 +254,10 @@ const steps = [
               <p class="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-gold">{clinic.city} clinic</p>
               <p class="mt-3 font-display text-[clamp(1.9rem,3.2vw,2.8rem)] leading-tight text-white">Get help with {short} in {clinic.city}.</p>
               <p class="mt-3 text-white/70">{clinic.address}, {clinic.zip}</p>
-              <a href={`/locations/${clinic.slug}`} class="link-arrow mt-4 !text-white/80 hover:!text-gold">Visit the {clinic.city} clinic page <span aria-hidden="true">&rarr;</span></a>
+              <a href={`/locations/${clinic.slug}/`} class="link-arrow mt-4 !text-white/80 hover:!text-gold">Visit the {clinic.city} clinic page <span aria-hidden="true">&rarr;</span></a>
             </div>
             <div class="flex flex-col gap-3 md:col-span-4 md:col-start-9">
-              <a href="/book-appointment" class="btn-gold w-full">Request an appointment</a>
+              <a href="/book-appointment/" class="btn-gold w-full">Request an appointment</a>
               <a href={phoneHref} class="btn-ghost w-full">Call {phone}</a>
               <a href={dir} target="_blank" rel="noopener" class="btn-ghost w-full">Get directions</a>
             </div>
@@ -267,7 +267,7 @@ const steps = [
         <div class="rounded-[1.75rem] bg-navy-950 p-8 text-white md:p-12" data-reveal>
           <p class="font-display text-[clamp(1.9rem,3.2vw,2.8rem)] leading-tight text-white">Get help with {short}.</p>
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="/book-appointment" class="btn-gold">Request an appointment</a>
+            <a href="/book-appointment/" class="btn-gold">Request an appointment</a>
             <a href={phoneHref} class="btn-ghost">Call {phone}</a>
           </div>
         </div>
@@ -275,21 +275,21 @@ const steps = [
 
       <div class="mt-20" data-reveal>
         <p class="eyebrow">{clinic ? "Nearby clinics" : "Where we treat it"}</p>
-        <h2 class="heading-xl mt-4 !text-[clamp(1.9rem,3vw,2.6rem)]">{clinic ? <>{name} care near <em class="text-sky">{clinic.city}.</em></> : <>{name} care at <em class="text-sky">15 clinics.</em></>}</h2>
+        <h2 class="heading-xl mt-4 !text-[clamp(1.9rem,3vw,2.6rem)]">{clinic ? <>{name} care near <em class="text-sky-ink">{clinic.city}.</em></> : <>{name} care at <em class="text-sky-ink">15 clinics.</em></>}</h2>
         <ul class={`mt-8 grid gap-3 sm:grid-cols-2 ${clinic ? "lg:grid-cols-4" : "lg:grid-cols-4"}`}>
           {(clinic ? near : clinics).map((c) => (
             <li>
-              <a href={`/conditions/${slug}/${c.slug}`} class="group flex h-full items-center justify-between rounded-xl border border-line bg-white px-5 py-4 transition-colors hover:border-navy">
+              <a href={`/conditions/${slug}/${c.slug}/`} class="group flex h-full items-center justify-between rounded-xl border border-line bg-white px-5 py-4 transition-colors hover:border-navy">
                 <span>
                   <span class="block font-semibold text-navy-900">{c.city}</span>
                   <span class="block text-[0.85rem] text-slate">{clinic ? `About ${miles(clinic, c)} miles away` : c.address}</span>
                 </span>
-                <span aria-hidden="true" class="text-sky transition-transform group-hover:translate-x-1">&rarr;</span>
+                <span aria-hidden="true" class="text-sky-ink transition-transform group-hover:translate-x-1">&rarr;</span>
               </a>
             </li>
           ))}
         </ul>
-        {clinic && <a href={`/conditions/${slug}`} class="link-arrow mt-6">All clinics that treat {short} <span aria-hidden="true">&rarr;</span></a>}
+        {clinic && <a href={`/conditions/${slug}/`} class="link-arrow mt-6">All clinics that treat {short} <span aria-hidden="true">&rarr;</span></a>}
       </div>
 
       <div class="mt-16" data-reveal>
