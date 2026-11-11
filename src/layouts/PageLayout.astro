@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import { pageSchema } from "@/lib/schema";
 interface Props { title: string; description?: string; eyebrow?: string; heading?: string; intro?: string; image?: string; schema?: Record<string, unknown> | Record<string, unknown>[] }
-const { title, description, eyebrow, heading, intro, image, schema } = Astro.props;
+const { title, description, eyebrow, heading, intro, image, schema: given } = Astro.props;
+// Pages that do not pass their own schema get WebPage (or CollectionPage for index pages) plus breadcrumbs.
+const path = Astro.url.pathname.endsWith("/") ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const isIndex = path === "/locations/" || path === "/services/";
+const schema = given ?? pageSchema(isIndex ? "CollectionPage" : "WebPage", title, path, description ?? intro, [{ name: "Home", path: "/" }, { name: title, path }]);
 ---
 <BaseLayout title={`${title} | Neuhaus Foot & Ankle`} description={description ?? intro} schema={schema}>
   <section class="relative overflow-hidden bg-navy-950 pb-20 pt-44 text-white md:pb-28 md:pt-52">

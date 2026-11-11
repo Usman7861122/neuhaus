@@ -23,7 +23,7 @@ export default defineConfig({
     react(),
     // Keep redirect-only pages out of the sitemap.
     sitemap({
-      filter: (page) => !/\/(contact|insurance|conditions)\/?$/.test(new URL(page).pathname),
+      filter: (page) => !/\/(about|contact|insurance|conditions)\/?$/.test(new URL(page).pathname),
       serialize(item) {
         const m = new URL(item.url).pathname.match(/^\/blog\/([^/]+)\/$/);
         item.lastmod = m && blogDates[m[1]] ? new Date(blogDates[m[1]]).toISOString() : buildDate;

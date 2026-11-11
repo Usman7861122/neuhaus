@@ -6,7 +6,7 @@ const tidy = (s: string) => s.replace(/\s+/g, " ").replace(/[\s,;:&\-–]+$/, ""
 
 const nameVariants = (name: string): string[] => {
   const noParens = name.replace(/\s*\([^)]*\)/g, "").trim();
-  const out = [name, noParens, noParens.split(":")[0], noParens.split(",")[0], noParens.split(/ & | and /)[0]];
+  const out = [name, noParens, noParens.split(":")[0], noParens.split(",")[0], noParens.split(/ and /)[0], noParens.split(/ & | and /)[0]];
   return [...new Set(out.map(tidy).filter((v) => v.length >= 6))];
 };
 
@@ -22,6 +22,10 @@ export function fitTitle(raw: string, max = MAX_TITLE): string {
     for (const v of nameVariants(m[1])) {
       for (const cand of [`${v} Treatment in ${m[2]}, TN`, `${v} in ${m[2]}, TN`]) if (cand.length <= max) return cand;
     }
+    // Last resort: always keep the city, cut the name.
+    const room = max - ` in ${m[2]}, TN`.length;
+    const cut = m[1].slice(0, room);
+    return `${tidy(cut.slice(0, cut.lastIndexOf(" ")))} in ${m[2]}, TN`;
   }
 
   // Generic: drop filler openings, then cut at the last natural break that fits.
