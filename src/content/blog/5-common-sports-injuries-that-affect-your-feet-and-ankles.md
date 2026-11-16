@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 The health benefits of engaging in sports are almost too numerous to count, but there’s always the threat of injury, including in your feet and ankles.
 
-So that you’re aware of the risks, the [team of podiatrists](/doctors) here at [Neuhaus Foot and Ankle](/about) wants to take a closer look at five ways in which you can injure your feet and ankles when you play sports. Our goal here is not to discourage you from being active. Instead, it is to encourage you to exercise a little caution when it comes to your feet and ankles.
+So that you’re aware of the risks, the [team of podiatrists](/doctors) here at [Neuhaus Foot and Ankle](/#about) wants to take a closer look at five ways in which you can injure your feet and ankles when you play sports. Our goal here is not to discourage you from being active. Instead, it is to encourage you to exercise a little caution when it comes to your feet and ankles.
 
 ## 1. Sprained ankle
 

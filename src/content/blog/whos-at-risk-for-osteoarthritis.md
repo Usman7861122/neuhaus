@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Osteoarthritis can affect any joint in your body, but this degenerative form of arthritis typically develops in those joints that work the hardest, including the 30 joints in each of your feet. As you can well imagine, osteoarthritis (OA) in your feet or ankles is of particular concern given how much you rely on your lower limbs to propel you through the world.
 
-While [arthritis](/services/foot-ankle-arthritis-joint-care) in all its forms, including OA, has no cure, there are plenty of ways in which we can manage and slow the disease, especially if we’re aware of your risks. To that end, the [team](/doctors) of foot health experts here at [Neuhaus Foot and Ankle](/about) outline some of the more common risks here so that we can help you take the steps necessary to reduce the risks of joint pain and inflammation.
+While [arthritis](/services/foot-ankle-arthritis-joint-care) in all its forms, including OA, has no cure, there are plenty of ways in which we can manage and slow the disease, especially if we’re aware of your risks. To that end, the [team](/doctors) of foot health experts here at [Neuhaus Foot and Ankle](/#about) outline some of the more common risks here so that we can help you take the steps necessary to reduce the risks of joint pain and inflammation.
 
 ## Age and gender-related issues
 

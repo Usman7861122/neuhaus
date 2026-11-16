@@ -11,7 +11,7 @@ When the pain and inflammation of osteoarthritis (OA) develop in any joint, itâ€
 
 Around [33 million Americans](https://www.cdc.gov/arthritis/osteoarthritis/index.html) have OA, and while knees and hips tend to grab the spotlight, it can also strike your feet and ankles. When this happens, every step becomes uncomfortable.
 
-Unfortunately, OA is irreversible and progressive, so the best way to address foot OA is to slow its progression. To that end, our [team](/doctors) of podiatry specialists at [Neuhaus Foot and Ankle](/about) pulled together some best practices for managing foot and ankle [osteoarthritis](/services/foot-ankle-arthritis-joint-care).
+Unfortunately, OA is irreversible and progressive, so the best way to address foot OA is to slow its progression. To that end, our [team](/doctors) of podiatry specialists at [Neuhaus Foot and Ankle](/#about) pulled together some best practices for managing foot and ankle [osteoarthritis](/services/foot-ankle-arthritis-joint-care).
 
 ## 1. Have us evaluate your foot arthritis first
 

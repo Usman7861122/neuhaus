@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Perhaps you’ve developed a bunion, or you have a family member dealing with this foot abnormality for years. Do genetics play a role? The answer is yes, you can inherit bunions, but you can also develop them with no family history of the condition.
 
-Bunions are one of the most common foot problems we see at [Neuhaus Foot and Ankle](/about), and our [team](/doctors) is well-versed in the many ways this condition occurs. We’re also experts in remedying [bunions](/services/bunions-toes-forefoot), which is good news because once a bunion starts, they only get worse and never better.
+Bunions are one of the most common foot problems we see at [Neuhaus Foot and Ankle](/#about), and our [team](/doctors) is well-versed in the many ways this condition occurs. We’re also experts in remedying [bunions](/services/bunions-toes-forefoot), which is good news because once a bunion starts, they only get worse and never better.
 
 ## Understanding the mechanics of bunions
 

@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 More than [two million people](https://my.clevelandclinic.org/health/articles/10060-heel-pain) in the United States experience heel pain each year, which makes sense given the amount of pressure your feet are under from the moment you get out of bed. And, all too often, your heels take the brunt of it.
 
-To give you an idea about what is commonly behind heel pain, our [team](/doctors) here at [Neuhaus Foot and Ankle](/about) assembled five culprits below.
+To give you an idea about what is commonly behind heel pain, our [team](/doctors) here at [Neuhaus Foot and Ankle](/#about) assembled five culprits below.
 
 Let’s take a look.
 

@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 For many athletes, runner’s toe, or runner’s toenail, is a badge of honor — the darkened toenail that signals pounding pavement over long distances.
 
-As podiatry experts, the [team](/doctors) at [Neuhaus Foot and Ankle](/about) takes a different view of [sports injuries](/services/fractures-trauma-sports-injuries) like runner’s toe. While it may not be all that medically significant, runner’s toe can become problematic. It also doesn’t look great.
+As podiatry experts, the [team](/doctors) at [Neuhaus Foot and Ankle](/#about) takes a different view of [sports injuries](/services/fractures-trauma-sports-injuries) like runner’s toe. While it may not be all that medically significant, runner’s toe can become problematic. It also doesn’t look great.
 
 Here's a look at how runner’s toe develops and five ways to prevent this minor injury.
 

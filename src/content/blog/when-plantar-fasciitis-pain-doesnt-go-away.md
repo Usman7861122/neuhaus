@@ -11,7 +11,7 @@ Each morning, you wake and place your feet on the ground, hoping that plantar fa
 
 Americans are no strangers to plantar fasciitis — the lifetime prevalence of this common foot condition is [about 10%](https://www.aafp.org/pubs/afp/issues/2019/0615/p744.html). The discomfort associated with plantar fasciitis is responsible for about [one million healthcare visits](https://emedicine.medscape.com/article/86143-overview).
 
-If your plantar fasciitis pain is not improving, and you're tired of being unable to move freely, it’s time to visit [Neuhaus Foot and Ankle](/about). Our [team](/doctors) of foot health experts has experience helping patients with [plantar fasciitis](/services/heel-achilles-arch-pain), and we feel confident that we can also help you.
+If your plantar fasciitis pain is not improving, and you're tired of being unable to move freely, it’s time to visit [Neuhaus Foot and Ankle](/#about). Our [team](/doctors) of foot health experts has experience helping patients with [plantar fasciitis](/services/heel-achilles-arch-pain), and we feel confident that we can also help you.
 
 ## Plantar fasciitis — no timeline
 

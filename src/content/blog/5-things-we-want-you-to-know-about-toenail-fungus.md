@@ -11,7 +11,7 @@ One of the joys of summer is releasing your feet from winter shoes and boots and
 
 The prevalence of toenail fungus among Americans is [about 10%](https://my.clevelandclinic.org/health/diseases/11303-toenail-fungus), and [reports](https://www.ncbi.nlm.nih.gov/books/NBK441853/) suggest that the problem is on the rise thanks to an aging population.
 
-At [Neuhaus Foot and Ankle](/about), our [team](/doctors) of foot health experts can attest to the rise in [fungal nails](/services). We can also report that toenail fungus can be frustrating to deal with once the infection takes hold.
+At [Neuhaus Foot and Ankle](/#about), our [team](/doctors) of foot health experts can attest to the rise in [fungal nails](/services). We can also report that toenail fungus can be frustrating to deal with once the infection takes hold.
 
 Here’s a look at a few more things we want you to know about this common foot issue.
 

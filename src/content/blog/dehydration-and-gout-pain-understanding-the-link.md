@@ -11,7 +11,7 @@ All it takes is just one go-round with gout to understand that this form of infl
 
 While many people with gout understand some of the common triggers, such as alcohol, sugar, and meat, fewer people realize that dehydration can play a significant role.
 
-To shed some light on the link between [gout](/services/foot-ankle-arthritis-joint-care) and dehydration, the skilled [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) pulled together the following information.
+To shed some light on the link between [gout](/services/foot-ankle-arthritis-joint-care) and dehydration, the skilled [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) pulled together the following information.
 
 ## Behind gout flare-ups
 

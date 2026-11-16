@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 While April is National Foot Health Awareness Month in the United States, there shouldn’t be a day that goes by when you aren’t protecting your feet.
 
-Our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) wants to take this opportunity to highlight some practices for protecting your feet against pain. Around [87% of people](https://www.healthinaging.org/a-z-topic/foot-problems/basic-facts) encounter foot pain at some point, and a third of older adults have stiff and achy feet.
+Our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) wants to take this opportunity to highlight some practices for protecting your feet against pain. Around [87% of people](https://www.healthinaging.org/a-z-topic/foot-problems/basic-facts) encounter foot pain at some point, and a third of older adults have stiff and achy feet.
 
 It’s no wonder, given how hard your feet work. So, take a minute to read about some strategies that will keep that spring in your step.
 

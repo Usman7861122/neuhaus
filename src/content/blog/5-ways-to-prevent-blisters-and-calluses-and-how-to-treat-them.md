@@ -11,7 +11,7 @@ Most of us have had minor, yet uncomfortable, foot issues like corns, calluses, 
 
 Furthermore, if you’re one of the [more than 38 million Americans](https://diabetes.org/about-diabetes/statistics/about-diabetes) who have diabetes or the [12 million American adults](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001153) who have peripheral artery disease (PAD), these [minor foot issues](https://tcoyd.org/2025/05/skin-care-for-diabetics-guide/) can turn the corner into far more serious foot wounds.
 
-Whether you need to pay more attention to corns, [calluses](/services), and blisters for your health or you just don’t want to develop these uncomfortable issues, our [team](/doctors) of foot health specialists at [Neuhaus Foot and Ankle](/about) recommends the following.
+Whether you need to pay more attention to corns, [calluses](/services), and blisters for your health or you just don’t want to develop these uncomfortable issues, our [team](/doctors) of foot health specialists at [Neuhaus Foot and Ankle](/#about) recommends the following.
 
 ## 1. Alleviate the pressure and friction
 

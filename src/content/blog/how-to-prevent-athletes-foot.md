@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 The term athlete’s foot may be somewhat misleading as this fungal infection can strike almost anyone, whether you’re active or not. And once athlete’s foot takes hold, it can lead to a very uncomfortable rash, which can turn into a more painful experience if blisters and cracks form.
 
-At [Neuhaus Foot and Ankle](/about), our [team](/doctors) of experienced podiatrists believes that prevention is the best approach to dealing with [fungal infections](/services), which is why we’ve pulled together the following tips before the warmer months are upon us.
+At [Neuhaus Foot and Ankle](/#about), our [team](/doctors) of experienced podiatrists believes that prevention is the best approach to dealing with [fungal infections](/services), which is why we’ve pulled together the following tips before the warmer months are upon us.
 
 ## Staying high and dry in public places
 

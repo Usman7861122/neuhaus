@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Every day, you rely on your feet to carry you to where you need to go. So when issues arise, they can have a significant impact on your life. One of these problems might be [rheumatoid arthritis (RA)](/services/foot-ankle-arthritis-joint-care) — in fact, [90% of people with RA](https://orthoinfo.aaos.org/en/diseases--conditions/rheumatoid-arthritis-of-the-foot-and-ankle) develop symptoms in their ankles and feet.
 
-To help you determine whether RA is affecting your feet, the [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/about), with 10 locations across Tennessee, wants to outline five of the more common signs of a potential problem.
+To help you determine whether RA is affecting your feet, the [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/#about), with 10 locations across Tennessee, wants to outline five of the more common signs of a potential problem.
 
 ## Rheumatoid arthritis at a glance
 

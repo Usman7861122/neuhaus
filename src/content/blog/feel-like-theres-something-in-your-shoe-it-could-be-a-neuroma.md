@@ -11,7 +11,7 @@ There’s a saying that when something is annoying, it amounts to, “A pebble i
 
 This strange sensation is due to nerve inflammation, which can make it feel like a foreign — and annoying — object is in your footwear.
 
-Called a [Morton’s neuroma](/services), our [team](/doctors) at [Neuhaus Foot and Ankle](/about) has ample experience in diagnosing and treating this common foot issue, which affects [at least five times more women](https://www.ncbi.nlm.nih.gov/books/NBK470249/) than men (more on why in a moment).
+Called a [Morton’s neuroma](/services), our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) has ample experience in diagnosing and treating this common foot issue, which affects [at least five times more women](https://www.ncbi.nlm.nih.gov/books/NBK470249/) than men (more on why in a moment).
 
 ## Morton’s neuroma — not a tumor
 

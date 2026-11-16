@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Each minute, the six quarts of blood in your body circulate three times and, in one day, your blood travels about [12,000 miles](https://www.pbs.org/wgbh/nova/heart/heartfacts.html). This incredibly hard-working system not only relies on a healthy heart to do the pumping but also healthy blood vessels for the round trips. If there's a problem anywhere in this complex system, the first areas to show signs are those farthest from your heart, such as your lower legs and feet.
 
-Our [team of podiatrists](/doctors) at [Neuhaus Foot and Ankle](/about) understands all too well how circulatory issues affect your feet, which is why we’re focusing on ways to improve circulation in this month’s blog post.
+Our [team of podiatrists](/doctors) at [Neuhaus Foot and Ankle](/#about) understands all too well how circulatory issues affect your feet, which is why we’re focusing on ways to improve circulation in this month’s blog post.
 
 Here’s a look at the issues that can compromise blood flow to your feet and lower legs and what you can do to get more blood pumping through.
 

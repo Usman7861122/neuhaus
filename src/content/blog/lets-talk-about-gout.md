@@ -13,7 +13,7 @@ When people learn that gout is a form of arthritis that usually only attacks the
 
 While there’s no cure for arthritis, there is a bright spot when it comes to gout — you can avoid flare-ups through proper management.
 
-As foot health experts,[we know that gout](/services/foot-ankle-arthritis-joint-care) falls under our area of expertise since it tends to target the feet. In this role, our [team](/doctors) at [Neuhaus Foot and Ankle](/about) has learned a few things along the way about managing gout, and we want to share some key findings here.
+As foot health experts,[we know that gout](/services/foot-ankle-arthritis-joint-care) falls under our area of expertise since it tends to target the feet. In this role, our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) has learned a few things along the way about managing gout, and we want to share some key findings here.
 
 ## Gout basics
 

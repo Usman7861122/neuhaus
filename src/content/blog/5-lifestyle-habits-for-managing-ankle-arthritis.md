@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Arthritis in any joint is problematic, but when the pain and inflammation strike joints that allow you to move through the world, it takes the issue to a new level. More specifically, if you’re struggling with ankle arthritis, you can be, quite literally, hobbled by the problem.
 
-As podiatrists, one of the primary goals of the [team](/doctors) at [Neuhaus Foot and Ankle](/about) is to preserve pain-free movement. From bunions to [arthritis](/services/foot-ankle-arthritis-joint-care), issues that occur in your feet and ankles can challenge your ability to move without pain. Our mission is to help relieve the discomfort.
+As podiatrists, one of the primary goals of the [team](/doctors) at [Neuhaus Foot and Ankle](/#about) is to preserve pain-free movement. From bunions to [arthritis](/services/foot-ankle-arthritis-joint-care), issues that occur in your feet and ankles can challenge your ability to move without pain. Our mission is to help relieve the discomfort.
 
 To that end, we’re focusing on some great tips for managing ankle arthritis so you can maintain your ability to move freely.
 

@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 It’s often the little things that have outsized results—a small bug bite that causes you to scratch all night or a wart on the bottom of your foot that makes every step uncomfortable. In this blog post, we want to focus on this second condition —[plantar warts](/services).
 
-While not all that serious medically, plantar warts can be a significant hassle. Our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) has seen its fair share of plantar warts, and we’ve learned a few things we want to share here, starting with whether they’re cause for concern.
+While not all that serious medically, plantar warts can be a significant hassle. Our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) has seen its fair share of plantar warts, and we’ve learned a few things we want to share here, starting with whether they’re cause for concern.
 
 ## A common and mostly harmless infection
 

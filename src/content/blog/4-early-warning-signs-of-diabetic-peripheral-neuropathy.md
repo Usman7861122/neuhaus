@@ -11,7 +11,7 @@ Chronic diseases like diabetes can wreak havoc on your health over time. From vi
 
 Since November is National Diabetes Month, we will focus on the impact this disease can have on the health of your feet and ankles. In fact, of the [more than 11% of the United States population](https://diabetes.org/about-diabetes/statistics/about-diabetes) with diabetes, about [nearly half (47%)](https://emedicine.medscape.com/article/1170337-overview) will develop diabetes-related peripheral neuropathy.
 
-At [Neuhaus Foot and Ankle](/about), our [team](/doctors) has decades of experience helping people protect their feet in the face of [diabetes](/services/diabetic-foot-care-wounds-circulation). As podiatrists, our primary concern is nerve damage in your lower limbs, so we’re going to outline some early warning signs that should serve as a wake-up call to take action.
+At [Neuhaus Foot and Ankle](/#about), our [team](/doctors) has decades of experience helping people protect their feet in the face of [diabetes](/services/diabetic-foot-care-wounds-circulation). As podiatrists, our primary concern is nerve damage in your lower limbs, so we’re going to outline some early warning signs that should serve as a wake-up call to take action.
 
 ## How is peripheral neuropathy related to diabetes?
 

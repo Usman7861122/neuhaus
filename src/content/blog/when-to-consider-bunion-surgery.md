@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Bunions are common, and some are more problematic than others. If you’re developing bunions, you may be pondering your options as you watch the abnormality reshape your foot (or feet).
 
-To help you with your decision-making, the [team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/about) wanted to highlight a few points that you should consider when searching for solutions. Bunion surgery is certainly effective, but it’s still surgery and a decision that shouldn’t be taken lightly.
+To help you with your decision-making, the [team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/#about) wanted to highlight a few points that you should consider when searching for solutions. Bunion surgery is certainly effective, but it’s still surgery and a decision that shouldn’t be taken lightly.
 
 ## Bunions are progressive and irreversible
 

@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Between hammertoes, [bunions](/services/bunions-toes-forefoot), and bunionettes, foot abnormalities can impact your feet in many ways.
 
-In this month’s blog post, our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) will focus on the first one on the list —[hammertoes](/services/bunions-toes-forefoot). This aptly named foot abnormality is common, especially as you get older. Fortunately, surgery can treat it.
+In this month’s blog post, our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) will focus on the first one on the list —[hammertoes](/services/bunions-toes-forefoot). This aptly named foot abnormality is common, especially as you get older. Fortunately, surgery can treat it.
 
 While we understand that surgery isn’t always a preferred option, it’s often the best for progressive conditions like hammertoes.
 

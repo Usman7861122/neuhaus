@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 A gout flare-up is an unpleasant experience, largely due to the pain. Making matters more miserable, these flare-ups often occur in the middle of the night, waking you from your restful slumber and making falling back asleep difficult. As a result, you may not get enough sleep, which can worsen your gout, creating an unwanted cycle.
 
-To help you break free, the [team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/about), with 10 locations throughout Tennessee, presents a few tips for better managing your sleep when you have [gout](/services/foot-ankle-arthritis-joint-care).
+To help you break free, the [team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/#about), with 10 locations throughout Tennessee, presents a few tips for better managing your sleep when you have [gout](/services/foot-ankle-arthritis-joint-care).
 
 ## Why the nighttime flare-up?
 

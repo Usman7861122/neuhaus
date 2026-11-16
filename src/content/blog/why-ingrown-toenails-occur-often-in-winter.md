@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 As we say goodbye to bare feet and open-toed shoes and turn to more appropriate winter footwear, your risks for developing an ingrown toenail increase.
 
-To avoid this potentially painful problem, our [podiatry team](/doctors) at [Neuhaus Foot and Ankle](/about) in Nashville and Middle Tennessee wants to emphasize a few steps you can take to keep your toes (and nails) healthy this winter.
+To avoid this potentially painful problem, our [podiatry team](/doctors) at [Neuhaus Foot and Ankle](/#about) in Nashville and Middle Tennessee wants to emphasize a few steps you can take to keep your toes (and nails) healthy this winter.
 
 Here’s a look at why ingrown toenails are more prevalent in winter and what you can do to prevent them.
 

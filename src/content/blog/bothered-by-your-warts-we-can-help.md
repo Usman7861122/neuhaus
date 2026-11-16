@@ -11,7 +11,7 @@ Warts affect about [10% of people](https://www.ncbi.nlm.nih.gov/books/NBK431047/
 
 As a result, plantar warts can become more than just a mild nuisance and make getting around uncomfortable.
 
-The good news is that our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) can treat [plantar warts](/services), allowing you to move again without discomfort.
+The good news is that our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) can treat [plantar warts](/services), allowing you to move again without discomfort.
 
 ## Behind those pesky warts
 

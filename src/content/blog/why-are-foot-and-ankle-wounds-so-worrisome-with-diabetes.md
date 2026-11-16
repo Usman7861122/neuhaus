@@ -11,7 +11,7 @@ If there’s one universal truth about diabetes, it’s that it can impact your 
 
 If you find yourself in this group, perhaps the biggest threat to your health is diabetic foot ulcers, which affect about [one-third of people with diabetes](https://jamanetwork.com/journals/jama/fullarticle/2812203) at some point in their lives. More alarming is the fact that half of these ulcers will develop infection, and 20% of these infections will lead to amputation.
 
-Each November, the medical community shines the spotlight on [diabetes](/services/diabetic-foot-care-wounds-circulation) through National Diabetes Month, and our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) wants to participate in this effort.
+Each November, the medical community shines the spotlight on [diabetes](/services/diabetic-foot-care-wounds-circulation) through National Diabetes Month, and our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) wants to participate in this effort.
 
 We understand the devastating impact that diabetes can have on your lower limbs, and we want to do our part to prevent permanent damage. That means helping you stay one step ahead of foot and ankle wounds.
 

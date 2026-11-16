@@ -11,7 +11,7 @@ Maybe you’ve noticed that certain areas of your feet have lost sensation and a
 
 In all likelihood, these symptoms are due to peripheral neuropathy, which is the medical term for nerve damage. One of the biggest culprits behind peripheral neuropathy is diabetes, which affects [about 38.4 million Americans](https://www.niddk.nih.gov/health-information/health-statistics/diabetes-statistics).
 
-November is [National Diabetes Month](https://tcoyd.org/2023/11/this-diabetes-awareness-month-dont-forget-about-the-things-you-do-right/), so our [team](/doctors) of [diabetic foot health](/services/diabetic-foot-care-wounds-circulation) experts at [Neuhaus Foot and Ankle](/about) wants to focus on some of the more common complications of this chronic disease, and [peripheral neuropathy](/services/diabetic-foot-care-wounds-circulation) tops this list.
+November is [National Diabetes Month](https://tcoyd.org/2023/11/this-diabetes-awareness-month-dont-forget-about-the-things-you-do-right/), so our [team](/doctors) of [diabetic foot health](/services/diabetic-foot-care-wounds-circulation) experts at [Neuhaus Foot and Ankle](/#about) wants to focus on some of the more common complications of this chronic disease, and [peripheral neuropathy](/services/diabetic-foot-care-wounds-circulation) tops this list.
 
 Here’s a look at why numbness and tingling can develop in your feet and the best practices for managing these symptoms.
 

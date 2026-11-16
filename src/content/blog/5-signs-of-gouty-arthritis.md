@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 There are more than 150 types of arthritis, and gouty arthritis is the most common inflammatory form of joint disease. In the United States, [4% of the adult population](https://www.arthritis-health.com/types/gout/all-about-gout-symptoms-diagnosis-treatment) will experience gout, which most often affects men over 60. This number represents a significant rise over the past few decades, which means more people are developing gout.
 
-To help you identify [gout](/services/foot-ankle-arthritis-joint-care), the [knowledgeable podiatry team](/doctors) here at [Neuhaus Foot and Ankle](/about)pulled together the top five signs that you should watch out for — and the earlier you recognize these signs, the faster we can take action.
+To help you identify [gout](/services/foot-ankle-arthritis-joint-care), the [knowledgeable podiatry team](/doctors) here at [Neuhaus Foot and Ankle](/#about)pulled together the top five signs that you should watch out for — and the earlier you recognize these signs, the faster we can take action.
 
 ## 1. Pain of a different kind
 

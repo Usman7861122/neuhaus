@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Calluses and corns — these conditions are often grouped together because they result from friction on your skin. And your feet are no strangers to friction. In fact, almost everyone has calluses somewhere on the undersides of their feet. Fortunately, the more painful cousins to calluses — corns — are less prevalent but still common enough.
 
-If you want to keep pesky and uncomfortable [corns and calluses](/services) from creating problems in your feet, our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) wishes to share a few tips.
+If you want to keep pesky and uncomfortable [corns and calluses](/services) from creating problems in your feet, our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) wishes to share a few tips.
 
 ## Differentiating between corns and calluses
 

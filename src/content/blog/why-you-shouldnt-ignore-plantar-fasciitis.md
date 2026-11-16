@@ -11,7 +11,7 @@ You wake up in the morning, swing your feet out of bed, and rise. As you take yo
 
 The good news is that the pain typically subsides once you get up and move. Unfortunately, it will be back to greet you the following day or after a long period of inactivity.
 
-Each year in the United States, there are about [1 million visits](https://emedicine.medscape.com/article/86143-overview) to medical providers for plantar fasciitis treatment. So, if you’re struggling with heel and foot pain, we recommend seeing one of the highly experienced [foot health experts](/doctors) at [Neuhaus Foot and Ankle](/about). Our team has extensive experience helping people move past [plantar fasciitis](/services/heel-achilles-arch-pain).
+Each year in the United States, there are about [1 million visits](https://emedicine.medscape.com/article/86143-overview) to medical providers for plantar fasciitis treatment. So, if you’re struggling with heel and foot pain, we recommend seeing one of the highly experienced [foot health experts](/doctors) at [Neuhaus Foot and Ankle](/#about). Our team has extensive experience helping people move past [plantar fasciitis](/services/heel-achilles-arch-pain).
 
 ## Why is plantar fasciitis so painful?
 

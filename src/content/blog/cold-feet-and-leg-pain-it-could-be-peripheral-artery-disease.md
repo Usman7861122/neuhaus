@@ -11,7 +11,7 @@ You feel leg pain and muscle cramping when you start your morning walk. You are 
 
 If you’re experiencing both symptoms, it could point to a circulation issue, namely peripheral artery disease (PAD). In the United States, between [8 and 12 million people](https://www.nhlbi.nih.gov/sites/default/files/publications/06-5837_0.pdf) have PAD, which can turn into a serious cardiovascular disease.
 
-While we’re not cardiovascular specialists at [Neuhaus Foot and Ankle](/about), our [team](/doctors) includes foot, ankle, and lower limb experts who are often the first to identify [peripheral artery disease](/services/diabetic-foot-care-wounds-circulation). This early detection can make a significant difference in managing and slowing this potentially dangerous condition.
+While we’re not cardiovascular specialists at [Neuhaus Foot and Ankle](/#about), our [team](/doctors) includes foot, ankle, and lower limb experts who are often the first to identify [peripheral artery disease](/services/diabetic-foot-care-wounds-circulation). This early detection can make a significant difference in managing and slowing this potentially dangerous condition.
 
 So, if you’re experiencing cramping and leg pain, as well as cold feet, please read on to learn more about PAD.
 

@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 You grunt as you get up from your chair. Now, the stiffness in your body is becoming more of a rule than an exception. Aging can be challenging, and you want to do what you can to preserve your quality of life. Prioritizing your mobility is a great place to start.
 
-As our name suggests — [Neuhaus Foot and Ankle](/about) — our [team](/doctors) is devoted to helping our patients maintain comfortable mobility, no matter their stage in life. That said, there are some special considerations and best practices as you get older, which we review here.
+As our name suggests — [Neuhaus Foot and Ankle](/#about) — our [team](/doctors) is devoted to helping our patients maintain comfortable mobility, no matter their stage in life. That said, there are some special considerations and best practices as you get older, which we review here.
 
 ## Make sure the shoe fits
 

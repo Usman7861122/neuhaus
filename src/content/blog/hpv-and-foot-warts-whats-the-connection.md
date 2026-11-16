@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 While not necessarily medically dangerous, warts, especially those that develop on your feet, can pose considerable problems with comfort.
 
-At [Neuhaus Foot and Ankle](/about), our [team](/doctors) of podiatric health care experts specializes in the many conditions that can affect your all-important feet, from serious [neuropathies](/services/diabetic-foot-care-wounds-circulation) to more benign problems, like [plantar warts](/services).
+At [Neuhaus Foot and Ankle](/#about), our [team](/doctors) of podiatric health care experts specializes in the many conditions that can affect your all-important feet, from serious [neuropathies](/services/diabetic-foot-care-wounds-circulation) to more benign problems, like [plantar warts](/services).
 
 In the following, we review what causes warts (spoiler alert — the human papillomavirus, or HPV) — and how we can remedy the problem.
 

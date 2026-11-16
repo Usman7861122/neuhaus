@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 If you’re among the more than [37 million Americans](https://www.cdc.gov/diabetes/data/statistics-report/index.html)(11% of the overall population) with diabetes, you need to be on high alert for complications. At the head of the list is [diabetes-related peripheral neuropathy](/services/diabetic-foot-care-wounds-circulation) (nerve damage), which affects up to [half of people](https://emedicine.medscape.com/article/1170337-overview) with diabetes.
 
-Since November is National Diabetes Month, our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) wants to focus on this important topic in our monthly blog posts.
+Since November is National Diabetes Month, our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) wants to focus on this important topic in our monthly blog posts.
 
 Below, we look at how diabetes damages peripheral nerves in your body and what to watch out for in terms of early warning signs.
 

@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Whether you’ve already been through a fungal infection in your toenails, or you’d like to avoid the problem in the first place, knowing your risk factors for this tenacious condition is essential.
 
-So that you can keep your toenails healthy and whole, the highly experienced [podiatry team](/doctors) here at [Neuhaus Foot and Ankle](/about) with 10 convenient locations throughout Tennessee, gathered the three most common risk factors for [toenail fungus](/services), which we outline here.
+So that you can keep your toenails healthy and whole, the highly experienced [podiatry team](/doctors) here at [Neuhaus Foot and Ankle](/#about) with 10 convenient locations throughout Tennessee, gathered the three most common risk factors for [toenail fungus](/services), which we outline here.
 
 ## 1. Age
 

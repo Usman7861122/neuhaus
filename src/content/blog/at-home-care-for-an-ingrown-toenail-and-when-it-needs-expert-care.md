@@ -7,7 +7,7 @@ category: "Toenails"
 readTime: "3 min read"
 ---
 
-While you may not receive a “Get Well” card from friends and family when you have an ingrown toenail, you do have our sympathies. As foot health experts, our [team](/doctors) at [Neuhaus Foot and Ankle](/about) knows how this seemingly small issue can lead to big pain.
+While you may not receive a “Get Well” card from friends and family when you have an ingrown toenail, you do have our sympathies. As foot health experts, our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) knows how this seemingly small issue can lead to big pain.
 
 About [20% of visits](https://www.ncbi.nlm.nih.gov/books/NBK513138/) to the doctor for foot issues are for stubborn [ingrown toenails](/services), which can make even the slightest pressure on a toe excruciating.
 

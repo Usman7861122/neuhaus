@@ -11,7 +11,7 @@ For something so small, an ingrown toenail can have an outsized effect on your l
 
 If you’re thinking about taking matters into your own hands and performing a little bathroom surgery for your ingrown toenail, you may want to think again and instead seek our help.
 
-To explain why, our extensive [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) pulled together a few conditions in which a do-it-yourself approach to [ingrown toenails](/services) is not wise. Let’s take a look.
+To explain why, our extensive [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) pulled together a few conditions in which a do-it-yourself approach to [ingrown toenails](/services) is not wise. Let’s take a look.
 
 ## When infection is a greater risk for your feet
 

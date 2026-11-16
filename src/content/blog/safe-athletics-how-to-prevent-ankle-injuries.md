@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 From the moment you get out of bed in the morning, your ankles are constantly providing support and mobility. When you add sports to the mix, the added stresses on these joints can lead to injury.
 
-At [Neuhaus Foot and Ankle](/about), our expert [team](/doctors) of foot and ankle specialists believes that prevention plays a critical role in safeguarding the health of your lower extremities.
+At [Neuhaus Foot and Ankle](/#about), our expert [team](/doctors) of foot and ankle specialists believes that prevention plays a critical role in safeguarding the health of your lower extremities.
 
 With that in mind, we’ve pulled together some tips for preventing [ankle injuries](/services/ankle-pain-instability-tendons).
 

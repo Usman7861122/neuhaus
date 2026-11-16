@@ -11,7 +11,7 @@ Are you in a never-ending cycle of athlete’s foot and wondering why the infect
 
 This common fungal infection affects [up to 15% of people](https://www.ncbi.nlm.nih.gov/books/NBK279549/) — both athletes and non-athletes alike — and it can be stubborn once it takes hold.
 
-To help you eliminate athlete’s foot, our [team](/doctors) at [Neuhaus Foot and Ankle](/about) put together some best practices when it comes to prevention and management. Let’s take a look.
+To help you eliminate athlete’s foot, our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) put together some best practices when it comes to prevention and management. Let’s take a look.
 
 ## Get the right treatment and finish it
 

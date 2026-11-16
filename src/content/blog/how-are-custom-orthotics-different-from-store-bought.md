@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Your feet are workhorses — they support your body while you’re standing and propel you through life. Given their critical roles, it makes sense to provide a little extra support for your feet with [orthotics](/services).
 
-However, before you head to your local pharmacy for inserts, the [team of podiatrists](/doctors) here at [Neuhaus Foot and Ankle](/about) wants to make a compelling case for considering custom orthotics over store-bought.
+However, before you head to your local pharmacy for inserts, the [team of podiatrists](/doctors) here at [Neuhaus Foot and Ankle](/#about) wants to make a compelling case for considering custom orthotics over store-bought.
 
 ## Your feet are complex
 

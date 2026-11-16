@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 For the more than [9 million people](https://www.verywellhealth.com/gout-6273971) in the United States with gout, any steps toward preventing an attack are steps worth taking. And that starts with understanding the role uric acid plays in your body and how to keep these levels in check.
 
-Since May is Arthritis Awareness Month, our [team](/doctors) at [Neuhaus Foot and Ankle](/about) is devoting our blog posts to [arthritis](/services/foot-ankle-arthritis-joint-care) and your feet. Here, we take a closer look at what causes high levels of uric acid in your body and how keeping these levels in check can help prevent a [gout](/services/foot-ankle-arthritis-joint-care) attack.
+Since May is Arthritis Awareness Month, our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) is devoting our blog posts to [arthritis](/services/foot-ankle-arthritis-joint-care) and your feet. Here, we take a closer look at what causes high levels of uric acid in your body and how keeping these levels in check can help prevent a [gout](/services/foot-ankle-arthritis-joint-care) attack.
 
 ## The role of uric acid
 

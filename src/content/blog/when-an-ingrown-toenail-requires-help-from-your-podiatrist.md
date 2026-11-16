@@ -34,7 +34,7 @@ Fortunately, ingrown toenails aren’t usually serious, but they can be painful.
 
 ## When to seek a podiatrist for an ingrown toenail
 
-There are times, however, when an ingrown toenail causes significant problems and requires some professional help. At [Neuhaus Foot and Ankle](/about), with multiple locations in Murfreesboro, Brentwood, Hermitage, Nashville, Waverly, Smyrna, and Lebanon, TN, [our team of expert podiatrists](/doctors) offers some suggestions for when you should seek help at one of the clinics.
+There are times, however, when an ingrown toenail causes significant problems and requires some professional help. At [Neuhaus Foot and Ankle](/#about), with multiple locations in Murfreesboro, Brentwood, Hermitage, Nashville, Waverly, Smyrna, and Lebanon, TN, [our team of expert podiatrists](/doctors) offers some suggestions for when you should seek help at one of the clinics.
 
 ### It’s infected
 

@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Peripheral neuropathy affects at least [20 million people in the United States](https://www.ninds.nih.gov/disorders/patient-caregiver-education/fact-sheets/peripheral-neuropathy-fact-sheet), though experts suspect that this number is far higher thanks to poor reporting and misdiagnoses. Whatever the final tally may be, our goal is to better control these numbers through early detection and excellent care.
 
-At [Neuhaus Foot and Ankle](/about), our [team](/doctors) of podiatric health care experts has extensive experience identifying and treating [peripheral neuropathy](/services/diabetic-foot-care-wounds-circulation) in the feet, one of the primary locations where nerve damage develops.
+At [Neuhaus Foot and Ankle](/#about), our [team](/doctors) of podiatric health care experts has extensive experience identifying and treating [peripheral neuropathy](/services/diabetic-foot-care-wounds-circulation) in the feet, one of the primary locations where nerve damage develops.
 
 One of the keys to success is early intervention, before the nerve damage becomes permanent. And this is where you come in. By recognizing the early signs of peripheral neuropathy and coming to see us right away, you can avoid some of the very serious outcomes of untreated nerve damage.
 

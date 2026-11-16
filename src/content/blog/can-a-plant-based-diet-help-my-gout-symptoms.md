@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 If you’ve ever experienced a gout flare-up, you want to do everything in your power to prevent another one. Since one of the best steps toward that goal is to make a change in your diet that includes avoiding certain meats, you might be considering going the extra mile with a plant-based diet.
 
-At [Neuhaus Foot and Ankle](/about), with 10 locations throughout Tennessee, our [team of podiatrists](/doctors) applauds your willingness to get involved in your health and to make the adjustments necessary to avoid problems like [gout](/services/foot-ankle-arthritis-joint-care). Dietary changes have long been suggested when it comes to managing this form of inflammatory arthritis, and a plant-based diet certainly qualifies as a dietary change!
+At [Neuhaus Foot and Ankle](/#about), with 10 locations throughout Tennessee, our [team of podiatrists](/doctors) applauds your willingness to get involved in your health and to make the adjustments necessary to avoid problems like [gout](/services/foot-ankle-arthritis-joint-care). Dietary changes have long been suggested when it comes to managing this form of inflammatory arthritis, and a plant-based diet certainly qualifies as a dietary change!
 
 But is a plant-based diet more beneficial for managing gout? Let’s take a look.
 

@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 It’s hard to think of an activity that somehow doesn’t involve your feet. To call these small appendages hard-working would be an understatement, especially for those who call upon their feet to work.
 
-At [Neuhaus Foot and Ankle](/about), our [team of experienced podiatrists](/doctors) sees our fair share of work-related foot problems and [plantar fasciitis](/services/heel-achilles-arch-pain) ranks among the top.
+At [Neuhaus Foot and Ankle](/#about), our [team of experienced podiatrists](/doctors) sees our fair share of work-related foot problems and [plantar fasciitis](/services/heel-achilles-arch-pain) ranks among the top.
 
 To give you an idea of how your job may affect the health of your feet, here’s a quick look at plantar fasciitis and which occupations may place you more at risk of developing this painful condition.
 

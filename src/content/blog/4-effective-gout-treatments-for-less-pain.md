@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 More than [nine million people](https://jamanetwork.com/journals/jama/fullarticle/2787544) (or nearly 4% of the adult population) in the United States understand what it is like to experience a gout attack. A gout flare can be an incredibly painful event that hijacks your life for a couple of weeks, making relief your main priority.
 
-The good news is that there are ways that you can better weather a gout flare-up. In this month’s blog post, our [team of foot health experts](/doctors) at [Neuhaus Foot and Ankle](/about) reviews four options for pain relief when you have [gout](/services/foot-ankle-arthritis-joint-care).
+The good news is that there are ways that you can better weather a gout flare-up. In this month’s blog post, our [team of foot health experts](/doctors) at [Neuhaus Foot and Ankle](/#about) reviews four options for pain relief when you have [gout](/services/foot-ankle-arthritis-joint-care).
 
 ## Behind the pain
 

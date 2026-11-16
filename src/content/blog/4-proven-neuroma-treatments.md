@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 You begin to feel strange symptoms between your toes as you walk, ranging from tingling to pain. Upon inspection, you don’t notice anything too out of the ordinary, which means it could be a [Morton’s neuroma](/services).
 
-To figure out whether a neuroma is to blame for your discomfort, turn to the [experienced podiatry team](/doctors) here at [Neuhaus Foot and Ankle](/about). We have extensive experience with all foot-related problems and can quickly identify and remedy your issue.
+To figure out whether a neuroma is to blame for your discomfort, turn to the [experienced podiatry team](/doctors) here at [Neuhaus Foot and Ankle](/#about). We have extensive experience with all foot-related problems and can quickly identify and remedy your issue.
 
 If you suspect you have Morton’s neuroma, the good news is that there are several proven treatments that will put the spring back in your step.
 

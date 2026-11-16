@@ -11,7 +11,7 @@ You’ve been anxious to debut a new pair of shoes, and you spent the day showin
 
 Whatever the case, blisters on your feet are quite common and, in most cases, aren’t cause for concern (aside from the discomfort for a few days). That said, there are times when blisters can become problematic, such as when they become infected.
 
-To help you identify an infected blister on your foot, the [team of podiatrists](/doctors) here at [Neuhaus Foot and Ankle](/about) pulled together the following information on blisters and the potential warning signs of an infection.
+To help you identify an infected blister on your foot, the [team of podiatrists](/doctors) here at [Neuhaus Foot and Ankle](/#about) pulled together the following information on blisters and the potential warning signs of an infection.
 
 ## Behind your blister
 

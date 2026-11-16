@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Plantar fasciitis isn’t a medical emergency, but it can be quite painful. As the [two million people](https://orthoinfo.aaos.org/en/diseases--conditions/plantar-fasciitis-and-bone-spurs) who are treated for plantar fasciitis each year in the United States can tell you, avoiding the problem in the first place is the best way to manage the condition.
 
-If you want your first steps in the morning to be pain-free, the [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/about), with 10 locations across Tennessee, recommend several solutions for [plantar fasciitis](/services/heel-achilles-arch-pain), and [orthotics](/services) head the list.
+If you want your first steps in the morning to be pain-free, the [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/#about), with 10 locations across Tennessee, recommend several solutions for [plantar fasciitis](/services/heel-achilles-arch-pain), and [orthotics](/services) head the list.
 
 ## What’s behind plantar fasciitis?
 

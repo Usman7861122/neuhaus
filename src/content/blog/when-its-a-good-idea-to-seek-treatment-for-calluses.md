@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 For the most part, calluses on your feet are benign and common, but there are times when these rough patches of extra skin can become problematic.
 
-Since not all [calluses](/services) are created equal, the [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/about), with 10 locations across Tennessee, is taking a closer look at calluses in this month’s blog post. We’ll also explore when seeking treatment is the right idea.
+Since not all [calluses](/services) are created equal, the [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/#about), with 10 locations across Tennessee, is taking a closer look at calluses in this month’s blog post. We’ll also explore when seeking treatment is the right idea.
 
 ## How calluses form
 

@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 You might be wondering why specialists in foot health are concerned with uric acid, but if you’ve ever had a gout flare-up, you understand its significance. If you want to avoid this incredibly painful form of [arthritis](/services/foot-ankle-arthritis-joint-care), it pays to understand the role that uric acid plays in your body; especially considering that the incidence of gout in the United States is on the rise.
 
-To help you better understand the connection between [gout](/services/foot-ankle-arthritis-joint-care) and uric acid, the [podiatry team](/doctors) here at [Neuhaus Foot and Ankle](/about) presents the following information.
+To help you better understand the connection between [gout](/services/foot-ankle-arthritis-joint-care) and uric acid, the [podiatry team](/doctors) here at [Neuhaus Foot and Ankle](/#about) presents the following information.
 
 ## Uric acid and your body
 

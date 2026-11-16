@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Every year, about [50 million Americans](https://www.statista.com/statistics/190303/running-participants-in-the-us-since-2006/) put on sneakers and go for a run at least once. And if running has turned into your healthy habit, you may want to take it to the next level by adding some miles.
 
-While our [team](/doctors) of podiatry experts at [Neuhaus Foot and Ankle](/about) applaud your efforts, we also want you to keep the health of your feet top of mind. Runners can develop a wide range of [sports injuries](/services/fractures-trauma-sports-injuries), many of which affect your feet.
+While our [team](/doctors) of podiatry experts at [Neuhaus Foot and Ankle](/#about) applaud your efforts, we also want you to keep the health of your feet top of mind. Runners can develop a wide range of [sports injuries](/services/fractures-trauma-sports-injuries), many of which affect your feet.
 
 Of course, we want you to meet your running goals and go the extra mile, but we prefer you do so with these tips in mind.
 

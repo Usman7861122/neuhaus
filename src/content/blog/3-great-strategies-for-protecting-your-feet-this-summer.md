@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 The moment you can ditch the bulky shoes and boots of winter, you want to take advantage and release your feet.
 
-While getting outside and airing everything out is great, our experienced [team](/doctors) of podiatry specialists at [Neuhaus Foot and Ankle](/about) wants you to consider these foot health strategies.
+While getting outside and airing everything out is great, our experienced [team](/doctors) of podiatry specialists at [Neuhaus Foot and Ankle](/#about) wants you to consider these foot health strategies.
 
 ## 1. Going barefoot — when it’s OK and when not to
 

@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Any foot issue, even a seemingly minor one like an [ingrown toenail](/services), can disproportionately affect your life, given how much you rely on your feet to carry you through the world.
 
-So, as we enter a new year, our [network](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) wants to add something to your resolution list and get you to include your all-important feet.
+So, as we enter a new year, our [network](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) wants to add something to your resolution list and get you to include your all-important feet.
 
 As you move forward this year, wouldn’t it be nice to do so with happy and healthy feet? By following these tips, there’s no reason why you can’t.
 

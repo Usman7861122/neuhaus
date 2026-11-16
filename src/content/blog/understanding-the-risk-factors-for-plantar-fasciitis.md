@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 If you’ve experienced plantar fasciitis — a condition that sends about [two million Americans](https://orthoinfo.aaos.org/en/diseases--conditions/plantar-fasciitis-and-bone-spurs) to a doctor each year — you know all too well the pain it causes. If you haven’t had plantar fasciitis, you want to protect yourself from it.
 
-As with most foot conditions, understanding your risks is the best way to avoid them. That is why our [team](/doctors) at [Neuhaus Foot and Ankle](/about) is taking this opportunity to highlight the common risks of [plantar fasciitis](/services/heel-achilles-arch-pain).
+As with most foot conditions, understanding your risks is the best way to avoid them. That is why our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) is taking this opportunity to highlight the common risks of [plantar fasciitis](/services/heel-achilles-arch-pain).
 
 Let’s take a look.
 

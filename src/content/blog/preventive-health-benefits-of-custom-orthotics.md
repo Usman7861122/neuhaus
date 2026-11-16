@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Your feet are paramount to your mobility, so you want to make sure that they’re in optimal health. Taking steps to prevent common and uncomfortable foot conditions, such as [bunions](/services/bunions-toes-forefoot), [hammertoes](/services/bunions-toes-forefoot), and [plantar fasciitis](/services/heel-achilles-arch-pain), is key to preserving pain-free mobility. Fortunately, custom orthotics can play an essential role in that endeavor.
 
-In this month’s blog post, the [team of podiatrists](/doctors) here at [Neuhaus Foot and Ankle](/about), with 10 locations throughout Tennessee, takes a closer look at the preventive benefits of [custom orthotics](/services).
+In this month’s blog post, the [team of podiatrists](/doctors) here at [Neuhaus Foot and Ankle](/#about), with 10 locations throughout Tennessee, takes a closer look at the preventive benefits of [custom orthotics](/services).
 
 ## Appreciating your feet and their workload
 

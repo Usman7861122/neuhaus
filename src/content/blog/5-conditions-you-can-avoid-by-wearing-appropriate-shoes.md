@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Your feet have a challenging enough job carrying you through life, so you want to support their enormous daily efforts. Unfortunately, many of us are doing the opposite by wearing shoes that don’t provide support and cause harm to our feet.
 
-While our [team](/doctors) at [Neuhaus Foot and Ankle](/about) isn’t trying to police your fashion, we’re trying to protect your feet so they can carry you happily into the future. And by happily, we’re referring to avoiding some foot conditions associated with improper footwear.
+While our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) isn’t trying to police your fashion, we’re trying to protect your feet so they can carry you happily into the future. And by happily, we’re referring to avoiding some foot conditions associated with improper footwear.
 
 Let’s take a look at five.
 

@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 You might have been told as a child that you shouldn’t touch warts because they can spread, and there’s some truth to it. As an adult, if you’ve developed plantar warts on your feet, you’re probably worried about them affecting other parts of your body — or someone else.
 
-While the potential for plantar warts to spread exists, the threat is easily remedied with prompt treatment at our practice. In this month’s blog post, our [team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/about), with 10 locations throughout Tennessee, is focusing on [plantar warts](/services) and how to keep them from spreading.
+While the potential for plantar warts to spread exists, the threat is easily remedied with prompt treatment at our practice. In this month’s blog post, our [team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/#about), with 10 locations throughout Tennessee, is focusing on [plantar warts](/services) and how to keep them from spreading.
 
 ## Plantar warts at a glance
 

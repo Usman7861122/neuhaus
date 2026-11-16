@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Tennessee may not be known for harsh winters full of ice and snow that require heavy-duty winter boots, but it’s also far from sandal season. And the truth is, there are still plenty of days with freezing rain, ice, and snow. If you want to keep your feet warm and dry, while also protecting yourself against slip and falls, winter shoes are a must-have.
 
-At [Neuhaus Foot and Ankle](/about), the highly experienced [podiatry team](/doctors) partners with patients for optimal foot health, which includes finding the right footwear for every season.
+At [Neuhaus Foot and Ankle](/#about), the highly experienced [podiatry team](/doctors) partners with patients for optimal foot health, which includes finding the right footwear for every season.
 
 As winter approaches, here are five great tips to keep in mind when you go out to find your perfect winter shoe.
 

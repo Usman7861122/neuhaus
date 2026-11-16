@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Calluses may seem benign enough — after all, they’re just patches of thickened skin that develop on certain areas of your feet. However, depending upon their location and size, calluses can go from minor nuisances to painful problems that hamper your ability to step freely.
 
-If your feet easily develop [calluses](/services) and they’re causing problems, the extensive [team](/doctors) of podiatry experts at [Neuhaus Foot and Ankle](/about) is here to help.
+If your feet easily develop [calluses](/services) and they’re causing problems, the extensive [team](/doctors) of podiatry experts at [Neuhaus Foot and Ankle](/#about) is here to help.
 
 In this month’s blog post, we take a closer look at calluses — how they develop, why they become a serious problem, and what we can do to offer relief.
 

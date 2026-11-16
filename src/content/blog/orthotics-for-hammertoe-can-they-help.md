@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Do you have a toe that’s starting to bend upward at the joints, giving it a claw- or hammer-like appearance? The odds are fairly good that you’re developing a hammertoe, which requires early intervention so it doesn’t get worse.
 
-At [Neuhaus Foot and Ankle](/about), our [team](/doctors) of highly qualified podiatric specialists has one goal — to facilitate your journey through life by ensuring the health of your feet. We understand that even the smallest issue in your lower extremities can have a cascading effect, which is why seeking our help at the first signs of a problem is always a good idea. And this is certainly true of progressive conditions like [hammertoes](/services/bunions-toes-forefoot).
+At [Neuhaus Foot and Ankle](/#about), our [team](/doctors) of highly qualified podiatric specialists has one goal — to facilitate your journey through life by ensuring the health of your feet. We understand that even the smallest issue in your lower extremities can have a cascading effect, which is why seeking our help at the first signs of a problem is always a good idea. And this is certainly true of progressive conditions like [hammertoes](/services/bunions-toes-forefoot).
 
 In the following, we explore how hammertoes arise and whether [custom orthotics](/services) can play a role in halting their progression.
 

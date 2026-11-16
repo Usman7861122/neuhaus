@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Bunions are common, but in many cases, they’re preventable. The trick is to catch them before they develop or as they’re developing because, once bunions form, this structural issue doesn't go away on its own.
 
-While we offer surgical treatment for [bunions](/services/bunions-toes-forefoot) here at [Neuhaus Foot and Ankle](/about), our [team of podiatric experts](/doctors) wants our patients to avoid the issue in the first place.
+While we offer surgical treatment for [bunions](/services/bunions-toes-forefoot) here at [Neuhaus Foot and Ankle](/#about), our [team of podiatric experts](/doctors) wants our patients to avoid the issue in the first place.
 
 Here are four tips that can go a long way toward keeping problematic bunions at bay.
 

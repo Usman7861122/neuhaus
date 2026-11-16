@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Several conditions can lead to peripheral neuropathy (nerve damage) in your feet, but none are as prevalent as diabetes. If you consider that [1 in 10 people](https://www.cdc.gov/diabetes/images/library/socialmedia/diabetesintheus_print.pdf) in the United States has diabetes and more than half of these people will struggle with neuropathy, you understand just how significant the issue has become.
 
-As experts in the many conditions that can affect your lower extremities, the [team of podiatrists](/doctors) here at [Neuhaus Foot and Ankle](/about), with 10 locations throughout Tennessee, has considerable experience helping our patients to preserve their foot health in the face of diabetes. Through branches of our practice dedicated to [diabetic foot care](/services/diabetic-foot-care-wounds-circulation) and [neuropathy](/services/diabetic-foot-care-wounds-circulation), our goal is to help you maintain comfortable mobility. Here’s how we can accomplish this together.
+As experts in the many conditions that can affect your lower extremities, the [team of podiatrists](/doctors) here at [Neuhaus Foot and Ankle](/#about), with 10 locations throughout Tennessee, has considerable experience helping our patients to preserve their foot health in the face of diabetes. Through branches of our practice dedicated to [diabetic foot care](/services/diabetic-foot-care-wounds-circulation) and [neuropathy](/services/diabetic-foot-care-wounds-circulation), our goal is to help you maintain comfortable mobility. Here’s how we can accomplish this together.
 
 ## Causes of neuropathy
 

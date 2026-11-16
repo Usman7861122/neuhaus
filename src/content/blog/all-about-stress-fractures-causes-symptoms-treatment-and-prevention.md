@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Each of your feet contains [26 bones](https://www.arthritis.org/health-wellness/about-arthritis/where-it-hurts/anatomy-of-the-foot). Together, these bones account for about one-quarter of your body's total number of bones. While you can undoubtedly break any of these bones in an accident — think falls or having something heavy fall directly on your foot — most of the time, your feet develop stress fractures.
 
-Stress fractures are often subtle [sports injuries](/services/fractures-trauma-sports-injuries), so our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) wants to dive into stress fractures — how they happen, how to recognize one, and how we treat them.
+Stress fractures are often subtle [sports injuries](/services/fractures-trauma-sports-injuries), so our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) wants to dive into stress fractures — how they happen, how to recognize one, and how we treat them.
 
 ## The makings of a stress fracture
 

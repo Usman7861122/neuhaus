@@ -11,7 +11,7 @@ You look down at your feet, and you can hardly recognize them anymore. Gone are 
 
 Called bunions, this structural foot issue is common. In fact, about [1 in 5 people](https://www.ncbi.nlm.nih.gov/books/NBK513134/) have them.
 
-When it comes to treating [bunions](/services/bunions-toes-forefoot), our [team](/doctors) of podiatry specialists at [Neuhaus Foot and Ankle](/about) has extensive experience in this area, providing both surgical and non-surgical solutions.
+When it comes to treating [bunions](/services/bunions-toes-forefoot), our [team](/doctors) of podiatry specialists at [Neuhaus Foot and Ankle](/#about) has extensive experience in this area, providing both surgical and non-surgical solutions.
 
 The reality is that treating bunions is challenging because they are progressive and go more than bone deep.
 

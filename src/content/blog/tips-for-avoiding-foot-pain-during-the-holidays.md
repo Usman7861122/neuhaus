@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 You probably don’t give your feet much thought as you run around to prepare for the holidays. Then, at a holiday gathering you’ve been looking forward to, the effects of the extra workload start to take effect, and you’re in pain.
 
-If you want to avoid painful feet over the holidays this year, our [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/about) pulled together the following tips.
+If you want to avoid painful feet over the holidays this year, our [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/#about) pulled together the following tips.
 
 ## If the shoe fits
 

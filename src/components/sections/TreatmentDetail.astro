@@ -2,6 +2,9 @@
 import PageLayout from "@/layouts/PageLayout.astro";
 import { site, unsplash } from "@/data/site";
 import { conditionSlugForTitle } from "@/data/conditions";
+import PostLinks from "@/components/ui/PostLinks.astro";
+import { postsForTopic } from "@/lib/related";
+import { getCollection } from "astro:content";
 import { clinicsFor, treatmentsAt, nearest, miles, consultPhoto, accentPhoto, type Clinic } from "@/data/treatments";
 
 interface Props { service: any; all: any[]; clinic?: Clinic }
@@ -9,6 +12,7 @@ const { service, all, clinic } = Astro.props;
 const t = service.data.title as string;
 const lower = (service.data.short ?? t.toLowerCase()) as string;
 const groups = service.data.groups as { label: string | null; items: string[] }[];
+const blogPosts = clinic ? [] : postsForTopic(`${t} ${lower}`, await getCollection("blog"));
 const total = groups.reduce((n, g) => n + g.items.length, 0);
 const at = clinic ? ` in ${clinic.city}` : "";
 
@@ -262,6 +266,8 @@ const steps = [
       </div>
     </div>
   </section>
+
+  {blogPosts.length > 0 && <div class="wrap py-12"><PostLinks heading={`Articles about ${lower}`} posts={blogPosts} /></div>}
 
   <!-- 7. FAQ -->
   <section class="bg-mist py-16 md:py-24">

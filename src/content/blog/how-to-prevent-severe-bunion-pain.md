@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Bunions begin innocently enough, but as they progress and the misalignment in your joint worsens and the bony protrusion grows, you can be left in considerable pain.
 
-If you’re struggling with severe [bunion](/services/bunions-toes-forefoot) pain, there are some steps you can take to find relief. To get started, the [team of podiatric experts](/doctors) here at [Neuhaus Foot and Ankle](/about) presents the following information.
+If you’re struggling with severe [bunion](/services/bunions-toes-forefoot) pain, there are some steps you can take to find relief. To get started, the [team of podiatric experts](/doctors) here at [Neuhaus Foot and Ankle](/#about) presents the following information.
 
 ## When inflammation strikes
 

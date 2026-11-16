@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 More than [34 million people in the United States](https://www.diabetesresearch.org/diabetes-statistics) have diabetes and there are 1.5 million new diagnoses each year. Of the many complications that can develop from diabetes, foot ulcers are among the most common — one study found that ulcers affect [19-34% of all diabetics](https://www.acponline.org/system/files/documents/about_acp/chapters/mt/2017/the_diabetic_foot_neibauer.pdf). More alarming is the fact that 50% of foot ulcers lead to infection, and with infection comes the very real danger of amputation.
 
-At [Neuhaus Foot and Ankle,](/about) our [team](/doctors) of experienced podiatrists specializes in preventive [diabetic foot care](/services/diabetic-foot-care-wounds-circulation) because we prefer to focus on a more positive statistic — regular foot exams can reduce amputation rates by 45 to 85%.
+At [Neuhaus Foot and Ankle,](/#about) our [team](/doctors) of experienced podiatrists specializes in preventive [diabetic foot care](/services/diabetic-foot-care-wounds-circulation) because we prefer to focus on a more positive statistic — regular foot exams can reduce amputation rates by 45 to 85%.
 
 In the following, we take a closer look at the causes and treatments for diabetic foot ulcers.
 

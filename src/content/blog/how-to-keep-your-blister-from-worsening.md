@@ -11,7 +11,7 @@ You were anxious to give those new shoes a spin and ended up spending the whole 
 
 No matter how you developed a blister on your foot, you’ve got an uncomfortable problem to deal with, and you’re worried about complications.
 
-To keep your blister from devolving into a prolonged issue, our [team of podiatric experts](/doctors) here at [Neuhaus Foot and Ankle](/about) presents the following information to guide you through.
+To keep your blister from devolving into a prolonged issue, our [team of podiatric experts](/doctors) here at [Neuhaus Foot and Ankle](/#about) presents the following information to guide you through.
 
 ## Why blisters form
 

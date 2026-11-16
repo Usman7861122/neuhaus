@@ -1,0 +1,20 @@
+---
+// A short "read more" list of blog posts. Used on blog posts, and on condition and service pages.
+interface Props { heading: string; posts: { id: string; data: { title: string; excerpt: string; category: string; readTime: string } }[]; class?: string }
+const { heading, posts, class: cls = "" } = Astro.props;
+---
+{posts.length > 0 && (
+  <section class={cls} aria-label={heading}>
+    <h2 class="font-display text-3xl text-navy-900">{heading}</h2>
+    <ul class="mt-6 grid gap-4 md:grid-cols-3">
+      {posts.map((p) => (
+        <li>
+          <a href={`/blog/${p.id}/`} class="group flex h-full flex-col rounded-2xl border border-line bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-navy">
+            <span class="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-sky-ink">{p.data.category} &nbsp;/&nbsp; {p.data.readTime}</span>
+            <span class="mt-2 font-display text-[1.35rem] leading-[1.15] text-navy-900 group-hover:text-navy">{p.data.title}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}

@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Verruca plantaris — this seemingly important name is simply the medical term used to describe warts that develop on your feet. While not necessarily dangerous, plantar warts can be bothersome, especially since they tend to develop in high-pressure areas, like the bottoms of your feet. In fact, the word “plantar” indicates the soles of your feet.
 
-At [Neuhaus Foot and Ankle](/about), our experienced [podiatry team](/doctors) has treated its fair share of [plantar warts](/services). We want to highlight this condition here, especially as we head into summer, which is the prime time for this unwelcome viral infection.
+At [Neuhaus Foot and Ankle](/#about), our experienced [podiatry team](/doctors) has treated its fair share of [plantar warts](/services). We want to highlight this condition here, especially as we head into summer, which is the prime time for this unwelcome viral infection.
 
 If you want to spend your summer barefoot and wart-free, here are a few lifestyle tips that will keep plantar warts at bay.
 

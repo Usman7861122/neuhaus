@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Whether you’re a seasoned pro when it comes to wearing high heels, or you only bring them out for special occasions, there’s no getting around the fact that heels aren’t the most comfortable footwear.
 
-From our perspective as podiatrists, the [team](/doctors) here at [Neuhaus Foot and Ankle](/about) wants to underscore the comfort issues that come with high heels and how they’re related to foot structure issues, such as [bunions](/services/bunions-toes-forefoot).
+From our perspective as podiatrists, the [team](/doctors) here at [Neuhaus Foot and Ankle](/#about) wants to underscore the comfort issues that come with high heels and how they’re related to foot structure issues, such as [bunions](/services/bunions-toes-forefoot).
 
 If you routinely wear high heels and you’re developing painful bunions, the connection is no coincidence.
 

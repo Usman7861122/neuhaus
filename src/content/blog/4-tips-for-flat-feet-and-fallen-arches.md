@@ -11,7 +11,7 @@ We’re all born with flat feet, but within a few years, the tendons and ligamen
 
 Up to [one-third of the population](https://www.medicalnewstoday.com/articles/168608#causes-and-risks) has some degree of pes planus, the medical term for flat feet and fallen arches.
 
-If you have flat feet caused by fallen arches, and they’re causing problems — perhaps your feet hurt after being on them all day— our [team](/doctors) at [Neuhaus Foot and Ankle](/about) wants to help. To get started, we’ve pulled together four great tips for dealing with flat feet and fallen arches.
+If you have flat feet caused by fallen arches, and they’re causing problems — perhaps your feet hurt after being on them all day— our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) wants to help. To get started, we’ve pulled together four great tips for dealing with flat feet and fallen arches.
 
 ## 1. The right shoes
 

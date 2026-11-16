@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Onychomycosis. This rather ominous word is the medical term for a seemingly mundane problem — toenail fungus. While fungal nails may not exactly constitute a medical emergency, the condition can be incredibly stubborn to deal with once it takes hold, sending people on a months-long, if not years-long, battle to regain toenail health.
 
-At [Neuhaus Foot and Ankle](/about), our [team of foot health experts](/doctors) firmly believes that the best way to navigate [toenail fungus](/services) is to avoid the problem altogether. To that end, we’ve pulled together a few valuable tips that will keep onychomycosis at bay.
+At [Neuhaus Foot and Ankle](/#about), our [team of foot health experts](/doctors) firmly believes that the best way to navigate [toenail fungus](/services) is to avoid the problem altogether. To that end, we’ve pulled together a few valuable tips that will keep onychomycosis at bay.
 
 ## Create a barrier in public places
 

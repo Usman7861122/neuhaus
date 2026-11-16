@@ -11,7 +11,7 @@ When bunions develop in your feet, they’re not only unattractive, they can als
 
 If you know that bunions run in your family or you’ve seen someone close to you go through bunion treatment, including surgery, you know you want to avoid the problem.
 
-To help, the [team of experienced podiatrists](/doctors) at [Neuhaus Foot and Ankle](/about) thought we’d take this opportunity to outline a few [bunion](/services/bunions-toes-forefoot) prevention tips.
+To help, the [team of experienced podiatrists](/doctors) at [Neuhaus Foot and Ankle](/#about) thought we’d take this opportunity to outline a few [bunion](/services/bunions-toes-forefoot) prevention tips.
 
 ## Why bunion prevention is key
 

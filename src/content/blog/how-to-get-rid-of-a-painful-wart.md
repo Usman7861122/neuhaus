@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Warts, blisters, and [ingrown toenails](/services) — these may all seem like relatively minor issues until they show up in your feet. Given that plantar warts favor weight-bearing areas on the soles of your feet, it’s easy to understand how a wart can be so uncomfortable, making every other step a painful one.
 
-If you’re struggling with a [plantar wart](/services), the good news is that the [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/about) offer several solutions, clearing the way forward for pain-free walking.
+If you’re struggling with a [plantar wart](/services), the good news is that the [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/#about) offer several solutions, clearing the way forward for pain-free walking.
 
 ## Seeking professional help
 

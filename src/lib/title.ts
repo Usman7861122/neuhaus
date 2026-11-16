@@ -6,13 +6,14 @@ const tidy = (s: string) => s.replace(/\s+/g, " ").replace(/[\s,;:&\-–]+$/, ""
 
 const nameVariants = (name: string): string[] => {
   const noParens = name.replace(/\s*\([^)]*\)/g, "").trim();
-  const out = [name, noParens, noParens.split(":")[0], noParens.split(",")[0], noParens.split(/ and /)[0], noParens.split(/ & | and /)[0]];
+  const noTail = noParens.replace(/\s+(of|in|affecting)\s+the\s+.*$/i, "").replace(/,?\s+including\s+.*$/i, "");
+  const out = [name, noParens, noTail, noParens.split(":")[0], noParens.split(",")[0], noParens.split(/ and /)[0], noParens.split(/ & | and /)[0]];
   return [...new Set(out.map(tidy).filter((v) => v.length >= 6))];
 };
 
 export function fitTitle(raw: string, max = MAX_TITLE): string {
   let t = raw.replace(/\s+/g, " ").trim();
-  if (t.length <= max) return t;
+  if (t.length <= max) return enrich(t);
   if (t.endsWith(SUFFIX)) t = t.slice(0, -SUFFIX.length);
   if (t.length <= max) return t;
 
@@ -40,7 +41,15 @@ export function fitTitle(raw: string, max = MAX_TITLE): string {
       i = t.indexOf(s, i + 1);
     }
   }
-  if (best > 0) return tidy(t.slice(0, best));
+  if (best >= 40) return enrich(tidy(t.slice(0, best)));
+  // No good break: cut at a word, and never end on a filler word.
   const cut = t.slice(0, max);
-  return tidy(cut.slice(0, cut.lastIndexOf(" ")));
+  const words = cut.slice(0, cut.lastIndexOf(" ")).split(" ");
+  while (words.length > 3 && /^(to|a|an|of|the|and|or|for|in|on|with|your|you|that|is)$/i.test(words[words.length - 1])) words.pop();
+  return enrich(tidy(words.join(" ")));
+}
+
+/** Titles under 45 characters get the brand added when it fits, so they say more. */
+export function enrich(t: string): string {
+  return t.length < 45 && !/neuhaus/i.test(t) && (t + SUFFIX).length <= MAX_TITLE ? t + SUFFIX : t;
 }

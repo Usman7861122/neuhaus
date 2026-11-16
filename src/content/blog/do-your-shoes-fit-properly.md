@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 From the moment you hop out of bed until you go to sleep at night, your feet are hard at work, providing mobility, balance, and support. When you hamper their ability to function by wearing poorly fitting shoes, you can experience discomfort and harmful structural changes in your feet.
 
-As foot care specialists, the [team](/doctors) here at [Neuhaus Foot and Ankle](/about) is tasked with ensuring the health of these all-important appendages. While there’s much we can do to help you move through the world comfortably, you can also do your part by choosing a shoe that fits.
+As foot care specialists, the [team](/doctors) here at [Neuhaus Foot and Ankle](/#about) is tasked with ensuring the health of these all-important appendages. While there’s much we can do to help you move through the world comfortably, you can also do your part by choosing a shoe that fits.
 
 ## The dangers of ill-fitting shoes
 

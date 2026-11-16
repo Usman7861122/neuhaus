@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Those large bony protrusions at the base of your big toes are called bunions. They not only pose cosmetic issues, but they can be downright painful, especially when they’re inflamed.
 
-If you’re struggling with painful [bunions](/services/bunions-toes-forefoot), there are several ways to address the problem. To give you an idea about your options, our [team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/about), with 10 locations across Tennessee reviews four steps for reducing bunion pain.
+If you’re struggling with painful [bunions](/services/bunions-toes-forefoot), there are several ways to address the problem. To give you an idea about your options, our [team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/#about), with 10 locations across Tennessee reviews four steps for reducing bunion pain.
 
 ## 1. Change your shoes
 

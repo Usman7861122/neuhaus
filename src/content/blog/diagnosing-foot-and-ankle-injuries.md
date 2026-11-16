@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Your foot or ankle is in pain, and you’ve decided to just grit your teeth and bear it in the hopes that the discomfort will go away on its own. Unfortunately, this approach to your all-important feet and ankles is anything but wise as you run the risk of permanently damaging your foot or ankle. For any foot or ankle injury, you need prompt diagnosis and treatment.
 
-Providing advanced diagnostic and treatment services is the [highly qualified team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/about). Whether you’ve sprained your ankle or you’re struggling with heel pain, we can quickly identify and treat the injury and put that spring back in your step.
+Providing advanced diagnostic and treatment services is the [highly qualified team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/#about). Whether you’ve sprained your ankle or you’re struggling with heel pain, we can quickly identify and treat the injury and put that spring back in your step.
 
 ### The benefits of a professional diagnosis
 

@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 With every step you take, tendons in your feet and ankles enable the movements and provide support and stability along the way. Their role in your mobility can become abundantly clear when you tear one of these tough connective tissues, leaving you hobbled and in discomfort.
 
-If you’re wondering about what to expect after a tendon tear and whether the tissue will heal on its own, the answer is complex. In this month’s blog post, our [team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/about), with 10 locations across Tennessee, takes a closer look at tendon tears.
+If you’re wondering about what to expect after a tendon tear and whether the tissue will heal on its own, the answer is complex. In this month’s blog post, our [team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/#about), with 10 locations across Tennessee, takes a closer look at tendon tears.
 
 ## The main tendons in your feet and ankles
 

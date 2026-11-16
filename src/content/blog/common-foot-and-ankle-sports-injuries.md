@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Your feet and ankles are regularly under a lot of stress, but when you add sports into the mix, the risk of injury increases.
 
-At [Neuhaus Foot and Ankle](/about), our [team of podiatry experts](/doctors) encourages our clients to maintain a healthy and active lifestyle. We would, however, like you to be aware of the potential for injury to your feet and ankles so you can work to prevent a problem in the first place, allowing you to stay in the game.
+At [Neuhaus Foot and Ankle](/#about), our [team of podiatry experts](/doctors) encourages our clients to maintain a healthy and active lifestyle. We would, however, like you to be aware of the potential for injury to your feet and ankles so you can work to prevent a problem in the first place, allowing you to stay in the game.
 
 Here’s a look at five common [sports injuries](/services/fractures-trauma-sports-injuries) and how you can keep your feet and ankles safe.
 

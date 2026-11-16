@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 More than [eight million people in the United States](https://www.hss.edu/condition-list_gout.asp) struggle with gout — an inflammatory form of arthritis — with men outpacing women three to one. The prevalence of gout has been on the rise in recent decades and many medical experts point toward the rising incidence of obesity, high blood pressure, and diabetes as likely contributors.
 
-At [Neuhaus Foot and Ankle](/about), our experienced [team](/doctors) of podiatrists believes that one of the most important keys to preventing [gout](/services/foot-ankle-arthritis-joint-care) is education — namely nutritional counseling. Our team routinely helps patients manage this painful condition. Here’s what we recommend when it comes to diet.
+At [Neuhaus Foot and Ankle](/#about), our experienced [team](/doctors) of podiatrists believes that one of the most important keys to preventing [gout](/services/foot-ankle-arthritis-joint-care) is education — namely nutritional counseling. Our team routinely helps patients manage this painful condition. Here’s what we recommend when it comes to diet.
 
 ## Gout at a glance
 

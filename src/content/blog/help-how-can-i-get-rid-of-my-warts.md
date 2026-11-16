@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Warts are the most common viral infection impacting the skin. If you’re among those who are battling these uncomfortable and unsightly skin growths, you likely know how frustrating it can be to get rid of warts.
 
-In these cases, it’s best to get a qualified [podiatry team](/doctors) in your corner, like the one here at [Neuhaus Foot and Ankle](/about). When it comes to [warts](/services), we have the equipment, experience, and resources you need to banish this skin infection once and for all.
+In these cases, it’s best to get a qualified [podiatry team](/doctors) in your corner, like the one here at [Neuhaus Foot and Ankle](/#about). When it comes to [warts](/services), we have the equipment, experience, and resources you need to banish this skin infection once and for all.
 
 ## Why are warts so stubborn?
 

@@ -11,7 +11,7 @@ Your feet are anatomical marvels for their size — the small appendages are res
 
 A great way to provide extra support for your feet is with [custom orthotics](/services) designed specifically for your feet, health, and goals.
 
-To give you an idea of some of the many conditions that can benefit from tailored support, our [team](/doctors) at [Neuhaus Foot and Ankle](/about) presents five for which we routinely recommend custom orthotics.
+To give you an idea of some of the many conditions that can benefit from tailored support, our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) presents five for which we routinely recommend custom orthotics.
 
 ## 1. Foot and ankle arthritis
 

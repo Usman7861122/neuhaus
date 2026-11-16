@@ -11,7 +11,7 @@ Spring is here, and you’re looking forward to letting your feet see the light 
 
 To avoid contracting [toenail fungus](/services) this spring (or any time of year), you remain vigilant about protecting your feet against this fungal infection.
 
-To help ward off toenail fungus, the [highly qualified podiatry team](/doctors) here at [Neuhaus Foot and Ankle](/about) thought we’d outline a few prevention techniques to keep your feet looking great this spring and summer. As part of this discussion, we take a look at whether toenail fungus is contagious and how we can treat the problem should you become infected.
+To help ward off toenail fungus, the [highly qualified podiatry team](/doctors) here at [Neuhaus Foot and Ankle](/#about) thought we’d outline a few prevention techniques to keep your feet looking great this spring and summer. As part of this discussion, we take a look at whether toenail fungus is contagious and how we can treat the problem should you become infected.
 
 ## A self-contained infection
 

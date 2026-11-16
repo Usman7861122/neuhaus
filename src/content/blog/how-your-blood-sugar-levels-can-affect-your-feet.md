@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 If you have a health issue that prevents your body from properly regulating the levels of sugar in your blood, it is called diabetes. Each year in the United States, [1.4 million people](https://www.diabetes.org/about-us/statistics/about-diabetes) are diagnosed with diabetes, which puts them at risk for some significant health complications, including damage to their feet.
 
-To shed some light on the connection between high blood sugar levels and problems in your feet, the [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/about), with 10 locations across Tennessee, presents the following information.
+To shed some light on the connection between high blood sugar levels and problems in your feet, the [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/#about), with 10 locations across Tennessee, presents the following information.
 
 ## A matter of glucose regulation
 

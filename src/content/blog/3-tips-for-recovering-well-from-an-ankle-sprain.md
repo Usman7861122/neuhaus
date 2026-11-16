@@ -11,7 +11,7 @@ Each year in the United States, [about 2 million people](https://pmc.ncbi.nlm.ni
 
 If you consider that [up to 70% of acute ankle sprains](https://pmc.ncbi.nlm.nih.gov/articles/PMC6602402/) end with some lingering disability, including chronic ankle instability, you want to do what you can to heal right the first time.
 
-With that in mind, our extensive [team](/doctors) of [sports injury](/services/fractures-trauma-sports-injuries) experts at [Neuhaus Foot and Ankle](/about) wants to review the best practices that will help heal your ankle sprain.
+With that in mind, our extensive [team](/doctors) of [sports injury](/services/fractures-trauma-sports-injuries) experts at [Neuhaus Foot and Ankle](/#about) wants to review the best practices that will help heal your ankle sprain.
 
 ## 1. Have us evaluate the ankle sprain
 

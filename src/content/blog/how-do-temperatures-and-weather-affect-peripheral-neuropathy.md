@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Tennessee might not be known for extreme temperatures, but we do have our fair share of hot and cold swings. For the millions of people who have peripheral neuropathy, mainly due to diabetes, temperatures can have an impact on symptom severity.
 
-Our [team](/doctors) at [Neuhaus Foot and Ankle](/about) specializes in [diabetic foot](/services/diabetic-foot-care-wounds-circulation)and [peripheral neuropathy](/services/diabetic-foot-care-wounds-circulation) care, and we believe that education is an excellent first line of defense when managing this potentially painful condition.
+Our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) specializes in [diabetic foot](/services/diabetic-foot-care-wounds-circulation)and [peripheral neuropathy](/services/diabetic-foot-care-wounds-circulation) care, and we believe that education is an excellent first line of defense when managing this potentially painful condition.
 
 In this blog, we will look at how weather and temperatures can affect your neuropathy and how to prevent symptoms from flaring or further problems from developing.
 

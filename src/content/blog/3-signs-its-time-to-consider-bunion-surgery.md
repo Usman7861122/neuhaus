@@ -11,7 +11,7 @@ Most bunions start out innocently enough — your big toe starts to lean toward 
 
 Estimates place the prevalence of bunions at about [20% of people](https://www.ncbi.nlm.nih.gov/books/NBK513134/). While many people don’t have issues with their bunions. However, when bunions cause problems, it explains why [more than 350,000 bunion surgeries](https://pubmed.ncbi.nlm.nih.gov/35705454/) are performed yearly in the United States.
 
-As medical providers specializing in all things related to feet, our [Neuhaus Foot and Ankle](/about) team has experience helping people with problematic [bunions](/services/bunions-toes-forefoot). While surgery is only a decision you can make, we can outline what drives most of our patients to us for bunion surgery.
+As medical providers specializing in all things related to feet, our [Neuhaus Foot and Ankle](/#about) team has experience helping people with problematic [bunions](/services/bunions-toes-forefoot). While surgery is only a decision you can make, we can outline what drives most of our patients to us for bunion surgery.
 
 ## 1. Your bunions become painful
 

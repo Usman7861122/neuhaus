@@ -7,7 +7,7 @@ category: "Foot health"
 readTime: "3 min read"
 ---
 
-Maybe you stub your toe on the door frame or perhaps something heavy falls on your foot — in either case, you may incur a fracture. But not all fractures are equal, and one may be far more serious than the other. Depending upon the location and size of the fracture, there are times when good home care will suffice and others when you need the expert care of the [podiatry team](/doctors) at [Neuhaus Foot and Ankle](/about).
+Maybe you stub your toe on the door frame or perhaps something heavy falls on your foot — in either case, you may incur a fracture. But not all fractures are equal, and one may be far more serious than the other. Depending upon the location and size of the fracture, there are times when good home care will suffice and others when you need the expert care of the [podiatry team](/doctors) at [Neuhaus Foot and Ankle](/#about).
 
 Here are a few tips to help guide you when you’ve injured your toe.
 

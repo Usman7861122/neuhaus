@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 You hop out of bed to take on the day only to hobble with your first steps as your plantar fasciitis flares up. Granted, the pain subsides after a minute or two as your tissue stretches out, but wouldn’t it be nice not to deal with pain first thing in the morning?
 
-The [team](/doctors) at [Neuhaus Foot and Ankle](/about) certainly feels this way, which is why we’ve pulled together a few exercises that go a long way toward relieving the pain that stems from [plantar fasciitis](/services/heel-achilles-arch-pain).
+The [team](/doctors) at [Neuhaus Foot and Ankle](/#about) certainly feels this way, which is why we’ve pulled together a few exercises that go a long way toward relieving the pain that stems from [plantar fasciitis](/services/heel-achilles-arch-pain).
 
 ## 1. Stretching your calves
 

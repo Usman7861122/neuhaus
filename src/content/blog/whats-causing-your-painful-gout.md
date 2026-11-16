@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 If you have a history of gout, you’re all too familiar with the excruciating pain that develops in the affected joint — usually in your big toe. Granted, you can go years in between gout flare-ups, but all it takes is one more painful episode to remind you that prevention is the best tactic.
 
-To prevent your [gout](/services/foot-ankle-arthritis-joint-care) from flaring up again, it’s helpful to understand what’s prompting the problem. To that end, the [team](/doctors) of foot health experts here at [Neuhaus Foot and Ankle](/about) is taking this opportunity to dive a little deeper to explain the causes of gout.
+To prevent your [gout](/services/foot-ankle-arthritis-joint-care) from flaring up again, it’s helpful to understand what’s prompting the problem. To that end, the [team](/doctors) of foot health experts here at [Neuhaus Foot and Ankle](/#about) is taking this opportunity to dive a little deeper to explain the causes of gout.
 
 ## Getting to the root of gout
 

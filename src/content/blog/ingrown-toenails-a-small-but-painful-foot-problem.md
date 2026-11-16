@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Ingrown toenails can top the charts when it comes to pain and discomfort. Millions of people can attest to this — [up to 1 in 20 people](https://www.medicalnewstoday.com/articles/onychocryptosis) have the condition at any given time, and ingrown toenails account for a whopping [20% of all foot problems](https://my.clevelandclinic.org/health/diseases/17664-ingrown-toenails).
 
-Our [team](/doctors) at [Neuhaus Foot and Ankle](/about) recognizes that pain relief is a top priority when you have an [ingrown toenail](/services). We offer pain relief at any of our 13 locations across Tennessee.
+Our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) recognizes that pain relief is a top priority when you have an [ingrown toenail](/services). We offer pain relief at any of our 13 locations across Tennessee.
 
 In the following blog, we explore ingrown toenails, including how they form, how we treat them, why treatment is important, and how to prevent them. Let’s get started.
 

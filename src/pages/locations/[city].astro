@@ -31,6 +31,8 @@ const ld = JSON.stringify([
   {
     "@context": "https://schema.org", "@type": "MedicalClinic", name: `Neuhaus Foot & Ankle, ${c.city}`,
     medicalSpecialty: "Podiatric", telephone: c.phone,
+    url: `https://www.neufoot.com/locations/${c.slug}/`, image: "https://www.neufoot.com/images/neuhaus-logo.png", logo: "https://www.neufoot.com/images/neuhaus-logo.png",
+    parentOrganization: { "@type": "MedicalBusiness", name: "Neuhaus Foot & Ankle", url: "https://www.neufoot.com/" },
     address: { "@type": "PostalAddress", streetAddress: c.address, addressLocality: c.city, addressRegion: "TN", postalCode: c.zip.split(" ").pop(), addressCountry: "US" },
     geo: { "@type": "GeoCoordinates", latitude: c.lat, longitude: c.lng },
   },

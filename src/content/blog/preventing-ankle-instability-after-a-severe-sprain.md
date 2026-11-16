@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Americans are no strangers to sprained ankles — about [two million](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6602402/) occur yearly, and ankle sprains account for [one-quarter of sports injuries](https://kidshealth.org/en/teens/ankle-sprains.html). Whether diving for a ball or stepping off a curb awkwardly, however you develop an acute ankle sprain, there’s a [1 in 5 chance](https://www.ncbi.nlm.nih.gov/books/NBK560619/) you will struggle with chronic ankle instability.
 
-At [Neuhaus Foot and Ankle](/about), our [team](/doctors) of [sports injury](/services/fractures-trauma-sports-injuries) experts understands how a sprained ankle can cause a lifetime of instability in the joint. We’re here to help prevent that outcome.
+At [Neuhaus Foot and Ankle](/#about), our [team](/doctors) of [sports injury](/services/fractures-trauma-sports-injuries) experts understands how a sprained ankle can cause a lifetime of instability in the joint. We’re here to help prevent that outcome.
 
 ## Assessing the sprain
 

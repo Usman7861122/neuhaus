@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 You’ve developed a nasty case of toenail fungus and you’re worried about spreading this frustrating condition to others. Or, maybe someone in your family has the condition, and you’d prefer to keep it as contained as possible. The fact is that toenail fungus is contagious, and you’re right to exercise some caution.
 
-To protect yourself and others from [fungal nail infections](/services), our [team of podiatric experts](/doctors) at [Neuhaus Foot and Ankle](/about) wants to take a closer look at how this problem can spread from one foot to another.
+To protect yourself and others from [fungal nail infections](/services), our [team of podiatric experts](/doctors) at [Neuhaus Foot and Ankle](/#about) wants to take a closer look at how this problem can spread from one foot to another.
 
 ## Toenail fungus basics
 

@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 As the foundational structures of your body, to function best, your feet count on everything above them being properly aligned. When there’s a problem, such as tight calf muscles, the effects are not only local, but they also influence how your feet function.
 
-While many foot complaints are just that — problems in your feet — our [podiatric team](/doctors) here at [Neuhaus Foot and Ankle](/about) understands that the underlying problem may lie elsewhere. The perfect example is those who have tight calves, which can lead to issues both above and below these muscles.
+While many foot complaints are just that — problems in your feet — our [podiatric team](/doctors) here at [Neuhaus Foot and Ankle](/#about) understands that the underlying problem may lie elsewhere. The perfect example is those who have tight calves, which can lead to issues both above and below these muscles.
 
 In the following, we explore the effects that tight calves can have on your feet.
 

@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Foot pain can limit your life in a lot of ways. Whether you're dealing with foot deformities, bunions, or some other foot or ankle problem, custom orthotic inserts fit into your shoes, providing the support your feet and ankles need to help relieve pain. [Orthotics](/services) can also prevent foot or ankle injuries.
 
-At [Neuhaus Foot and Ankle](/about), we prescribe custom orthotics or recommend over-the-counter orthotics for patients in the Nashville, Tennessee, area. Here are just some of the reasons why our experienced [care team](/doctors) might suggest you try custom orthotics.
+At [Neuhaus Foot and Ankle](/#about), we prescribe custom orthotics or recommend over-the-counter orthotics for patients in the Nashville, Tennessee, area. Here are just some of the reasons why our experienced [care team](/doctors) might suggest you try custom orthotics.
 
 ## 1. Relief from pain
 

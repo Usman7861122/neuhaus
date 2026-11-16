@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Foot abnormalities like bunions are progressive and don’t simply appear out of nowhere. That means there are steps you can take to slow their progression. These steps not only save your feet from the cometic problems bunions pose but the pain and discomfort that comes with these bony protrusions as well.
 
-Since [bunions](/services/bunions-toes-forefoot) develop gradually, our knowledgeable [podiatry team](/doctors) here at [Neuhaus Foot and Ankle](/about) thought we’d take this opportunity to provide you with a few evasive measures that allow you to sidestep severe bunions.
+Since [bunions](/services/bunions-toes-forefoot) develop gradually, our knowledgeable [podiatry team](/doctors) here at [Neuhaus Foot and Ankle](/#about) thought we’d take this opportunity to provide you with a few evasive measures that allow you to sidestep severe bunions.
 
 Here’s a look at how bunions develop and four steps you can take to stop them from getting worse.
 

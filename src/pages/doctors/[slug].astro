@@ -24,7 +24,8 @@ const title = titleOptions.find((t) => t.length <= 60) ?? titleOptions[titleOpti
 const description = `${d.seeing} ${d.bio[0]}`.slice(0, 160);
 const ld = JSON.stringify({
   "@context": "https://schema.org", "@type": "Physician", name: `Dr. ${p.name}`, medicalSpecialty: "Podiatric",
-  honorificSuffix: p.creds, image: p.photo || undefined,
+  honorificSuffix: p.creds, url: `https://www.neufoot.com/doctors/${p.slug}/`,
+  image: p.photo ? new URL(p.photo, "https://www.neufoot.com/").href : undefined,
   worksFor: { "@type": "MedicalClinic", name: site.name },
   availableService: offices.map((o) => ({ "@type": "MedicalClinic", name: `Neuhaus Foot & Ankle, ${o!.city}`, address: { "@type": "PostalAddress", streetAddress: o!.address, addressLocality: o!.city, addressRegion: "TN" } })),
 });

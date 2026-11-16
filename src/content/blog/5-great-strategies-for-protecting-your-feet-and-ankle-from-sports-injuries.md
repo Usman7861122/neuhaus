@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Did you know that a whopping [30,000 people sprain their ankles](https://www.sportsmedoa.com/articles/jsmt-aid1052.php) daily in the United States? Or that plantar fasciitis sends [two million Americans](https://orthoinfo.aaos.org/en/diseases--conditions/plantar-fasciitis-and-bone-spurs) to the doctor each year? These are just two of the more common foot and ankle injuries that tend to favor active people.
 
-Our [team](/doctors) here at [Neuhaus Foot and Ankle](/about) wants you to be active, which is why we offer dedicated [sports injury services](/services/fractures-trauma-sports-injuries).
+Our [team](/doctors) here at [Neuhaus Foot and Ankle](/#about) wants you to be active, which is why we offer dedicated [sports injury services](/services/fractures-trauma-sports-injuries).
 
 While we can expertly treat your sports injury, we also want to help you avoid them. To that end, we’ve pulled together some great strategies for protecting your feet and ankles while you play sports.
 

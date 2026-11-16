@@ -11,7 +11,7 @@ The human body contains a whopping [60,000 miles of vessels](https://my.clevelan
 
 Such is the case with peripheral artery disease (PAD), which affects [1 out of every 20 Americans](https://www.nhlbi.nih.gov/sites/default/files/publications/06-5837_0.pdf) over the age of 50. The risk factors associated with PAD include serious issues like heart attack and stroke, but the condition can also lead to problems in your feet — potentially life-altering ones.
 
-As foot health experts, our [team](/doctors) at [Neuhaus Foot and Ankle](/about) wants to weigh in on [peripheral artery disease](/services/diabetic-foot-care-wounds-circulation) and why we’re concerned about this cardiovascular issue. Let’s take a look.
+As foot health experts, our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) wants to weigh in on [peripheral artery disease](/services/diabetic-foot-care-wounds-circulation) and why we’re concerned about this cardiovascular issue. Let’s take a look.
 
 ## PAD and slow-healing foot wounds
 

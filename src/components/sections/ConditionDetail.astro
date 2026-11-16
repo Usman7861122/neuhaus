@@ -4,6 +4,8 @@ import PageLayout from "@/layouts/PageLayout.astro";
 import { site, unsplash } from "@/data/site";
 import { conditions, conditionBySlug, siblingsOf, photoPool } from "@/data/conditions";
 import { clinics, nearest, miles, accentPhoto } from "@/data/treatments";
+import PostLinks from "@/components/ui/PostLinks.astro";
+import { postsForTopic } from "@/lib/related";
 
 interface Props { slug: string; city?: string }
 const { slug, city } = Astro.props;
@@ -12,6 +14,7 @@ const clinic = city ? clinics.find((c) => c.slug === city) : undefined;
 const services = (await getCollection("services")).sort((a, b) => a.data.order - b.data.order);
 const parent = services.find((s) => s.id === cond.parent)!;
 const sibs = siblingsOf(cond);
+const blogPosts = clinic ? [] : postsForTopic(`${cond.name} ${cond.aka ?? ""}`, await getCollection("blog"));
 const idx = conditions.findIndex((c) => c.slug === slug);
 
 const name = cond.name;
@@ -221,6 +224,8 @@ const steps = [
       </div>
     </section>
   )}
+
+  {blogPosts.length > 0 && <div class="wrap py-12"><PostLinks heading={`Read more about ${short}`} posts={blogPosts} /></div>}
 
   <!-- FAQ -->
   <section class="py-16 md:py-24">

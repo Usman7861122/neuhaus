@@ -11,7 +11,7 @@ For the millions of people with bunions, the bony protrusions can be a hassle in
 
 Whether you develop bunions due to age — [1 out of 3 people over 65](https://www.ncbi.nlm.nih.gov/books/NBK513134/) have bunions — or because of genetics —[70% of people with bunions](https://orthoinfo.aaos.org/en/diseases--conditions/bunions/) have a family history — you’ve likely had a painful flare-up or two.
 
-As experts in everything foot-related, including [bunions](/services/bunions-toes-forefoot), our [team](/doctors) at [Neuhaus Foot and Ankle](/about) wants to provide you with a few best practices when it comes to managing bunion pain.
+As experts in everything foot-related, including [bunions](/services/bunions-toes-forefoot), our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) wants to provide you with a few best practices when it comes to managing bunion pain.
 
 ## 1. Get into comfortable shoes
 

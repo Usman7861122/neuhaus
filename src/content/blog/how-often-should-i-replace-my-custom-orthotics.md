@@ -11,7 +11,7 @@ You’ve joined the millions of people who rely on custom orthotics to improve t
 
 However, to make sure that you continue to benefit from this important support, you should make sure that you update your orthotics regularly.
 
-When it comes to exact timelines for [custom orthotics](/services), our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) usually figures on 1-3 years. That said, custom orthotic replacement timelines can vary from one person to the next.
+When it comes to exact timelines for [custom orthotics](/services), our [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) usually figures on 1-3 years. That said, custom orthotic replacement timelines can vary from one person to the next.
 
 Here’s what we want you to know about the lifespan of custom orthotics.
 

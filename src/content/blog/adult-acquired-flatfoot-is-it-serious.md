@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Adult-acquired flatfoot, which is also known as fallen arches, is a fairly common problem that develops in about [five million people in the United States](https://www.ncbi.nlm.nih.gov/books/NBK542178/). For the lucky ones, the development poses no problems, while others are left dealing with persistent and nagging pain. Whatever its effect on your life, the good news is that there are solutions. And the earlier we intervene, the quicker we can get you back to normal foot function.
 
-Since adult-acquired flatfoot can be complex, you need the expertise of an experienced [podiatry team](/doctors), like the one found at [Neuhaus Foot and Ankle](/about). Our understanding of adult-acquired flatfoot is extensive, and we have the tools you need to remedy the problem.
+Since adult-acquired flatfoot can be complex, you need the expertise of an experienced [podiatry team](/doctors), like the one found at [Neuhaus Foot and Ankle](/#about). Our understanding of adult-acquired flatfoot is extensive, and we have the tools you need to remedy the problem.
 
 To give you an idea of what we’re up against, here’s a look at how adult-acquired flatfoot occurs and when it deserves our attention.
 

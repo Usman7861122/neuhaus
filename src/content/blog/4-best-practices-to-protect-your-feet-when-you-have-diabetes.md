@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 By 2045, the International Diabetes Foundation predicts that [1 out of every 8 people](https://idf.org/about-diabetes/diabetes-facts-figures/) worldwide will be living with diabetes. If you consider that, currently, in the United States, more than [1 in 10 people](https://www.cdc.gov/diabetes/data/statistics-report/index.html) has diabetes, you understand that the problem is growing.
 
-As podiatrists, our [team](/doctors) at [Neuhaus Foot and Ankle](/about) finds numbers like these alarming since foot health is directly impacted by diabetes.
+As podiatrists, our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) finds numbers like these alarming since foot health is directly impacted by diabetes.
 
 Since November is National Diabetes Month, we want to promote optimal [diabetic foot care](/services/diabetic-foot-care-wounds-circulation) by outlining some best practices.
 

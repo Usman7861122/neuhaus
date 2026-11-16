@@ -11,7 +11,7 @@ You love getting out and moving around. Unfortunately, you have an ankle that’
 
 Each year in the United States, there are about [two million acute ankle sprains](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6602402/), and each of these injuries lays the groundwork for future chronic ankle instability. In fact, about [40% of people](https://www.ncbi.nlm.nih.gov/books/NBK459212/) who sprain an ankle report ongoing issues with repeated sprains, instability, and pain.
 
-If you suspect you have chronic ankle instability — a common [sports injury](/services/fractures-trauma-sports-injuries) — our [team](/doctors) at [Neuhaus Foot and Ankle](/about) wants to share some tips to help you take to your feet with more confidence again.
+If you suspect you have chronic ankle instability — a common [sports injury](/services/fractures-trauma-sports-injuries) — our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) wants to share some tips to help you take to your feet with more confidence again.
 
 ## Why the ankle instability?
 

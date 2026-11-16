@@ -11,7 +11,7 @@ Each year in the United States, [two million people](https://orthoinfo.aaos.org/
 
 If you devote yourself to your plantar fascia for a few minutes each day, you can not only relieve your current plantar fasciitis but also go a long way toward preventing the issue in the future.
 
-To get you started, our [team of foot health experts](/doctors) at [Neuhaus Foot and Ankle](/about) pulled together a few of the best exercises and stretches for [plantar fasciitis](/services/heel-achilles-arch-pain).
+To get you started, our [team of foot health experts](/doctors) at [Neuhaus Foot and Ankle](/#about) pulled together a few of the best exercises and stretches for [plantar fasciitis](/services/heel-achilles-arch-pain).
 
 ## Have a ball or a can of corn
 

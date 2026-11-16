@@ -11,7 +11,7 @@ Your two feet contain a quarter of the bones in your entire body — 26 in each.
 
 It should come as no surprise, given this large number of joints in your feet, that arthritis can strike, especially osteoarthritis (OA) — the most common form of joint disease.
 
-May is Arthritis Awareness Month, so our [team](/doctors) at [Neuhaus Foot and Ankle](/about) is focusing on the effects of [arthritis](/services/foot-ankle-arthritis-joint-care) on your feet. If your feet are achy and stiff, and you can’t figure out why, you’ll want to read on to see whether OA might be the culprit.
+May is Arthritis Awareness Month, so our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) is focusing on the effects of [arthritis](/services/foot-ankle-arthritis-joint-care) on your feet. If your feet are achy and stiff, and you can’t figure out why, you’ll want to read on to see whether OA might be the culprit.
 
 ## Osteoarthritis — a wear-and-tear disease
 

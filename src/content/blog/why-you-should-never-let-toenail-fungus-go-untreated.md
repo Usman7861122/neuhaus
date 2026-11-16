@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Fungal nail infections are common — they affect about [14% of the population](https://www.cdc.gov/fungal/nail-infections.html) in the United States. This minor medical issue can be unbelievably stubborn, engaging you in a seemingly never-ending battle to reclaim your toenails.
 
-If you’re battling [toenail fungus](/services), there are a few points that our [team](/doctors) of podiatry experts at [Neuhaus Foot and Ankle](/about) wants to make, starting with the fact that it’s not your imagination — the fungus is one formidable foe.
+If you’re battling [toenail fungus](/services), there are a few points that our [team](/doctors) of podiatry experts at [Neuhaus Foot and Ankle](/#about) wants to make, starting with the fact that it’s not your imagination — the fungus is one formidable foe.
 
 ## How the infection starts
 

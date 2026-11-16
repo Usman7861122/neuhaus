@@ -1,5 +1,5 @@
 ---
-title: "List of our most beloved and most supportive shoes for every occasion"
+title: "Best Supportive Shoes and Socks: Podiatrist Picks"
 date: 2020-12-06
 excerpt: "You’ve learned what to look for when purchasing supportive shoes. Now let us show you some of our favorite socks and shoes that are sure to impress in any occasion!"
 image: "https://sa1s3optim.patientpop.com/assets/images/provider/photos/2347824.jpeg"

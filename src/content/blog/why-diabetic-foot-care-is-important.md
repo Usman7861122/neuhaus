@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 For the [more than 38 million Americans](https://diabetes.org/about-diabetes/statistics/about-diabetes) who have a diabetes diagnosis, life can become more challenging, largely due to the serious complications associated with the chronic disease.
 
-As podiatrists, our extensive [team](/doctors) at [Neuhaus Foot and Ankle](/about) wants to focus on one complication in particular — diabetic foot ulcers. Since June is National Wound Healing Awareness Month, we thought it would be a good time to review why targeted [diabetic foot care](/services/diabetic-foot-care-wounds-circulation) is so critical.
+As podiatrists, our extensive [team](/doctors) at [Neuhaus Foot and Ankle](/#about) wants to focus on one complication in particular — diabetic foot ulcers. Since June is National Wound Healing Awareness Month, we thought it would be a good time to review why targeted [diabetic foot care](/services/diabetic-foot-care-wounds-circulation) is so critical.
 
 ## Diabetes and the health of your feet
 

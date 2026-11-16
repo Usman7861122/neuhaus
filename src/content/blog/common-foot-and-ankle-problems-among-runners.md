@@ -11,7 +11,7 @@ Whether you're a daily runner or get out once or twice a week, this exercise is 
 
 So, if you count yourself among the millions of Americans who run, you also need to know about running injuries, which affect [at least half of runners](https://www.yalemedicine.org/conditions/running-injury) yearly.
 
-As our name suggests, our focus at [Neuhaus Foot and Ankle](/about) is on feet and ankles. We extend this focus up to your lower legs, especially when it comes to [sports injuries](/services/fractures-trauma-sports-injuries). In the following blog post, our [team](/doctors) highlights common running injuries we see at our practice.
+As our name suggests, our focus at [Neuhaus Foot and Ankle](/#about) is on feet and ankles. We extend this focus up to your lower legs, especially when it comes to [sports injuries](/services/fractures-trauma-sports-injuries). In the following blog post, our [team](/doctors) highlights common running injuries we see at our practice.
 
 ## Shin splints
 

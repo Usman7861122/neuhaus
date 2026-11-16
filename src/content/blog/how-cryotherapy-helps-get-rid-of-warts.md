@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 We often take our feet for granted, assuming they’ll hold up their end of the bargain in getting us to where we need to go. Unfortunately, even the smallest problem can affect our ability to move with ease. And this can certainly be said of warts.
 
-While warts may seem insignificant, once you develop these uncomfortable growths, you understand just how frustrating this condition can be. If you’ve tried over-the-counter remedies, to no avail, the [team](/doctors) of qualified foot health experts here at [Neuhaus Foot and Ankle](/about) can help you [resolve plantar warts](/services), once and for all.
+While warts may seem insignificant, once you develop these uncomfortable growths, you understand just how frustrating this condition can be. If you’ve tried over-the-counter remedies, to no avail, the [team](/doctors) of qualified foot health experts here at [Neuhaus Foot and Ankle](/#about) can help you [resolve plantar warts](/services), once and for all.
 
 ## Warts — a lesson in frustration
 

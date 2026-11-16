@@ -11,7 +11,7 @@ For the millions of Americans who have diabetes ([more than 38 million](https://
 
 Now that we have your attention with these eye-opening statistics, let’s go in a more positive direction.
 
-Since November is National Diabetes Month, our extensive [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/about) wants to discuss the importance of early [diabetic foot care](/services/diabetic-foot-care-wounds-circulation) when you have a wound.
+Since November is National Diabetes Month, our extensive [team](/doctors) of foot health experts at [Neuhaus Foot and Ankle](/#about) wants to discuss the importance of early [diabetic foot care](/services/diabetic-foot-care-wounds-circulation) when you have a wound.
 
 ## The link between diabetes and foot ulcers
 

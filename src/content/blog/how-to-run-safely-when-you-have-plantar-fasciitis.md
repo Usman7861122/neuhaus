@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 You head out regularly to hit the track, trails, or streets for a run. It is important for your overall mental and physical wellness. But when plantar fasciitis strikes, you don’t want to give up your routine.
 
-To help you stay quick on your feet, the [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/about), with 10 locations across Tennessee, want to provide you with a few tips that can make running with [plantar fasciitis](/services/heel-achilles-arch-pain) easier and safer.
+To help you stay quick on your feet, the [team of foot health experts](/doctors) here at [Neuhaus Foot and Ankle](/#about), with 10 locations across Tennessee, want to provide you with a few tips that can make running with [plantar fasciitis](/services/heel-achilles-arch-pain) easier and safer.
 
 ## How you develop plantar fasciitis
 

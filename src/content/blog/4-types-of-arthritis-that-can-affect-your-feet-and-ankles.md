@@ -7,7 +7,7 @@ category: "Arthritis"
 readTime: "2 min read"
 ---
 
-May is National Arthritis Awareness Month in the United States, so our [team](/doctors) of podiatry specialists at [Neuhaus Foot and Ankle](/about) thought it would be a good time to discuss how [arthritis](/services/foot-ankle-arthritis-joint-care) can affect your feet and ankles.
+May is National Arthritis Awareness Month in the United States, so our [team](/doctors) of podiatry specialists at [Neuhaus Foot and Ankle](/#about) thought it would be a good time to discuss how [arthritis](/services/foot-ankle-arthritis-joint-care) can affect your feet and ankles.
 
 At least [1 in 4 adults](https://odphp.health.gov/healthypeople/about/workgroups/arthritis-workgroup) in the US has an arthritis diagnosis, and we suspect this number is on the low side as many cases go undiagnosed. No matter the final tally, suffice it to say that [more than 100 different types of arthritis](https://www.arthritis.org/health-wellness/healthy-living/managing-pain/understanding-pain/sources-of-arthritis-pain) are causing joint pain and inflammation in millions of Americans.
 

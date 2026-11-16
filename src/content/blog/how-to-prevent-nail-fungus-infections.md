@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 As the temperatures warm, you begin to transition your wardrobe over to more appropriate wear, and you look forward to letting your body breathe — especially your feet. The one thing that might force them back into hiding is a bad case of unsightly toenail fungus, so you want to avoid the condition as best you can.
 
-To help keep your toenails healthy, the [team of podiatrists](/doctors) here at [Neuhaus Foot and Ankle](/about), with 10 locations throughout Tennessee, thought we’d devote this month’s blog post to [toenail fungus](/services) and the ways you can avoid this stubborn infection.
+To help keep your toenails healthy, the [team of podiatrists](/doctors) here at [Neuhaus Foot and Ankle](/#about), with 10 locations throughout Tennessee, thought we’d devote this month’s blog post to [toenail fungus](/services) and the ways you can avoid this stubborn infection.
 
 ## Toenail fungus at a glance
 

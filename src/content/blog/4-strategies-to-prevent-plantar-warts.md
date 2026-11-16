@@ -11,7 +11,7 @@ From a medical standpoint, plantar warts aren’t exactly a huge issue. However,
 
 These common growths — plantar warts develop in about [10% of the general population](https://my.clevelandclinic.org/health/diseases/24899-plantar-warts) — are contagious, so there are some steps you can take to avoid getting them in the first place.
 
-In this month’s blog post, our [team](/doctors) of podiatry specialists at [Neuhaus Foot and Ankle](/about) presents four steps for preventing [plantar warts](/services). We’ll also quickly outline how we treat plantar warts should they develop despite your best evasive efforts.
+In this month’s blog post, our [team](/doctors) of podiatry specialists at [Neuhaus Foot and Ankle](/#about) presents four steps for preventing [plantar warts](/services). We’ll also quickly outline how we treat plantar warts should they develop despite your best evasive efforts.
 
 ## 1. Take extra care around locker rooms and swimming pools
 

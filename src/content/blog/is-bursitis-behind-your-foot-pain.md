@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Consider your feet for a moment and all that they’re tasked with — these relatively small appendages are ground zero for your support and mobility. So, when even the smallest problem develops in your feet, it can throw off the structural balance and lead to pain, which can certainly be the case with bursitis.
 
-At [Neuhaus Foot and Ankle](/about), our [team](/doctors) of experienced podiatric experts has seen almost every imaginable cause of foot pain, from [ingrown toenails](/services) to [arthritis](/services/foot-ankle-arthritis-joint-care). One of the many issues is bursitis, and we dive into that problem here.
+At [Neuhaus Foot and Ankle](/#about), our [team](/doctors) of experienced podiatric experts has seen almost every imaginable cause of foot pain, from [ingrown toenails](/services) to [arthritis](/services/foot-ankle-arthritis-joint-care). One of the many issues is bursitis, and we dive into that problem here.
 
 ## Small problem, large discomfort
 

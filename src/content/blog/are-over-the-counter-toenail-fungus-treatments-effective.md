@@ -11,7 +11,7 @@ If it’s your first time with toenail fungus, know that once it takes hold, thi
 
 Toenail fungus affects [up to 14% of the general population](https://www.cdc.gov/fungal/nail-infections.html), which explains why there are so many over-the-counter products. Unfortunately, many of these products are long on promises but short on results.
 
-To shed some light on the challenges of treating [fungal toenails](/services), our [team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/about) pulled together some important points about treating the issue with over-the-counter (OTC) medications.
+To shed some light on the challenges of treating [fungal toenails](/services), our [team of podiatry experts](/doctors) here at [Neuhaus Foot and Ankle](/#about) pulled together some important points about treating the issue with over-the-counter (OTC) medications.
 
 ## What does toenail fungus look like?
 

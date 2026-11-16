@@ -3,6 +3,8 @@ import { getCollection, render } from "astro:content";
 import PageLayout from "@/layouts/PageLayout.astro";
 import { site, blogImage } from "@/data/site";
 import { formatDate } from "@/lib/format";
+import PostLinks from "@/components/ui/PostLinks.astro";
+import { conditionForPost, relatedPosts } from "@/lib/related";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -10,6 +12,8 @@ export async function getStaticPaths() {
 }
 const { post } = Astro.props;
 const { Content } = await render(post);
+const cond = conditionForPost(post);
+const related = relatedPosts(post, await getCollection("blog"));
 const schema = {
   "@context": "https://schema.org", "@type": "Article", headline: post.data.title, description: post.data.excerpt,
   datePublished: new Date(post.data.date).toISOString(), image: new URL(blogImage(post.data.image, 1600), Astro.site).href,
@@ -31,7 +35,16 @@ const schema = {
           <a href={site.phoneHref} class="btn-outline">Call {site.phone}</a>
         </div>
       </div>
-      <a href="/blog/" class="link-arrow mt-10">&larr; Back to all articles</a>
     </article>
+    <div class="wrap mt-12 max-w-5xl">
+      {cond && (
+        <p class="rounded-2xl border border-line p-6">
+          Related care: <a class="font-semibold text-navy underline" href={`/conditions/${cond.slug}/`}>{cond.name}</a>.
+          See symptoms, causes and treatment, and find your nearest clinic.
+        </p>
+      )}
+      <PostLinks heading="Keep reading" posts={related} class="mt-12" />
+      <a href="/blog/" class="link-arrow mt-10 inline-flex">&larr; Back to all articles</a>
+    </div>
   </section>
 </PageLayout>

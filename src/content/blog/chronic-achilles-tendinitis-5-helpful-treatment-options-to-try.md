@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 The human body contains about [4,000 tendons,](https://newsinhealth.nih.gov/2014/06/protect-your-tendons) which are connective tissues that attach muscles to bone. The largest and strongest of these tissues are your Achilles tendons, which attach your heel bones to your calf muscles to facilitate mobility.
 
-One of the more common ankle injuries that our [team](/doctors) of podiatry and [sports injury](/services/fractures-trauma-sports-injuries) experts at [Neuhaus Foot and Ankle](/about) sees is Achilles tendonitis.
+One of the more common ankle injuries that our [team](/doctors) of podiatry and [sports injury](/services/fractures-trauma-sports-injuries) experts at [Neuhaus Foot and Ankle](/#about) sees is Achilles tendonitis.
 
 While anyone can develop Achilles tendonitis, it’s especially common among athletes. In fact, athletes have a [24% chance](https://www.ncbi.nlm.nih.gov/books/NBK538149/) of developing the condition during their lifetimes.
 

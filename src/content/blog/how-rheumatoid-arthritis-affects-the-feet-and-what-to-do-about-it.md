@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Rheumatoid arthritis (RA) affects [1.5 million people](https://www.healthline.com/health/rheumatoid-arthritis/facts-statistics-infographic#Prevalence) in the United States, and women outpace men by 2-3 times. This form of arthritis can strike any joint in your body, but it tends to favor certain areas, such as your feet and ankles. In fact, more than [90% of people with RA](https://orthoinfo.aaos.org/en/diseases--conditions/rheumatoid-arthritis-of-the-foot-and-ankle) develop symptoms in their feet and ankles at some point.
 
-As foot and ankle specialists, our [team of podiatrists](/doctors) at [Neuhaus Foot and Ankle](/about) is well-versed in the forms of [arthritis](/services/foot-ankle-arthritis-joint-care) that can strike your lower appendages, including RA.
+As foot and ankle specialists, our [team of podiatrists](/doctors) at [Neuhaus Foot and Ankle](/#about) is well-versed in the forms of [arthritis](/services/foot-ankle-arthritis-joint-care) that can strike your lower appendages, including RA.
 
 In the following article, we explore how RA affects your feet and ankles and what we can do to help you move more freely.
 

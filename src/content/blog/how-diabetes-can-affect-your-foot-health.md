@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 The prevalence of diabetes in the United States is alarming — more than [34 million people](https://www.cdc.gov/diabetes/data/statistics-report/index.html) are already diagnosed, and an additional 88 million are considered prediabetic. Of the many concerns that come with a diabetes diagnosis, foot health is among the most significant.
 
-As experts in foot health, the [team](/doctors) here at [Neuhaus Foot and Ankle](/about) understands the serious complications that can arise when you have diabetes, ranging from mild nerve damage in your feet to amputation.
+As experts in foot health, the [team](/doctors) here at [Neuhaus Foot and Ankle](/#about) understands the serious complications that can arise when you have diabetes, ranging from mild nerve damage in your feet to amputation.
 
 As part of our comprehensive podiatry care, we offer specialized services that address [diabetic foot health](/services/diabetic-foot-care-wounds-circulation). Through expert preventive care, we can preserve the health of your feet in the face of diabetes.
 

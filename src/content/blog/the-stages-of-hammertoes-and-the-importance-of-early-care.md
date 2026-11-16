@@ -11,7 +11,7 @@ Many foot issues start out small enough — a bunion begins as just a small bump
 
 The same can be said of a common foot abnormality—hammertoes, which affect up to [20% of people.](https://www.ncbi.nlm.nih.gov/books/NBK559268/) When a hammertoe reaches the later stages, it takes on a crooked, inverted V shape that looks like a hammer.
 
-Early intervention can make a big difference with most progressive health issues. With that in mind, our [team](/doctors) at [Neuhaus Foot and Ankle](/about) wants to outline the stages of a developing [hammertoe](/services/bunions-toes-forefoot) and what we can do to treat it.
+Early intervention can make a big difference with most progressive health issues. With that in mind, our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) wants to outline the stages of a developing [hammertoe](/services/bunions-toes-forefoot) and what we can do to treat it.
 
 ## The three stages of hammertoes
 

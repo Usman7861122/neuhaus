@@ -11,7 +11,7 @@ Each of your feet contains [26 small bones](https://www.ncbi.nlm.nih.gov/books/N
 
 However, if you pile on to their already heavy workload, problems can arise, such as stress fractures. To give you an idea about how common this is, stress fractures in the foot or ankle account for about [20% of sports injuries](https://my.clevelandclinic.org/health/diseases/15841-stress-fractures) in recreational and competitive athletes.
 
-Our [team](/doctors) at [Neuhaus Foot and Ankle](/about) specializes in [sports injuries](/services/fractures-trauma-sports-injuries) that involve the feet and ankles, and we can say that our experiences reflect that stat above. In fact, a considerable portion of sports injuries are stress fractures. However, these stress injuries are not only relegated to the playing field, as we see many non-athletic patients with stress fractures.
+Our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) specializes in [sports injuries](/services/fractures-trauma-sports-injuries) that involve the feet and ankles, and we can say that our experiences reflect that stat above. In fact, a considerable portion of sports injuries are stress fractures. However, these stress injuries are not only relegated to the playing field, as we see many non-athletic patients with stress fractures.
 
 No matter how the injury develops, early intervention is critical because stress fractures become bigger problems quickly. With that in mind, we review a few common signs of stress fractures below.
 

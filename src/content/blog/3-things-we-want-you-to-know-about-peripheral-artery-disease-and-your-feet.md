@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 You feel pain in your lower legs, and even the smallest cut or blister takes a long time to heal. These are telltale signs of peripheral artery disease (PAD), which can significantly impact your foot health.
 
-As experts in the health of your lower limbs and feet, our podiatry [team](/doctors) at [Neuhaus Foot and Ankle](/about) wants to underscore the connection between [PAD](/services/diabetic-foot-care-wounds-circulation) and foot health in this month’s blog post. We’re not trying to use scare tactics, but this connection is serious because PAD can lead to dangerous infections and amputation.
+As experts in the health of your lower limbs and feet, our podiatry [team](/doctors) at [Neuhaus Foot and Ankle](/#about) wants to underscore the connection between [PAD](/services/diabetic-foot-care-wounds-circulation) and foot health in this month’s blog post. We’re not trying to use scare tactics, but this connection is serious because PAD can lead to dangerous infections and amputation.
 
 Now that we have your attention let’s review some points we want to make about PAD.
 

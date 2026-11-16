@@ -11,7 +11,7 @@ When describing toenail fungus, we often hear words like “stubborn” or “ha
 
 Toenail fungus isn’t usually medically serious. However, it can be a challenging condition to eliminate once it takes hold, so you want to do what you can to quickly contain the infection.
 
-As experts in [fungal toenails](/services), our [team](/doctors) at [Neuhaus Foot and Ankle](/about) wants to share a few strategies for dealing with these difficult infections.
+As experts in [fungal toenails](/services), our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) wants to share a few strategies for dealing with these difficult infections.
 
 And these best practices also go a long way toward preventing another fungal toenail infection in the future.
 

@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 There are [more than 100 types of arthritis](https://www.arthritis.org/health-wellness/healthy-living/managing-pain/understanding-pain/sources-of-arthritis-pain) that can lead to joint pain and inflammation in your body. When it comes to your all-important feet and ankles, rheumatoid arthritis affects about [1.5 million Americans](https://www.healthline.com/health/rheumatoid-arthritis/facts-statistics-infographic#Prevalence),
 
-May is Arthritis Awareness Month, so our [team](/doctors) at [Neuhaus Foot and Ankle](/about) is focusing on foot and ankle [arthritis](/services/foot-ankle-arthritis-joint-care) in this month’s blog posts. Here are some important points we want to share about rheumatoid arthritis (RA) and your feet.
+May is Arthritis Awareness Month, so our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) is focusing on foot and ankle [arthritis](/services/foot-ankle-arthritis-joint-care) in this month’s blog posts. Here are some important points we want to share about rheumatoid arthritis (RA) and your feet.
 
 ## Rheumatoid arthritis is an autoimmune condition
 

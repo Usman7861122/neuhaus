@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 Your feet and ankles are engineering marvels — about one-quarter of the bones in your body are located in your feet. And that’s to say nothing of the effort your ankles make. In fact, by the age of 50, most people have logged about [75,000 miles](https://www.arthritis.org/health-wellness/about-arthritis/where-it-hurts/anatomy-of-the-foot) on their feet and ankles.
 
-These miles can take their toll in the form of foot or ankle arthritis. Since May is Arthritis Awareness Month, our [team](/doctors) at [Neuhaus Foot and Ankle](/about) wants to review best practices for managing foot and ankle [arthritis](/services/foot-ankle-arthritis-joint-care). Let’s dive in.
+These miles can take their toll in the form of foot or ankle arthritis. Since May is Arthritis Awareness Month, our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) wants to review best practices for managing foot and ankle [arthritis](/services/foot-ankle-arthritis-joint-care). Let’s dive in.
 
 ## Don’t ignore your symptoms
 

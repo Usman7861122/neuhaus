@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Modern working conditions can wreak havoc on our bodies — too much standing or too much sitting. If you’re in the former group and spend most of your day on your feet, those same feet may be paying the price.
 
-One of the best ways to support your feet while you work is with custom orthotics. Our team knows what it’s talking about since healthcare providers often spend most of their days on their feet as well. This is certainly the case with our [team](/doctors) at [Neuhaus Foot and Ankle](/about), which is why we’re so pleased to offer [custom orthotics](/services).
+One of the best ways to support your feet while you work is with custom orthotics. Our team knows what it’s talking about since healthcare providers often spend most of their days on their feet as well. This is certainly the case with our [team](/doctors) at [Neuhaus Foot and Ankle](/#about), which is why we’re so pleased to offer [custom orthotics](/services).
 
 Below, discuss three amazing benefits that orthotics can provide if you’re on your feet while you work.
 

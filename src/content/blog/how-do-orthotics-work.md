@@ -9,7 +9,7 @@ readTime: "2 min read"
 
 Take a quick look at your feet and marvel at how small they are in relation to their enormous responsibilities. Due to their relatively small size, biomechanics are paramount in the ability of your feet to carry you through life, and any imbalance can have a cascading effect.
 
-For this reason, many of our patients here at [Neuhaus Foot and Ankle](/about), with 10 locations throughout Tennessee, turn to [custom orthotics](/services) to give their feet a little extra support in their duties. If you’re wondering whether orthotics can help your feet function better, our [team](/doctors) of foot health experts pulled together the following information.
+For this reason, many of our patients here at [Neuhaus Foot and Ankle](/#about), with 10 locations throughout Tennessee, turn to [custom orthotics](/services) to give their feet a little extra support in their duties. If you’re wondering whether orthotics can help your feet function better, our [team](/doctors) of foot health experts pulled together the following information.
 
 ## Explaining orthotics
 

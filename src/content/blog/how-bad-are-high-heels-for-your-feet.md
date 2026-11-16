@@ -9,7 +9,7 @@ readTime: "4 min read"
 
 Women, let’s face it, wearing your favorite stilettos for a fun night out often comes with aching feet. But did you know you might be causing permanent damage to your toes and arches for the sake of fashion? While your feet may recover after a day or two, just exactly how bad are high heels for your feet?
 
-Here at [Neuhaus Foot and Ankle](/about), we see women of all ages at our [eight locations in Nashville and across middle Tennessee](/book-appointment), with progressive and painful foot problems that can be traced back to wearing high heels.
+Here at [Neuhaus Foot and Ankle](/#about), we see women of all ages at our [eight locations in Nashville and across middle Tennessee](/book-appointment), with progressive and painful foot problems that can be traced back to wearing high heels.
 
 While [our board-certified podiatrists](/doctors) understand that a nice pair of pumps or high-heeled boots perfectly complement your black dress and other formal or casual attire, we’d like to make a case for healthy feet being more fashionable than your footwear.
 
@@ -51,6 +51,6 @@ Consider adding a pair of [custom orthotics](/services) to your dress shoes to h
 
 ### Favor some flats
 
-While we don’t claim to be experts in fashion footwear, [we *are* experts in feet](/about). There are hundreds, if not thousands of cute, dressy flats that complement any outfit. Flats let you thoroughly enjoy an evening out without having to deal with aching feet during and after the party.
+While we don’t claim to be experts in fashion footwear, [we *are* experts in feet](/#about). There are hundreds, if not thousands of cute, dressy flats that complement any outfit. Flats let you thoroughly enjoy an evening out without having to deal with aching feet during and after the party.
 
 Learn more ways to keep your feet healthy in all kinds of shoes. Give us a call at the Neuhaus Foot and Ankle location closest to you, or [schedule an appointment online](/book-appointment) today.

@@ -9,7 +9,7 @@ readTime: "3 min read"
 
 The days are longer, the temps are higher, and you look forward to going out without bundling up, and that includes your feet.
 
-As you free your feet for summer fun, our [team](/doctors) at [Neuhaus Foot and Ankle](/about) wants you to keep some practices in mind to protect your feet during the warmer months. Let’s take a look.
+As you free your feet for summer fun, our [team](/doctors) at [Neuhaus Foot and Ankle](/#about) wants you to keep some practices in mind to protect your feet during the warmer months. Let’s take a look.
 
 ## 1. Let your toes spread out
 

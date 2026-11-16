@@ -11,7 +11,7 @@ When you have [gout](/services/foot-ankle-arthritis-joint-care), you never know 
 
 For the more than [9 million people](https://jamanetwork.com/journals/jama/fullarticle/2787544) with gout in the United States (nearly 4% of the adult population), managing the condition is paramount — both during an attack and between flare-ups.
 
-And that’s where we come in. Our [foot team experts](/doctors) at [Neuhaus Foot and Ankle](/about) have extensive experience helping our patients navigate this painful form of arthritis. Below, we review four treatments that provide relief.
+And that’s where we come in. Our [foot team experts](/doctors) at [Neuhaus Foot and Ankle](/#about) have extensive experience helping our patients navigate this painful form of arthritis. Below, we review four treatments that provide relief.
 
 ## 1. Over-the-counter nonsteroidal anti-inflammatory drugs
 
