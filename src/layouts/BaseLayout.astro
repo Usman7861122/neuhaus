@@ -14,6 +14,21 @@ const { title, description, overlayHeader = false, schema } = Astro.props;
     <SEO title={title} description={description} />
     <slot name="head" />
     {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+    <!-- Google Analytics 4. Loaded after the page is ready so it does not slow the page down. -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-8MDSC0QKPY", { allow_google_signals: false, allow_ad_personalization_signals: false });
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          var s = document.createElement("script");
+          s.async = true;
+          s.src = "https://www.googletagmanager.com/gtag/js?id=G-8MDSC0QKPY";
+          document.head.appendChild(s);
+        }, 1500);
+      });
+    </script>
   </head>
   <body class="pb-[4.5rem] md:pb-0">
     <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[80] focus:rounded-full focus:bg-gold focus:px-5 focus:py-3 focus:text-navy-950">Skip to content</a>
