@@ -29,6 +29,19 @@ const { title, description, overlayHeader = false, schema } = Astro.props;
         }, 1500);
       });
     </script>
+    <!-- LeadConnector chat widget. Added after the page is ready so it does not slow the page down. -->
+    <script is:inline>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          var s = document.createElement("script");
+          s.src = "https://widgets.leadconnectorhq.com/loader.js";
+          s.async = true;
+          s.setAttribute("data-resources-url", "https://widgets.leadconnectorhq.com/chat-widget/loader.js");
+          s.setAttribute("data-widget-id", "6afded45571e778efff425b4");
+          document.body.appendChild(s);
+        }, 2500);
+      });
+    </script>
   </head>
   <body class="pb-[4.5rem] md:pb-0">
     <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[80] focus:rounded-full focus:bg-gold focus:px-5 focus:py-3 focus:text-navy-950">Skip to content</a>
