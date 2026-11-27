@@ -25,6 +25,12 @@ const blog = defineCollection({
     image: z.string(),
     category: z.string(),
     readTime: z.string(),
+    // Optional extras used for SEO and AI answers (FAQ markup, citations, topic)
+    updated: z.coerce.date().optional(),
+    keywords: z.array(z.string()).default([]),
+    topic: z.string().optional(),
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+    sources: z.array(z.object({ title: z.string(), url: z.string() })).default([]),
   }),
 });
 

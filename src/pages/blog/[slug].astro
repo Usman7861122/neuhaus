@@ -14,19 +14,62 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const cond = conditionForPost(post);
 const related = relatedPosts(post, await getCollection("blog"));
-const schema = {
-  "@context": "https://schema.org", "@type": "Article", headline: post.data.title, description: post.data.excerpt,
-  datePublished: new Date(post.data.date).toISOString(), image: new URL(blogImage(post.data.image, 1600), Astro.site).href,
-  author: { "@type": "Organization", name: site.name },
-  publisher: { "@type": "Organization", name: site.name, url: "https://www.neufoot.com/" },
-  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
-};
+const BASE = "https://www.neufoot.com";
+const url = new URL(Astro.url.pathname.endsWith("/") ? Astro.url.pathname : `${Astro.url.pathname}/`, BASE).href;
+const d = post.data;
+const orgRef = { "@id": `${BASE}/#organization` };
+const schema = [
+  {
+    "@context": "https://schema.org", "@type": "Article", "@id": `${url}#article`, headline: d.title, description: d.excerpt,
+    datePublished: new Date(d.date).toISOString(), dateModified: new Date(d.updated ?? d.date).toISOString(),
+    image: new URL(blogImage(d.image, 1600), BASE).href, inLanguage: "en-US",
+    author: { "@type": "Organization", name: site.name, ...orgRef }, publisher: { "@type": "Organization", name: site.name, url: `${BASE}/`, ...orgRef },
+    mainEntityOfPage: url, isPartOf: { "@type": "Blog", name: "Neuhaus Foot & Ankle Blog", url: `${BASE}/blog/` },
+    articleSection: d.category,
+    ...(d.keywords.length ? { keywords: d.keywords.join(", ") } : {}),
+    ...(d.topic ? { about: { "@type": "MedicalCondition", name: d.topic } } : {}),
+    ...(d.sources.length ? { citation: d.sources.map((s) => ({ "@type": "CreativeWork", name: s.title, url: s.url })) } : {}),
+    ...(d.faqs.length ? { mentions: { "@id": `${url}#faq` } } : {}),
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${BASE}/` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE}/blog/` },
+      { "@type": "ListItem", position: 3, name: d.title, item: url },
+    ],
+  },
+  ...(d.faqs.length ? [{
+    "@context": "https://schema.org", "@type": "FAQPage", "@id": `${url}#faq`, url,
+    mainEntity: d.faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  }] : []),
+];
 ---
 <PageLayout schema={schema} title={post.data.title} description={post.data.excerpt} eyebrow={`${post.data.category} / ${formatDate(post.data.date)}`} heading={post.data.title} intro={post.data.excerpt} image={blogImage(post.data.image, 2000)}>
   <section class="py-20 md:py-28">
     <article class="prose-content wrap max-w-3xl">
       <p class="!text-sm !text-slate">{post.data.readTime} &nbsp;|&nbsp; Written by the Neuhaus Foot &amp; Ankle team</p>
       <Content />
+      {d.faqs.length > 0 && (
+        <section class="mt-14" aria-labelledby="faq-heading">
+          <h2 id="faq-heading">Frequently asked questions</h2>
+          {d.faqs.map((f) => (
+            <div class="mt-6">
+              <h3>{f.q}</h3>
+              <p>{f.a}</p>
+            </div>
+          ))}
+        </section>
+      )}
+      {d.sources.length > 0 && (
+        <section class="mt-14" aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Sources and further reading</h2>
+          <ul>
+            {d.sources.map((s) => <li><a href={s.url} rel="noopener" target="_blank">{s.title}</a></li>)}
+          </ul>
+        </section>
+      )}
+      <p class="mt-10 !text-sm !text-slate">This article is for general education and is not a diagnosis or personal medical advice. Updated {formatDate(d.updated ?? d.date)}.</p>
       <div class="mt-14 rounded-2xl bg-mist p-8">
         <p class="font-display text-3xl leading-tight text-navy-900">Questions about your feet?</p>
         <p class="mt-2">Our podiatrists can help. Book a visit at any of our 15 clinics.</p>
